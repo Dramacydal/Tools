@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet {
+namespace Bgs.Protocol {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/content_handle_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,7 +31,7 @@ namespace Bnet {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.ContentHandle), global::Bnet.ContentHandle.Parser, new[]{ "Region", "Usage", "Hash", "ProtoUrl" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.ContentHandle), global::Bgs.Protocol.ContentHandle.Parser, new[]{ "Region", "Usage", "Hash", "ProtoUrl" }, null, null, null)
           }));
     }
     #endregion
@@ -44,7 +44,7 @@ namespace Bnet {
     public static pb::MessageParser<ContentHandle> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.ContentHandleTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.ContentHandleTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

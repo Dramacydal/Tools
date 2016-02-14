@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet {
+namespace Bgs.Protocol {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/role_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -32,9 +32,9 @@ namespace Bnet {
             "dHJpYnV0ZRIZCg1raWNrYWJsZV9yb2xlGAkgAygNQgIQARIaCg5yZW1vdmFi",
             "bGVfcm9sZRgKIAMoDUICEAFCAkgCYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.AttributeTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.AttributeTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Role), global::Bnet.Role.Parser, new[]{ "Id", "Name", "Privilege", "AssignableRole", "Required", "Unique", "RelegationRole", "Attribute", "KickableRole", "RemovableRole" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Role), global::Bgs.Protocol.Role.Parser, new[]{ "Id", "Name", "Privilege", "AssignableRole", "Required", "Unique", "RelegationRole", "Attribute", "KickableRole", "RemovableRole" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Bnet {
     public static pb::MessageParser<Role> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.RoleTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.RoleTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -147,10 +147,10 @@ namespace Bnet {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 8;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(66, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(66, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 

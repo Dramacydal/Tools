@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Account.V1 {
+namespace Bgs.Protocol.Account.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/account_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -182,40 +182,40 @@ namespace Bnet.Account.V1 {
             "b3VudC52MS5HYW1lQWNjb3VudFNlc3Npb25Ob3RpZmljYXRpb24aGS5iZ3Mu",
             "cHJvdG9jb2wuTk9fUkVTUE9OU0UiA4gCAUIFSAKAAQBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.Account.V1.AccountTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.Account.V1.AccountTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetAccountRequest), global::Bnet.Account.V1.GetAccountRequest.Parser, new[]{ "Ref", "FetchAll", "FetchBlob", "FetchId", "FetchEmail", "FetchBattleTag", "FetchFullName", "FetchLinks", "FetchParentalControls" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetAccountResponse), global::Bnet.Account.V1.GetAccountResponse.Parser, new[]{ "Blob", "Id", "Email", "BattleTag", "FullName", "Links", "ParentalControlInfo" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.CreateGameAccountRequest), global::Bnet.Account.V1.CreateGameAccountRequest.Parser, new[]{ "Account", "Region", "Program", "RealmPermissions" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.CacheExpireRequest), global::Bnet.Account.V1.CacheExpireRequest.Parser, new[]{ "Account", "GameAccount", "Email" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.CredentialUpdateRequest), global::Bnet.Account.V1.CredentialUpdateRequest.Parser, new[]{ "Account", "OldCredentials", "NewCredentials", "Region" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.CredentialUpdateResponse), global::Bnet.Account.V1.CredentialUpdateResponse.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.AccountFlagUpdateRequest), global::Bnet.Account.V1.AccountFlagUpdateRequest.Parser, new[]{ "Account", "Region", "Flag", "Active" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GameAccountFlagUpdateRequest), global::Bnet.Account.V1.GameAccountFlagUpdateRequest.Parser, new[]{ "GameAccount", "Flag", "Active" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.SubscriptionUpdateRequest), global::Bnet.Account.V1.SubscriptionUpdateRequest.Parser, new[]{ "Ref" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.SubscriptionUpdateResponse), global::Bnet.Account.V1.SubscriptionUpdateResponse.Parser, new[]{ "Ref" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.IsIgrAddressRequest), global::Bnet.Account.V1.IsIgrAddressRequest.Parser, new[]{ "ClientAddress", "Region" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.AccountServiceRegion), global::Bnet.Account.V1.AccountServiceRegion.Parser, new[]{ "Id", "Shard" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.AccountServiceConfig), global::Bnet.Account.V1.AccountServiceConfig.Parser, new[]{ "Region" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetAccountStateRequest), global::Bnet.Account.V1.GetAccountStateRequest.Parser, new[]{ "EntityId", "Program", "Region", "Options", "Tags" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetAccountStateResponse), global::Bnet.Account.V1.GetAccountStateResponse.Parser, new[]{ "State", "Tags" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetGameAccountStateRequest), global::Bnet.Account.V1.GetGameAccountStateRequest.Parser, new[]{ "AccountId", "GameAccountId", "Options", "Tags" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetGameAccountStateResponse), global::Bnet.Account.V1.GetGameAccountStateResponse.Parser, new[]{ "State", "Tags" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetLicensesRequest), global::Bnet.Account.V1.GetLicensesRequest.Parser, new[]{ "TargetId", "FetchAccountLicenses", "FetchGameAccountLicenses", "FetchDynamicAccountLicenses", "Program", "ExcludeUnknownProgram" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetLicensesResponse), global::Bnet.Account.V1.GetLicensesResponse.Parser, new[]{ "Licenses" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetGameSessionInfoRequest), global::Bnet.Account.V1.GetGameSessionInfoRequest.Parser, new[]{ "EntityId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetGameSessionInfoResponse), global::Bnet.Account.V1.GetGameSessionInfoResponse.Parser, new[]{ "SessionInfo" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetGameTimeRemainingInfoRequest), global::Bnet.Account.V1.GetGameTimeRemainingInfoRequest.Parser, new[]{ "GameAccountId", "AccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetGameTimeRemainingInfoResponse), global::Bnet.Account.V1.GetGameTimeRemainingInfoResponse.Parser, new[]{ "GameTimeRemainingInfo" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetCAISInfoRequest), global::Bnet.Account.V1.GetCAISInfoRequest.Parser, new[]{ "EntityId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetCAISInfoResponse), global::Bnet.Account.V1.GetCAISInfoResponse.Parser, new[]{ "CaisInfo" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.ForwardCacheExpireRequest), global::Bnet.Account.V1.ForwardCacheExpireRequest.Parser, new[]{ "EntityId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetAuthorizedDataRequest), global::Bnet.Account.V1.GetAuthorizedDataRequest.Parser, new[]{ "EntityId", "Tag", "PrivilegedNetwork" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GetAuthorizedDataResponse), global::Bnet.Account.V1.GetAuthorizedDataResponse.Parser, new[]{ "Data" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.AccountStateNotification), global::Bnet.Account.V1.AccountStateNotification.Parser, new[]{ "AccountState", "SubscriberId", "AccountTags", "SubscriptionCompleted" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GameAccountStateNotification), global::Bnet.Account.V1.GameAccountStateNotification.Parser, new[]{ "GameAccountState", "SubscriberId", "GameAccountTags", "SubscriptionCompleted" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GameAccountNotification), global::Bnet.Account.V1.GameAccountNotification.Parser, new[]{ "GameAccounts", "SubscriberId", "AccountTags" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Account.V1.GameAccountSessionNotification), global::Bnet.Account.V1.GameAccountSessionNotification.Parser, new[]{ "GameAccount", "SessionInfo" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetAccountRequest), global::Bgs.Protocol.Account.V1.GetAccountRequest.Parser, new[]{ "Ref", "FetchAll", "FetchBlob", "FetchId", "FetchEmail", "FetchBattleTag", "FetchFullName", "FetchLinks", "FetchParentalControls" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetAccountResponse), global::Bgs.Protocol.Account.V1.GetAccountResponse.Parser, new[]{ "Blob", "Id", "Email", "BattleTag", "FullName", "Links", "ParentalControlInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.CreateGameAccountRequest), global::Bgs.Protocol.Account.V1.CreateGameAccountRequest.Parser, new[]{ "Account", "Region", "Program", "RealmPermissions" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.CacheExpireRequest), global::Bgs.Protocol.Account.V1.CacheExpireRequest.Parser, new[]{ "Account", "GameAccount", "Email" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.CredentialUpdateRequest), global::Bgs.Protocol.Account.V1.CredentialUpdateRequest.Parser, new[]{ "Account", "OldCredentials", "NewCredentials", "Region" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.CredentialUpdateResponse), global::Bgs.Protocol.Account.V1.CredentialUpdateResponse.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.AccountFlagUpdateRequest), global::Bgs.Protocol.Account.V1.AccountFlagUpdateRequest.Parser, new[]{ "Account", "Region", "Flag", "Active" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GameAccountFlagUpdateRequest), global::Bgs.Protocol.Account.V1.GameAccountFlagUpdateRequest.Parser, new[]{ "GameAccount", "Flag", "Active" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.SubscriptionUpdateRequest), global::Bgs.Protocol.Account.V1.SubscriptionUpdateRequest.Parser, new[]{ "Ref" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.SubscriptionUpdateResponse), global::Bgs.Protocol.Account.V1.SubscriptionUpdateResponse.Parser, new[]{ "Ref" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.IsIgrAddressRequest), global::Bgs.Protocol.Account.V1.IsIgrAddressRequest.Parser, new[]{ "ClientAddress", "Region" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.AccountServiceRegion), global::Bgs.Protocol.Account.V1.AccountServiceRegion.Parser, new[]{ "Id", "Shard" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.AccountServiceConfig), global::Bgs.Protocol.Account.V1.AccountServiceConfig.Parser, new[]{ "Region" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetAccountStateRequest), global::Bgs.Protocol.Account.V1.GetAccountStateRequest.Parser, new[]{ "EntityId", "Program", "Region", "Options", "Tags" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetAccountStateResponse), global::Bgs.Protocol.Account.V1.GetAccountStateResponse.Parser, new[]{ "State", "Tags" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetGameAccountStateRequest), global::Bgs.Protocol.Account.V1.GetGameAccountStateRequest.Parser, new[]{ "AccountId", "GameAccountId", "Options", "Tags" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetGameAccountStateResponse), global::Bgs.Protocol.Account.V1.GetGameAccountStateResponse.Parser, new[]{ "State", "Tags" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetLicensesRequest), global::Bgs.Protocol.Account.V1.GetLicensesRequest.Parser, new[]{ "TargetId", "FetchAccountLicenses", "FetchGameAccountLicenses", "FetchDynamicAccountLicenses", "Program", "ExcludeUnknownProgram" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetLicensesResponse), global::Bgs.Protocol.Account.V1.GetLicensesResponse.Parser, new[]{ "Licenses" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetGameSessionInfoRequest), global::Bgs.Protocol.Account.V1.GetGameSessionInfoRequest.Parser, new[]{ "EntityId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetGameSessionInfoResponse), global::Bgs.Protocol.Account.V1.GetGameSessionInfoResponse.Parser, new[]{ "SessionInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetGameTimeRemainingInfoRequest), global::Bgs.Protocol.Account.V1.GetGameTimeRemainingInfoRequest.Parser, new[]{ "GameAccountId", "AccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetGameTimeRemainingInfoResponse), global::Bgs.Protocol.Account.V1.GetGameTimeRemainingInfoResponse.Parser, new[]{ "GameTimeRemainingInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetCAISInfoRequest), global::Bgs.Protocol.Account.V1.GetCAISInfoRequest.Parser, new[]{ "EntityId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetCAISInfoResponse), global::Bgs.Protocol.Account.V1.GetCAISInfoResponse.Parser, new[]{ "CaisInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.ForwardCacheExpireRequest), global::Bgs.Protocol.Account.V1.ForwardCacheExpireRequest.Parser, new[]{ "EntityId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetAuthorizedDataRequest), global::Bgs.Protocol.Account.V1.GetAuthorizedDataRequest.Parser, new[]{ "EntityId", "Tag", "PrivilegedNetwork" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GetAuthorizedDataResponse), global::Bgs.Protocol.Account.V1.GetAuthorizedDataResponse.Parser, new[]{ "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.AccountStateNotification), global::Bgs.Protocol.Account.V1.AccountStateNotification.Parser, new[]{ "AccountState", "SubscriberId", "AccountTags", "SubscriptionCompleted" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GameAccountStateNotification), global::Bgs.Protocol.Account.V1.GameAccountStateNotification.Parser, new[]{ "GameAccountState", "SubscriberId", "GameAccountTags", "SubscriptionCompleted" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GameAccountNotification), global::Bgs.Protocol.Account.V1.GameAccountNotification.Parser, new[]{ "GameAccounts", "SubscriberId", "AccountTags" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Account.V1.GameAccountSessionNotification), global::Bgs.Protocol.Account.V1.GameAccountSessionNotification.Parser, new[]{ "GameAccount", "SessionInfo" }, null, null, null)
           }));
     }
     #endregion
@@ -228,7 +228,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetAccountRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -259,8 +259,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "ref" field.</summary>
     public const int RefFieldNumber = 1;
-    private global::Bnet.Account.V1.AccountReference ref_;
-    public global::Bnet.Account.V1.AccountReference Ref {
+    private global::Bgs.Protocol.Account.V1.AccountReference ref_;
+    public global::Bgs.Protocol.Account.V1.AccountReference Ref {
       get { return ref_; }
       set {
         ref_ = value;
@@ -465,7 +465,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.ref_ != null) {
         if (ref_ == null) {
-          ref_ = new global::Bnet.Account.V1.AccountReference();
+          ref_ = new global::Bgs.Protocol.Account.V1.AccountReference();
         }
         Ref.MergeFrom(other.Ref);
       }
@@ -504,7 +504,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (ref_ == null) {
-              ref_ = new global::Bnet.Account.V1.AccountReference();
+              ref_ = new global::Bgs.Protocol.Account.V1.AccountReference();
             }
             input.ReadMessage(ref_);
             break;
@@ -553,7 +553,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetAccountResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -582,8 +582,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "blob" field.</summary>
     public const int BlobFieldNumber = 11;
-    private global::Bnet.Account.V1.AccountBlob blob_;
-    public global::Bnet.Account.V1.AccountBlob Blob {
+    private global::Bgs.Protocol.Account.V1.AccountBlob blob_;
+    public global::Bgs.Protocol.Account.V1.AccountBlob Blob {
       get { return blob_; }
       set {
         blob_ = value;
@@ -592,8 +592,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 12;
-    private global::Bnet.Account.V1.AccountId id_;
-    public global::Bnet.Account.V1.AccountId Id {
+    private global::Bgs.Protocol.Account.V1.AccountId id_;
+    public global::Bgs.Protocol.Account.V1.AccountId Id {
       get { return id_; }
       set {
         id_ = value;
@@ -631,17 +631,17 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "links" field.</summary>
     public const int LinksFieldNumber = 16;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.GameAccountLink> _repeated_links_codec
-        = pb::FieldCodec.ForMessage(130, global::Bnet.Account.V1.GameAccountLink.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.GameAccountLink> links_ = new pbc::RepeatedField<global::Bnet.Account.V1.GameAccountLink>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.GameAccountLink> Links {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.GameAccountLink> _repeated_links_codec
+        = pb::FieldCodec.ForMessage(130, global::Bgs.Protocol.Account.V1.GameAccountLink.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.GameAccountLink> links_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.GameAccountLink>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.GameAccountLink> Links {
       get { return links_; }
     }
 
     /// <summary>Field number for the "parental_control_info" field.</summary>
     public const int ParentalControlInfoFieldNumber = 17;
-    private global::Bnet.Account.V1.ParentalControlInfo parentalControlInfo_;
-    public global::Bnet.Account.V1.ParentalControlInfo ParentalControlInfo {
+    private global::Bgs.Protocol.Account.V1.ParentalControlInfo parentalControlInfo_;
+    public global::Bgs.Protocol.Account.V1.ParentalControlInfo ParentalControlInfo {
       get { return parentalControlInfo_; }
       set {
         parentalControlInfo_ = value;
@@ -738,13 +738,13 @@ namespace Bnet.Account.V1 {
       }
       if (other.blob_ != null) {
         if (blob_ == null) {
-          blob_ = new global::Bnet.Account.V1.AccountBlob();
+          blob_ = new global::Bgs.Protocol.Account.V1.AccountBlob();
         }
         Blob.MergeFrom(other.Blob);
       }
       if (other.id_ != null) {
         if (id_ == null) {
-          id_ = new global::Bnet.Account.V1.AccountId();
+          id_ = new global::Bgs.Protocol.Account.V1.AccountId();
         }
         Id.MergeFrom(other.Id);
       }
@@ -758,7 +758,7 @@ namespace Bnet.Account.V1 {
       links_.Add(other.links_);
       if (other.parentalControlInfo_ != null) {
         if (parentalControlInfo_ == null) {
-          parentalControlInfo_ = new global::Bnet.Account.V1.ParentalControlInfo();
+          parentalControlInfo_ = new global::Bgs.Protocol.Account.V1.ParentalControlInfo();
         }
         ParentalControlInfo.MergeFrom(other.ParentalControlInfo);
       }
@@ -773,14 +773,14 @@ namespace Bnet.Account.V1 {
             break;
           case 90: {
             if (blob_ == null) {
-              blob_ = new global::Bnet.Account.V1.AccountBlob();
+              blob_ = new global::Bgs.Protocol.Account.V1.AccountBlob();
             }
             input.ReadMessage(blob_);
             break;
           }
           case 98: {
             if (id_ == null) {
-              id_ = new global::Bnet.Account.V1.AccountId();
+              id_ = new global::Bgs.Protocol.Account.V1.AccountId();
             }
             input.ReadMessage(id_);
             break;
@@ -803,7 +803,7 @@ namespace Bnet.Account.V1 {
           }
           case 138: {
             if (parentalControlInfo_ == null) {
-              parentalControlInfo_ = new global::Bnet.Account.V1.ParentalControlInfo();
+              parentalControlInfo_ = new global::Bgs.Protocol.Account.V1.ParentalControlInfo();
             }
             input.ReadMessage(parentalControlInfo_);
             break;
@@ -820,7 +820,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<CreateGameAccountRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -846,8 +846,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 1;
-    private global::Bnet.Account.V1.AccountId account_;
-    public global::Bnet.Account.V1.AccountId Account {
+    private global::Bgs.Protocol.Account.V1.AccountId account_;
+    public global::Bgs.Protocol.Account.V1.AccountId Account {
       get { return account_; }
       set {
         account_ = value;
@@ -957,7 +957,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.account_ != null) {
         if (account_ == null) {
-          account_ = new global::Bnet.Account.V1.AccountId();
+          account_ = new global::Bgs.Protocol.Account.V1.AccountId();
         }
         Account.MergeFrom(other.Account);
       }
@@ -981,7 +981,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (account_ == null) {
-              account_ = new global::Bnet.Account.V1.AccountId();
+              account_ = new global::Bgs.Protocol.Account.V1.AccountId();
             }
             input.ReadMessage(account_);
             break;
@@ -1010,7 +1010,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<CacheExpireRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1035,19 +1035,19 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.AccountId> _repeated_account_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Account.V1.AccountId.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.AccountId> account_ = new pbc::RepeatedField<global::Bnet.Account.V1.AccountId>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.AccountId> Account {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.AccountId> _repeated_account_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Account.V1.AccountId.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountId> account_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountId>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountId> Account {
       get { return account_; }
     }
 
     /// <summary>Field number for the "game_account" field.</summary>
     public const int GameAccountFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.GameAccountHandle> _repeated_gameAccount_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Account.V1.GameAccountHandle.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.GameAccountHandle> gameAccount_ = new pbc::RepeatedField<global::Bnet.Account.V1.GameAccountHandle>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.GameAccountHandle> GameAccount {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.GameAccountHandle> _repeated_gameAccount_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Account.V1.GameAccountHandle.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.GameAccountHandle> gameAccount_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.GameAccountHandle>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.GameAccountHandle> GameAccount {
       get { return gameAccount_; }
     }
 
@@ -1143,7 +1143,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<CredentialUpdateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1169,8 +1169,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 1;
-    private global::Bnet.Account.V1.AccountId account_;
-    public global::Bnet.Account.V1.AccountId Account {
+    private global::Bgs.Protocol.Account.V1.AccountId account_;
+    public global::Bgs.Protocol.Account.V1.AccountId Account {
       get { return account_; }
       set {
         account_ = value;
@@ -1179,19 +1179,19 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "old_credentials" field.</summary>
     public const int OldCredentialsFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.AccountCredential> _repeated_oldCredentials_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Account.V1.AccountCredential.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.AccountCredential> oldCredentials_ = new pbc::RepeatedField<global::Bnet.Account.V1.AccountCredential>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.AccountCredential> OldCredentials {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.AccountCredential> _repeated_oldCredentials_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Account.V1.AccountCredential.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountCredential> oldCredentials_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountCredential>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountCredential> OldCredentials {
       get { return oldCredentials_; }
     }
 
     /// <summary>Field number for the "new_credentials" field.</summary>
     public const int NewCredentialsFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.AccountCredential> _repeated_newCredentials_codec
-        = pb::FieldCodec.ForMessage(26, global::Bnet.Account.V1.AccountCredential.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.AccountCredential> newCredentials_ = new pbc::RepeatedField<global::Bnet.Account.V1.AccountCredential>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.AccountCredential> NewCredentials {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.AccountCredential> _repeated_newCredentials_codec
+        = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.Account.V1.AccountCredential.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountCredential> newCredentials_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountCredential>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountCredential> NewCredentials {
       get { return newCredentials_; }
     }
 
@@ -1268,7 +1268,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.account_ != null) {
         if (account_ == null) {
-          account_ = new global::Bnet.Account.V1.AccountId();
+          account_ = new global::Bgs.Protocol.Account.V1.AccountId();
         }
         Account.MergeFrom(other.Account);
       }
@@ -1288,7 +1288,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (account_ == null) {
-              account_ = new global::Bnet.Account.V1.AccountId();
+              account_ = new global::Bgs.Protocol.Account.V1.AccountId();
             }
             input.ReadMessage(account_);
             break;
@@ -1317,7 +1317,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<CredentialUpdateResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1393,7 +1393,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<AccountFlagUpdateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1419,8 +1419,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "account" field.</summary>
     public const int AccountFieldNumber = 1;
-    private global::Bnet.Account.V1.AccountId account_;
-    public global::Bnet.Account.V1.AccountId Account {
+    private global::Bgs.Protocol.Account.V1.AccountId account_;
+    public global::Bgs.Protocol.Account.V1.AccountId Account {
       get { return account_; }
       set {
         account_ = value;
@@ -1530,7 +1530,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.account_ != null) {
         if (account_ == null) {
-          account_ = new global::Bnet.Account.V1.AccountId();
+          account_ = new global::Bgs.Protocol.Account.V1.AccountId();
         }
         Account.MergeFrom(other.Account);
       }
@@ -1554,7 +1554,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (account_ == null) {
-              account_ = new global::Bnet.Account.V1.AccountId();
+              account_ = new global::Bgs.Protocol.Account.V1.AccountId();
             }
             input.ReadMessage(account_);
             break;
@@ -1583,7 +1583,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GameAccountFlagUpdateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1608,8 +1608,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "game_account" field.</summary>
     public const int GameAccountFieldNumber = 1;
-    private global::Bnet.Account.V1.GameAccountHandle gameAccount_;
-    public global::Bnet.Account.V1.GameAccountHandle GameAccount {
+    private global::Bgs.Protocol.Account.V1.GameAccountHandle gameAccount_;
+    public global::Bgs.Protocol.Account.V1.GameAccountHandle GameAccount {
       get { return gameAccount_; }
       set {
         gameAccount_ = value;
@@ -1700,7 +1700,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.gameAccount_ != null) {
         if (gameAccount_ == null) {
-          gameAccount_ = new global::Bnet.Account.V1.GameAccountHandle();
+          gameAccount_ = new global::Bgs.Protocol.Account.V1.GameAccountHandle();
         }
         GameAccount.MergeFrom(other.GameAccount);
       }
@@ -1721,7 +1721,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (gameAccount_ == null) {
-              gameAccount_ = new global::Bnet.Account.V1.GameAccountHandle();
+              gameAccount_ = new global::Bgs.Protocol.Account.V1.GameAccountHandle();
             }
             input.ReadMessage(gameAccount_);
             break;
@@ -1746,7 +1746,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<SubscriptionUpdateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1769,10 +1769,10 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "ref" field.</summary>
     public const int RefFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.SubscriberReference> _repeated_ref_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Account.V1.SubscriberReference.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.SubscriberReference> ref_ = new pbc::RepeatedField<global::Bnet.Account.V1.SubscriberReference>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.SubscriberReference> Ref {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.SubscriberReference> _repeated_ref_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Account.V1.SubscriberReference.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.SubscriberReference> ref_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.SubscriberReference>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.SubscriberReference> Ref {
       get { return ref_; }
     }
 
@@ -1841,7 +1841,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<SubscriptionUpdateResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1864,10 +1864,10 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "ref" field.</summary>
     public const int RefFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.SubscriberReference> _repeated_ref_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Account.V1.SubscriberReference.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.SubscriberReference> ref_ = new pbc::RepeatedField<global::Bnet.Account.V1.SubscriberReference>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.SubscriberReference> Ref {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.SubscriberReference> _repeated_ref_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Account.V1.SubscriberReference.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.SubscriberReference> ref_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.SubscriberReference>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.SubscriberReference> Ref {
       get { return ref_; }
     }
 
@@ -1936,7 +1936,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<IsIgrAddressRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2066,7 +2066,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<AccountServiceRegion> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[11]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2196,7 +2196,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<AccountServiceConfig> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[12]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2219,10 +2219,10 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "region" field.</summary>
     public const int RegionFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.AccountServiceRegion> _repeated_region_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Account.V1.AccountServiceRegion.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.AccountServiceRegion> region_ = new pbc::RepeatedField<global::Bnet.Account.V1.AccountServiceRegion>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.AccountServiceRegion> Region {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.AccountServiceRegion> _repeated_region_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Account.V1.AccountServiceRegion.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountServiceRegion> region_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountServiceRegion>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountServiceRegion> Region {
       get { return region_; }
     }
 
@@ -2291,7 +2291,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetAccountStateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[13]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2318,8 +2318,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -2348,8 +2348,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "options" field.</summary>
     public const int OptionsFieldNumber = 10;
-    private global::Bnet.Account.V1.AccountFieldOptions options_;
-    public global::Bnet.Account.V1.AccountFieldOptions Options {
+    private global::Bgs.Protocol.Account.V1.AccountFieldOptions options_;
+    public global::Bgs.Protocol.Account.V1.AccountFieldOptions Options {
       get { return options_; }
       set {
         options_ = value;
@@ -2358,8 +2358,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "tags" field.</summary>
     public const int TagsFieldNumber = 11;
-    private global::Bnet.Account.V1.AccountFieldTags tags_;
-    public global::Bnet.Account.V1.AccountFieldTags Tags {
+    private global::Bgs.Protocol.Account.V1.AccountFieldTags tags_;
+    public global::Bgs.Protocol.Account.V1.AccountFieldTags Tags {
       get { return tags_; }
       set {
         tags_ = value;
@@ -2448,7 +2448,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -2460,13 +2460,13 @@ namespace Bnet.Account.V1 {
       }
       if (other.options_ != null) {
         if (options_ == null) {
-          options_ = new global::Bnet.Account.V1.AccountFieldOptions();
+          options_ = new global::Bgs.Protocol.Account.V1.AccountFieldOptions();
         }
         Options.MergeFrom(other.Options);
       }
       if (other.tags_ != null) {
         if (tags_ == null) {
-          tags_ = new global::Bnet.Account.V1.AccountFieldTags();
+          tags_ = new global::Bgs.Protocol.Account.V1.AccountFieldTags();
         }
         Tags.MergeFrom(other.Tags);
       }
@@ -2481,7 +2481,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -2496,14 +2496,14 @@ namespace Bnet.Account.V1 {
           }
           case 82: {
             if (options_ == null) {
-              options_ = new global::Bnet.Account.V1.AccountFieldOptions();
+              options_ = new global::Bgs.Protocol.Account.V1.AccountFieldOptions();
             }
             input.ReadMessage(options_);
             break;
           }
           case 90: {
             if (tags_ == null) {
-              tags_ = new global::Bnet.Account.V1.AccountFieldTags();
+              tags_ = new global::Bgs.Protocol.Account.V1.AccountFieldTags();
             }
             input.ReadMessage(tags_);
             break;
@@ -2520,7 +2520,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetAccountStateResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[14]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2544,8 +2544,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 1;
-    private global::Bnet.Account.V1.AccountState state_;
-    public global::Bnet.Account.V1.AccountState State {
+    private global::Bgs.Protocol.Account.V1.AccountState state_;
+    public global::Bgs.Protocol.Account.V1.AccountState State {
       get { return state_; }
       set {
         state_ = value;
@@ -2554,8 +2554,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "tags" field.</summary>
     public const int TagsFieldNumber = 2;
-    private global::Bnet.Account.V1.AccountFieldTags tags_;
-    public global::Bnet.Account.V1.AccountFieldTags Tags {
+    private global::Bgs.Protocol.Account.V1.AccountFieldTags tags_;
+    public global::Bgs.Protocol.Account.V1.AccountFieldTags Tags {
       get { return tags_; }
       set {
         tags_ = value;
@@ -2617,13 +2617,13 @@ namespace Bnet.Account.V1 {
       }
       if (other.state_ != null) {
         if (state_ == null) {
-          state_ = new global::Bnet.Account.V1.AccountState();
+          state_ = new global::Bgs.Protocol.Account.V1.AccountState();
         }
         State.MergeFrom(other.State);
       }
       if (other.tags_ != null) {
         if (tags_ == null) {
-          tags_ = new global::Bnet.Account.V1.AccountFieldTags();
+          tags_ = new global::Bgs.Protocol.Account.V1.AccountFieldTags();
         }
         Tags.MergeFrom(other.Tags);
       }
@@ -2638,14 +2638,14 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (state_ == null) {
-              state_ = new global::Bnet.Account.V1.AccountState();
+              state_ = new global::Bgs.Protocol.Account.V1.AccountState();
             }
             input.ReadMessage(state_);
             break;
           }
           case 18: {
             if (tags_ == null) {
-              tags_ = new global::Bnet.Account.V1.AccountFieldTags();
+              tags_ = new global::Bgs.Protocol.Account.V1.AccountFieldTags();
             }
             input.ReadMessage(tags_);
             break;
@@ -2662,7 +2662,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetGameAccountStateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[15]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2688,9 +2688,9 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 1;
-    private global::Bnet.EntityId accountId_;
+    private global::Bgs.Protocol.EntityId accountId_;
     [global::System.ObsoleteAttribute()]
-    public global::Bnet.EntityId AccountId {
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -2699,8 +2699,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 2;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -2709,8 +2709,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "options" field.</summary>
     public const int OptionsFieldNumber = 10;
-    private global::Bnet.Account.V1.GameAccountFieldOptions options_;
-    public global::Bnet.Account.V1.GameAccountFieldOptions Options {
+    private global::Bgs.Protocol.Account.V1.GameAccountFieldOptions options_;
+    public global::Bgs.Protocol.Account.V1.GameAccountFieldOptions Options {
       get { return options_; }
       set {
         options_ = value;
@@ -2719,8 +2719,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "tags" field.</summary>
     public const int TagsFieldNumber = 11;
-    private global::Bnet.Account.V1.GameAccountFieldTags tags_;
-    public global::Bnet.Account.V1.GameAccountFieldTags Tags {
+    private global::Bgs.Protocol.Account.V1.GameAccountFieldTags tags_;
+    public global::Bgs.Protocol.Account.V1.GameAccountFieldTags Tags {
       get { return tags_; }
       set {
         tags_ = value;
@@ -2800,25 +2800,25 @@ namespace Bnet.Account.V1 {
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
       if (other.options_ != null) {
         if (options_ == null) {
-          options_ = new global::Bnet.Account.V1.GameAccountFieldOptions();
+          options_ = new global::Bgs.Protocol.Account.V1.GameAccountFieldOptions();
         }
         Options.MergeFrom(other.Options);
       }
       if (other.tags_ != null) {
         if (tags_ == null) {
-          tags_ = new global::Bnet.Account.V1.GameAccountFieldTags();
+          tags_ = new global::Bgs.Protocol.Account.V1.GameAccountFieldTags();
         }
         Tags.MergeFrom(other.Tags);
       }
@@ -2833,28 +2833,28 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
           }
           case 18: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
           }
           case 82: {
             if (options_ == null) {
-              options_ = new global::Bnet.Account.V1.GameAccountFieldOptions();
+              options_ = new global::Bgs.Protocol.Account.V1.GameAccountFieldOptions();
             }
             input.ReadMessage(options_);
             break;
           }
           case 90: {
             if (tags_ == null) {
-              tags_ = new global::Bnet.Account.V1.GameAccountFieldTags();
+              tags_ = new global::Bgs.Protocol.Account.V1.GameAccountFieldTags();
             }
             input.ReadMessage(tags_);
             break;
@@ -2871,7 +2871,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetGameAccountStateResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[16]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2895,8 +2895,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 1;
-    private global::Bnet.Account.V1.GameAccountState state_;
-    public global::Bnet.Account.V1.GameAccountState State {
+    private global::Bgs.Protocol.Account.V1.GameAccountState state_;
+    public global::Bgs.Protocol.Account.V1.GameAccountState State {
       get { return state_; }
       set {
         state_ = value;
@@ -2905,8 +2905,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "tags" field.</summary>
     public const int TagsFieldNumber = 2;
-    private global::Bnet.Account.V1.GameAccountFieldTags tags_;
-    public global::Bnet.Account.V1.GameAccountFieldTags Tags {
+    private global::Bgs.Protocol.Account.V1.GameAccountFieldTags tags_;
+    public global::Bgs.Protocol.Account.V1.GameAccountFieldTags Tags {
       get { return tags_; }
       set {
         tags_ = value;
@@ -2968,13 +2968,13 @@ namespace Bnet.Account.V1 {
       }
       if (other.state_ != null) {
         if (state_ == null) {
-          state_ = new global::Bnet.Account.V1.GameAccountState();
+          state_ = new global::Bgs.Protocol.Account.V1.GameAccountState();
         }
         State.MergeFrom(other.State);
       }
       if (other.tags_ != null) {
         if (tags_ == null) {
-          tags_ = new global::Bnet.Account.V1.GameAccountFieldTags();
+          tags_ = new global::Bgs.Protocol.Account.V1.GameAccountFieldTags();
         }
         Tags.MergeFrom(other.Tags);
       }
@@ -2989,14 +2989,14 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (state_ == null) {
-              state_ = new global::Bnet.Account.V1.GameAccountState();
+              state_ = new global::Bgs.Protocol.Account.V1.GameAccountState();
             }
             input.ReadMessage(state_);
             break;
           }
           case 18: {
             if (tags_ == null) {
-              tags_ = new global::Bnet.Account.V1.GameAccountFieldTags();
+              tags_ = new global::Bgs.Protocol.Account.V1.GameAccountFieldTags();
             }
             input.ReadMessage(tags_);
             break;
@@ -3013,7 +3013,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetLicensesRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[17]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3041,8 +3041,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 1;
-    private global::Bnet.EntityId targetId_;
-    public global::Bnet.EntityId TargetId {
+    private global::Bgs.Protocol.EntityId targetId_;
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -3190,7 +3190,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
@@ -3220,7 +3220,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;
@@ -3257,7 +3257,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetLicensesResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[18]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3280,10 +3280,10 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "licenses" field.</summary>
     public const int LicensesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.AccountLicense> _repeated_licenses_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Account.V1.AccountLicense.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.AccountLicense> licenses_ = new pbc::RepeatedField<global::Bnet.Account.V1.AccountLicense>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.AccountLicense> Licenses {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.AccountLicense> _repeated_licenses_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Account.V1.AccountLicense.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountLicense> licenses_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountLicense>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountLicense> Licenses {
       get { return licenses_; }
     }
 
@@ -3352,7 +3352,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetGameSessionInfoRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[19]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3375,8 +3375,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -3429,7 +3429,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -3444,7 +3444,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -3461,7 +3461,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetGameSessionInfoResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[20]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[20]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3484,8 +3484,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "session_info" field.</summary>
     public const int SessionInfoFieldNumber = 2;
-    private global::Bnet.Account.V1.GameSessionInfo sessionInfo_;
-    public global::Bnet.Account.V1.GameSessionInfo SessionInfo {
+    private global::Bgs.Protocol.Account.V1.GameSessionInfo sessionInfo_;
+    public global::Bgs.Protocol.Account.V1.GameSessionInfo SessionInfo {
       get { return sessionInfo_; }
       set {
         sessionInfo_ = value;
@@ -3538,7 +3538,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.sessionInfo_ != null) {
         if (sessionInfo_ == null) {
-          sessionInfo_ = new global::Bnet.Account.V1.GameSessionInfo();
+          sessionInfo_ = new global::Bgs.Protocol.Account.V1.GameSessionInfo();
         }
         SessionInfo.MergeFrom(other.SessionInfo);
       }
@@ -3553,7 +3553,7 @@ namespace Bnet.Account.V1 {
             break;
           case 18: {
             if (sessionInfo_ == null) {
-              sessionInfo_ = new global::Bnet.Account.V1.GameSessionInfo();
+              sessionInfo_ = new global::Bgs.Protocol.Account.V1.GameSessionInfo();
             }
             input.ReadMessage(sessionInfo_);
             break;
@@ -3570,7 +3570,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetGameTimeRemainingInfoRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[21]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[21]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3594,8 +3594,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 1;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -3604,8 +3604,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 2;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -3667,13 +3667,13 @@ namespace Bnet.Account.V1 {
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -3688,14 +3688,14 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
           }
           case 18: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
@@ -3712,7 +3712,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetGameTimeRemainingInfoResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[22]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[22]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3735,8 +3735,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "game_time_remaining_info" field.</summary>
     public const int GameTimeRemainingInfoFieldNumber = 1;
-    private global::Bnet.Account.V1.GameTimeRemainingInfo gameTimeRemainingInfo_;
-    public global::Bnet.Account.V1.GameTimeRemainingInfo GameTimeRemainingInfo {
+    private global::Bgs.Protocol.Account.V1.GameTimeRemainingInfo gameTimeRemainingInfo_;
+    public global::Bgs.Protocol.Account.V1.GameTimeRemainingInfo GameTimeRemainingInfo {
       get { return gameTimeRemainingInfo_; }
       set {
         gameTimeRemainingInfo_ = value;
@@ -3789,7 +3789,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.gameTimeRemainingInfo_ != null) {
         if (gameTimeRemainingInfo_ == null) {
-          gameTimeRemainingInfo_ = new global::Bnet.Account.V1.GameTimeRemainingInfo();
+          gameTimeRemainingInfo_ = new global::Bgs.Protocol.Account.V1.GameTimeRemainingInfo();
         }
         GameTimeRemainingInfo.MergeFrom(other.GameTimeRemainingInfo);
       }
@@ -3804,7 +3804,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (gameTimeRemainingInfo_ == null) {
-              gameTimeRemainingInfo_ = new global::Bnet.Account.V1.GameTimeRemainingInfo();
+              gameTimeRemainingInfo_ = new global::Bgs.Protocol.Account.V1.GameTimeRemainingInfo();
             }
             input.ReadMessage(gameTimeRemainingInfo_);
             break;
@@ -3821,7 +3821,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetCAISInfoRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[23]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[23]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3844,8 +3844,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -3898,7 +3898,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -3913,7 +3913,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -3930,7 +3930,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetCAISInfoResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[24]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[24]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3953,8 +3953,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "cais_info" field.</summary>
     public const int CaisInfoFieldNumber = 1;
-    private global::Bnet.Account.V1.CAIS caisInfo_;
-    public global::Bnet.Account.V1.CAIS CaisInfo {
+    private global::Bgs.Protocol.Account.V1.CAIS caisInfo_;
+    public global::Bgs.Protocol.Account.V1.CAIS CaisInfo {
       get { return caisInfo_; }
       set {
         caisInfo_ = value;
@@ -4007,7 +4007,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.caisInfo_ != null) {
         if (caisInfo_ == null) {
-          caisInfo_ = new global::Bnet.Account.V1.CAIS();
+          caisInfo_ = new global::Bgs.Protocol.Account.V1.CAIS();
         }
         CaisInfo.MergeFrom(other.CaisInfo);
       }
@@ -4022,7 +4022,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (caisInfo_ == null) {
-              caisInfo_ = new global::Bnet.Account.V1.CAIS();
+              caisInfo_ = new global::Bgs.Protocol.Account.V1.CAIS();
             }
             input.ReadMessage(caisInfo_);
             break;
@@ -4039,7 +4039,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<ForwardCacheExpireRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[25]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[25]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -4062,8 +4062,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -4116,7 +4116,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -4131,7 +4131,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -4148,7 +4148,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetAuthorizedDataRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[26]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[26]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -4173,8 +4173,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -4259,7 +4259,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -4278,7 +4278,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -4303,7 +4303,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GetAuthorizedDataResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[27]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[27]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -4326,10 +4326,10 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "data" field.</summary>
     public const int DataFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.AuthorizedData> _repeated_data_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Account.V1.AuthorizedData.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.AuthorizedData> data_ = new pbc::RepeatedField<global::Bnet.Account.V1.AuthorizedData>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.AuthorizedData> Data {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.AuthorizedData> _repeated_data_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Account.V1.AuthorizedData.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AuthorizedData> data_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AuthorizedData>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AuthorizedData> Data {
       get { return data_; }
     }
 
@@ -4398,7 +4398,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<AccountStateNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[28]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[28]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -4424,8 +4424,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "account_state" field.</summary>
     public const int AccountStateFieldNumber = 1;
-    private global::Bnet.Account.V1.AccountState accountState_;
-    public global::Bnet.Account.V1.AccountState AccountState {
+    private global::Bgs.Protocol.Account.V1.AccountState accountState_;
+    public global::Bgs.Protocol.Account.V1.AccountState AccountState {
       get { return accountState_; }
       set {
         accountState_ = value;
@@ -4444,8 +4444,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "account_tags" field.</summary>
     public const int AccountTagsFieldNumber = 3;
-    private global::Bnet.Account.V1.AccountFieldTags accountTags_;
-    public global::Bnet.Account.V1.AccountFieldTags AccountTags {
+    private global::Bgs.Protocol.Account.V1.AccountFieldTags accountTags_;
+    public global::Bgs.Protocol.Account.V1.AccountFieldTags AccountTags {
       get { return accountTags_; }
       set {
         accountTags_ = value;
@@ -4535,7 +4535,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.accountState_ != null) {
         if (accountState_ == null) {
-          accountState_ = new global::Bnet.Account.V1.AccountState();
+          accountState_ = new global::Bgs.Protocol.Account.V1.AccountState();
         }
         AccountState.MergeFrom(other.AccountState);
       }
@@ -4544,7 +4544,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.accountTags_ != null) {
         if (accountTags_ == null) {
-          accountTags_ = new global::Bnet.Account.V1.AccountFieldTags();
+          accountTags_ = new global::Bgs.Protocol.Account.V1.AccountFieldTags();
         }
         AccountTags.MergeFrom(other.AccountTags);
       }
@@ -4562,7 +4562,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (accountState_ == null) {
-              accountState_ = new global::Bnet.Account.V1.AccountState();
+              accountState_ = new global::Bgs.Protocol.Account.V1.AccountState();
             }
             input.ReadMessage(accountState_);
             break;
@@ -4573,7 +4573,7 @@ namespace Bnet.Account.V1 {
           }
           case 26: {
             if (accountTags_ == null) {
-              accountTags_ = new global::Bnet.Account.V1.AccountFieldTags();
+              accountTags_ = new global::Bgs.Protocol.Account.V1.AccountFieldTags();
             }
             input.ReadMessage(accountTags_);
             break;
@@ -4594,7 +4594,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GameAccountStateNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[29]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[29]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -4620,8 +4620,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "game_account_state" field.</summary>
     public const int GameAccountStateFieldNumber = 1;
-    private global::Bnet.Account.V1.GameAccountState gameAccountState_;
-    public global::Bnet.Account.V1.GameAccountState GameAccountState {
+    private global::Bgs.Protocol.Account.V1.GameAccountState gameAccountState_;
+    public global::Bgs.Protocol.Account.V1.GameAccountState GameAccountState {
       get { return gameAccountState_; }
       set {
         gameAccountState_ = value;
@@ -4640,8 +4640,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "game_account_tags" field.</summary>
     public const int GameAccountTagsFieldNumber = 3;
-    private global::Bnet.Account.V1.GameAccountFieldTags gameAccountTags_;
-    public global::Bnet.Account.V1.GameAccountFieldTags GameAccountTags {
+    private global::Bgs.Protocol.Account.V1.GameAccountFieldTags gameAccountTags_;
+    public global::Bgs.Protocol.Account.V1.GameAccountFieldTags GameAccountTags {
       get { return gameAccountTags_; }
       set {
         gameAccountTags_ = value;
@@ -4731,7 +4731,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.gameAccountState_ != null) {
         if (gameAccountState_ == null) {
-          gameAccountState_ = new global::Bnet.Account.V1.GameAccountState();
+          gameAccountState_ = new global::Bgs.Protocol.Account.V1.GameAccountState();
         }
         GameAccountState.MergeFrom(other.GameAccountState);
       }
@@ -4740,7 +4740,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.gameAccountTags_ != null) {
         if (gameAccountTags_ == null) {
-          gameAccountTags_ = new global::Bnet.Account.V1.GameAccountFieldTags();
+          gameAccountTags_ = new global::Bgs.Protocol.Account.V1.GameAccountFieldTags();
         }
         GameAccountTags.MergeFrom(other.GameAccountTags);
       }
@@ -4758,7 +4758,7 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (gameAccountState_ == null) {
-              gameAccountState_ = new global::Bnet.Account.V1.GameAccountState();
+              gameAccountState_ = new global::Bgs.Protocol.Account.V1.GameAccountState();
             }
             input.ReadMessage(gameAccountState_);
             break;
@@ -4769,7 +4769,7 @@ namespace Bnet.Account.V1 {
           }
           case 26: {
             if (gameAccountTags_ == null) {
-              gameAccountTags_ = new global::Bnet.Account.V1.GameAccountFieldTags();
+              gameAccountTags_ = new global::Bgs.Protocol.Account.V1.GameAccountFieldTags();
             }
             input.ReadMessage(gameAccountTags_);
             break;
@@ -4790,7 +4790,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GameAccountNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[30]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[30]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -4815,10 +4815,10 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "game_accounts" field.</summary>
     public const int GameAccountsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.GameAccountList> _repeated_gameAccounts_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Account.V1.GameAccountList.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.GameAccountList> gameAccounts_ = new pbc::RepeatedField<global::Bnet.Account.V1.GameAccountList>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.GameAccountList> GameAccounts {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.GameAccountList> _repeated_gameAccounts_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Account.V1.GameAccountList.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.GameAccountList> gameAccounts_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.GameAccountList>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.GameAccountList> GameAccounts {
       get { return gameAccounts_; }
     }
 
@@ -4834,8 +4834,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "account_tags" field.</summary>
     public const int AccountTagsFieldNumber = 3;
-    private global::Bnet.Account.V1.AccountFieldTags accountTags_;
-    public global::Bnet.Account.V1.AccountFieldTags AccountTags {
+    private global::Bgs.Protocol.Account.V1.AccountFieldTags accountTags_;
+    public global::Bgs.Protocol.Account.V1.AccountFieldTags AccountTags {
       get { return accountTags_; }
       set {
         accountTags_ = value;
@@ -4905,7 +4905,7 @@ namespace Bnet.Account.V1 {
       }
       if (other.accountTags_ != null) {
         if (accountTags_ == null) {
-          accountTags_ = new global::Bnet.Account.V1.AccountFieldTags();
+          accountTags_ = new global::Bgs.Protocol.Account.V1.AccountFieldTags();
         }
         AccountTags.MergeFrom(other.AccountTags);
       }
@@ -4928,7 +4928,7 @@ namespace Bnet.Account.V1 {
           }
           case 26: {
             if (accountTags_ == null) {
-              accountTags_ = new global::Bnet.Account.V1.AccountFieldTags();
+              accountTags_ = new global::Bgs.Protocol.Account.V1.AccountFieldTags();
             }
             input.ReadMessage(accountTags_);
             break;
@@ -4945,7 +4945,7 @@ namespace Bnet.Account.V1 {
     public static pb::MessageParser<GameAccountSessionNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[31]; }
+      get { return global::Bgs.Protocol.Account.V1.AccountServiceReflection.Descriptor.MessageTypes[31]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -4969,8 +4969,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "game_account" field.</summary>
     public const int GameAccountFieldNumber = 1;
-    private global::Bnet.Account.V1.GameAccountHandle gameAccount_;
-    public global::Bnet.Account.V1.GameAccountHandle GameAccount {
+    private global::Bgs.Protocol.Account.V1.GameAccountHandle gameAccount_;
+    public global::Bgs.Protocol.Account.V1.GameAccountHandle GameAccount {
       get { return gameAccount_; }
       set {
         gameAccount_ = value;
@@ -4979,8 +4979,8 @@ namespace Bnet.Account.V1 {
 
     /// <summary>Field number for the "session_info" field.</summary>
     public const int SessionInfoFieldNumber = 2;
-    private global::Bnet.Account.V1.GameSessionUpdateInfo sessionInfo_;
-    public global::Bnet.Account.V1.GameSessionUpdateInfo SessionInfo {
+    private global::Bgs.Protocol.Account.V1.GameSessionUpdateInfo sessionInfo_;
+    public global::Bgs.Protocol.Account.V1.GameSessionUpdateInfo SessionInfo {
       get { return sessionInfo_; }
       set {
         sessionInfo_ = value;
@@ -5042,13 +5042,13 @@ namespace Bnet.Account.V1 {
       }
       if (other.gameAccount_ != null) {
         if (gameAccount_ == null) {
-          gameAccount_ = new global::Bnet.Account.V1.GameAccountHandle();
+          gameAccount_ = new global::Bgs.Protocol.Account.V1.GameAccountHandle();
         }
         GameAccount.MergeFrom(other.GameAccount);
       }
       if (other.sessionInfo_ != null) {
         if (sessionInfo_ == null) {
-          sessionInfo_ = new global::Bnet.Account.V1.GameSessionUpdateInfo();
+          sessionInfo_ = new global::Bgs.Protocol.Account.V1.GameSessionUpdateInfo();
         }
         SessionInfo.MergeFrom(other.SessionInfo);
       }
@@ -5063,14 +5063,14 @@ namespace Bnet.Account.V1 {
             break;
           case 10: {
             if (gameAccount_ == null) {
-              gameAccount_ = new global::Bnet.Account.V1.GameAccountHandle();
+              gameAccount_ = new global::Bgs.Protocol.Account.V1.GameAccountHandle();
             }
             input.ReadMessage(gameAccount_);
             break;
           }
           case 18: {
             if (sessionInfo_ == null) {
-              sessionInfo_ = new global::Bnet.Account.V1.GameSessionUpdateInfo();
+              sessionInfo_ = new global::Bgs.Protocol.Account.V1.GameSessionUpdateInfo();
             }
             input.ReadMessage(sessionInfo_);
             break;

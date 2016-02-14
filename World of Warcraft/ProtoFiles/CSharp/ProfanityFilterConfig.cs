@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Profanity.V1 {
+namespace Bgs.Protocol.Profanity.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/profanity_filter_config.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,8 +31,8 @@ namespace Bnet.Profanity.V1 {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Profanity.V1.WordFilter), global::Bnet.Profanity.V1.WordFilter.Parser, new[]{ "Type", "Regex" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Profanity.V1.WordFilters), global::Bnet.Profanity.V1.WordFilters.Parser, new[]{ "Filters" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Profanity.V1.WordFilter), global::Bgs.Protocol.Profanity.V1.WordFilter.Parser, new[]{ "Type", "Regex" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Profanity.V1.WordFilters), global::Bgs.Protocol.Profanity.V1.WordFilters.Parser, new[]{ "Filters" }, null, null, null)
           }));
     }
     #endregion
@@ -45,7 +45,7 @@ namespace Bnet.Profanity.V1 {
     public static pb::MessageParser<WordFilter> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Profanity.V1.ProfanityFilterConfigReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Profanity.V1.ProfanityFilterConfigReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -175,7 +175,7 @@ namespace Bnet.Profanity.V1 {
     public static pb::MessageParser<WordFilters> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Profanity.V1.ProfanityFilterConfigReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Profanity.V1.ProfanityFilterConfigReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -198,10 +198,10 @@ namespace Bnet.Profanity.V1 {
 
     /// <summary>Field number for the "filters" field.</summary>
     public const int FiltersFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Profanity.V1.WordFilter> _repeated_filters_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Profanity.V1.WordFilter.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Profanity.V1.WordFilter> filters_ = new pbc::RepeatedField<global::Bnet.Profanity.V1.WordFilter>();
-    public pbc::RepeatedField<global::Bnet.Profanity.V1.WordFilter> Filters {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Profanity.V1.WordFilter> _repeated_filters_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Profanity.V1.WordFilter.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Profanity.V1.WordFilter> filters_ = new pbc::RepeatedField<global::Bgs.Protocol.Profanity.V1.WordFilter>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Profanity.V1.WordFilter> Filters {
       get { return filters_; }
     }
 

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Friends.V1 {
+namespace Bgs.Protocol.Friends.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/friends_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -44,11 +44,11 @@ namespace Bnet.Friends.V1 {
             "c0IvChhibmV0LnByb3RvY29sLmZyaWVuZHMudjFCEUZyaWVuZHNUeXBlc1By",
             "b3RvSAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.AttributeTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.InvitationTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.AttributeTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.InvitationTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.Friend), global::Bnet.Friends.V1.Friend.Parser, new[]{ "AccountId", "Attribute", "Role", "Privileges", "AttributesEpoch", "FullName", "BattleTag" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.FriendInvitation), global::Bnet.Friends.V1.FriendInvitation.Parser, new[]{ "FirstReceived", "Role", "FriendInvitation_" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.FriendInvitationParams), global::Bnet.Friends.V1.FriendInvitationParams.Parser, new[]{ "TargetEmail", "TargetBattleTag", "InviterBattleTag", "InviterFullName", "InviteeDisplayName", "Role", "PreviousRoleDeprecated", "FriendParams" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.Friend), global::Bgs.Protocol.Friends.V1.Friend.Parser, new[]{ "AccountId", "Attribute", "Role", "Privileges", "AttributesEpoch", "FullName", "BattleTag" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.FriendInvitation), global::Bgs.Protocol.Friends.V1.FriendInvitation.Parser, new[]{ "FirstReceived", "Role", "FriendInvitation_" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.FriendInvitationParams), global::Bgs.Protocol.Friends.V1.FriendInvitationParams.Parser, new[]{ "TargetEmail", "TargetBattleTag", "InviterBattleTag", "InviterFullName", "InviteeDisplayName", "Role", "PreviousRoleDeprecated", "FriendParams" }, null, null, null)
           }));
     }
     #endregion
@@ -61,7 +61,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<Friend> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -90,8 +90,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 1;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -100,10 +100,10 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -246,7 +246,7 @@ namespace Bnet.Friends.V1 {
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -275,7 +275,7 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
@@ -317,7 +317,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<FriendInvitation> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -361,8 +361,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "friend_invitation" field.</summary>
     public const int FriendInvitation_FieldNumber = 103;
-    private global::Bnet.Friends.V1.FriendInvitation friendInvitation_;
-    public global::Bnet.Friends.V1.FriendInvitation FriendInvitation_ {
+    private global::Bgs.Protocol.Friends.V1.FriendInvitation friendInvitation_;
+    public global::Bgs.Protocol.Friends.V1.FriendInvitation FriendInvitation_ {
       get { return friendInvitation_; }
       set {
         friendInvitation_ = value;
@@ -432,7 +432,7 @@ namespace Bnet.Friends.V1 {
       role_.Add(other.role_);
       if (other.friendInvitation_ != null) {
         if (friendInvitation_ == null) {
-          friendInvitation_ = new global::Bnet.Friends.V1.FriendInvitation();
+          friendInvitation_ = new global::Bgs.Protocol.Friends.V1.FriendInvitation();
         }
         FriendInvitation_.MergeFrom(other.FriendInvitation_);
       }
@@ -456,7 +456,7 @@ namespace Bnet.Friends.V1 {
           }
           case 826: {
             if (friendInvitation_ == null) {
-              friendInvitation_ = new global::Bnet.Friends.V1.FriendInvitation();
+              friendInvitation_ = new global::Bgs.Protocol.Friends.V1.FriendInvitation();
             }
             input.ReadMessage(friendInvitation_);
             break;
@@ -473,7 +473,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<FriendInvitationParams> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsTypesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsTypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -572,8 +572,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "friend_params" field.</summary>
     public const int FriendParamsFieldNumber = 103;
-    private global::Bnet.Friends.V1.FriendInvitationParams friendParams_;
-    public global::Bnet.Friends.V1.FriendInvitationParams FriendParams {
+    private global::Bgs.Protocol.Friends.V1.FriendInvitationParams friendParams_;
+    public global::Bgs.Protocol.Friends.V1.FriendInvitationParams FriendParams {
       get { return friendParams_; }
       set {
         friendParams_ = value;
@@ -696,7 +696,7 @@ namespace Bnet.Friends.V1 {
       previousRoleDeprecated_.Add(other.previousRoleDeprecated_);
       if (other.friendParams_ != null) {
         if (friendParams_ == null) {
-          friendParams_ = new global::Bnet.Friends.V1.FriendInvitationParams();
+          friendParams_ = new global::Bgs.Protocol.Friends.V1.FriendInvitationParams();
         }
         FriendParams.MergeFrom(other.FriendParams);
       }
@@ -741,7 +741,7 @@ namespace Bnet.Friends.V1 {
           }
           case 826: {
             if (friendParams_ == null) {
-              friendParams_ = new global::Bnet.Friends.V1.FriendInvitationParams();
+              friendParams_ = new global::Bgs.Protocol.Friends.V1.FriendInvitationParams();
             }
             input.ReadMessage(friendParams_);
             break;

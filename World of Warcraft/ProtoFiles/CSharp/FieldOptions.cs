@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet {
+namespace Bgs.Protocol {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/global_extensions/field_options.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,7 +31,7 @@ namespace Bnet {
             "bmV0LnByb3RvY29sQhFGaWVsZE9wdGlvbnNQcm90b0gCYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { pbr::FileDescriptor.DescriptorProtoFileDescriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Bnet.LogOption), }, null));
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Bgs.Protocol.LogOption), }, null));
     }
     #endregion
 

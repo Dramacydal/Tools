@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Channel.V1 {
+namespace Bgs.Protocol.Channel.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/channel_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -63,16 +63,16 @@ namespace Bnet.Channel.V1 {
             "CzIWLmJncy5wcm90b2NvbC5JZGVudGl0eRIzCgVzdGF0ZRgCIAEoCzIkLmJn",
             "cy5wcm90b2NvbC5jaGFubmVsLnYxLk1lbWJlclN0YXRlQgJIAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.AttributeTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.InvitationTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.AttributeTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.InvitationTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.ChannelId), global::Bnet.Channel.V1.ChannelId.Parser, new[]{ "Type", "Host", "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.Message), global::Bnet.Channel.V1.Message.Parser, new[]{ "Attribute", "Role" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.ListChannelsOptions), global::Bnet.Channel.V1.ListChannelsOptions.Parser, new[]{ "StartIndex", "MaxResults", "Name", "Program", "Locale", "CapacityFull", "AttributeFilter", "ChannelType" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.ChannelDescription), global::Bnet.Channel.V1.ChannelDescription.Parser, new[]{ "ChannelId", "CurrentMembers", "State" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.ChannelInfo), global::Bnet.Channel.V1.ChannelInfo.Parser, new[]{ "Description", "Member" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.ChannelState), global::Bnet.Channel.V1.ChannelState.Parser, new[]{ "MaxMembers", "MinMembers", "Attribute", "Invitation", "MaxInvitations", "Reason", "PrivacyLevel", "Name", "DelegateName", "ChannelType", "Program", "AllowOfflineMembers", "SubscribeToPresence", "DestroyOnFounderLeave" }, null, new[]{ typeof(global::Bnet.Channel.V1.ChannelState.Types.PrivacyLevel) }, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.MemberState), global::Bnet.Channel.V1.MemberState.Parser, new[]{ "Attribute", "Role", "Privileges", "Info", "DEPRECATEDHidden" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.Member), global::Bnet.Channel.V1.Member.Parser, new[]{ "Identity", "State" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.ChannelId), global::Bgs.Protocol.Channel.V1.ChannelId.Parser, new[]{ "Type", "Host", "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.Message), global::Bgs.Protocol.Channel.V1.Message.Parser, new[]{ "Attribute", "Role" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.ListChannelsOptions), global::Bgs.Protocol.Channel.V1.ListChannelsOptions.Parser, new[]{ "StartIndex", "MaxResults", "Name", "Program", "Locale", "CapacityFull", "AttributeFilter", "ChannelType" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.ChannelDescription), global::Bgs.Protocol.Channel.V1.ChannelDescription.Parser, new[]{ "ChannelId", "CurrentMembers", "State" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.ChannelInfo), global::Bgs.Protocol.Channel.V1.ChannelInfo.Parser, new[]{ "Description", "Member" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.ChannelState), global::Bgs.Protocol.Channel.V1.ChannelState.Parser, new[]{ "MaxMembers", "MinMembers", "Attribute", "Invitation", "MaxInvitations", "Reason", "PrivacyLevel", "Name", "DelegateName", "ChannelType", "Program", "AllowOfflineMembers", "SubscribeToPresence", "DestroyOnFounderLeave" }, null, new[]{ typeof(global::Bgs.Protocol.Channel.V1.ChannelState.Types.PrivacyLevel) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.MemberState), global::Bgs.Protocol.Channel.V1.MemberState.Parser, new[]{ "Attribute", "Role", "Privileges", "Info", "DEPRECATEDHidden" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.Member), global::Bgs.Protocol.Channel.V1.Member.Parser, new[]{ "Identity", "State" }, null, null, null)
           }));
     }
     #endregion
@@ -85,7 +85,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<ChannelId> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -120,8 +120,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 2;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -205,7 +205,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
@@ -227,7 +227,7 @@ namespace Bnet.Channel.V1 {
           }
           case 18: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
@@ -248,7 +248,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<Message> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -272,10 +272,10 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -370,7 +370,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<ListChannelsOptions> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -460,8 +460,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "attribute_filter" field.</summary>
     public const int AttributeFilterFieldNumber = 7;
-    private global::Bnet.AttributeFilter attributeFilter_;
-    public global::Bnet.AttributeFilter AttributeFilter {
+    private global::Bgs.Protocol.AttributeFilter attributeFilter_;
+    public global::Bgs.Protocol.AttributeFilter AttributeFilter {
       get { return attributeFilter_; }
       set {
         attributeFilter_ = value;
@@ -605,7 +605,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.attributeFilter_ != null) {
         if (attributeFilter_ == null) {
-          attributeFilter_ = new global::Bnet.AttributeFilter();
+          attributeFilter_ = new global::Bgs.Protocol.AttributeFilter();
         }
         AttributeFilter.MergeFrom(other.AttributeFilter);
       }
@@ -647,7 +647,7 @@ namespace Bnet.Channel.V1 {
           }
           case 58: {
             if (attributeFilter_ == null) {
-              attributeFilter_ = new global::Bnet.AttributeFilter();
+              attributeFilter_ = new global::Bgs.Protocol.AttributeFilter();
             }
             input.ReadMessage(attributeFilter_);
             break;
@@ -668,7 +668,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<ChannelDescription> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -693,8 +693,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "channel_id" field.</summary>
     public const int ChannelIdFieldNumber = 1;
-    private global::Bnet.EntityId channelId_;
-    public global::Bnet.EntityId ChannelId {
+    private global::Bgs.Protocol.EntityId channelId_;
+    public global::Bgs.Protocol.EntityId ChannelId {
       get { return channelId_; }
       set {
         channelId_ = value;
@@ -713,8 +713,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 3;
-    private global::Bnet.Channel.V1.ChannelState state_;
-    public global::Bnet.Channel.V1.ChannelState State {
+    private global::Bgs.Protocol.Channel.V1.ChannelState state_;
+    public global::Bgs.Protocol.Channel.V1.ChannelState State {
       get { return state_; }
       set {
         state_ = value;
@@ -785,7 +785,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.channelId_ != null) {
         if (channelId_ == null) {
-          channelId_ = new global::Bnet.EntityId();
+          channelId_ = new global::Bgs.Protocol.EntityId();
         }
         ChannelId.MergeFrom(other.ChannelId);
       }
@@ -794,7 +794,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.state_ != null) {
         if (state_ == null) {
-          state_ = new global::Bnet.Channel.V1.ChannelState();
+          state_ = new global::Bgs.Protocol.Channel.V1.ChannelState();
         }
         State.MergeFrom(other.State);
       }
@@ -809,7 +809,7 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (channelId_ == null) {
-              channelId_ = new global::Bnet.EntityId();
+              channelId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(channelId_);
             break;
@@ -820,7 +820,7 @@ namespace Bnet.Channel.V1 {
           }
           case 26: {
             if (state_ == null) {
-              state_ = new global::Bnet.Channel.V1.ChannelState();
+              state_ = new global::Bgs.Protocol.Channel.V1.ChannelState();
             }
             input.ReadMessage(state_);
             break;
@@ -837,7 +837,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<ChannelInfo> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -861,8 +861,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "description" field.</summary>
     public const int DescriptionFieldNumber = 1;
-    private global::Bnet.Channel.V1.ChannelDescription description_;
-    public global::Bnet.Channel.V1.ChannelDescription Description {
+    private global::Bgs.Protocol.Channel.V1.ChannelDescription description_;
+    public global::Bgs.Protocol.Channel.V1.ChannelDescription Description {
       get { return description_; }
       set {
         description_ = value;
@@ -871,10 +871,10 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member" field.</summary>
     public const int MemberFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Channel.V1.Member> _repeated_member_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Channel.V1.Member.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Channel.V1.Member> member_ = new pbc::RepeatedField<global::Bnet.Channel.V1.Member>();
-    public pbc::RepeatedField<global::Bnet.Channel.V1.Member> Member {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Channel.V1.Member> _repeated_member_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Channel.V1.Member.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member> member_ = new pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member> Member {
       get { return member_; }
     }
 
@@ -928,7 +928,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.description_ != null) {
         if (description_ == null) {
-          description_ = new global::Bnet.Channel.V1.ChannelDescription();
+          description_ = new global::Bgs.Protocol.Channel.V1.ChannelDescription();
         }
         Description.MergeFrom(other.Description);
       }
@@ -944,7 +944,7 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (description_ == null) {
-              description_ = new global::Bnet.Channel.V1.ChannelDescription();
+              description_ = new global::Bgs.Protocol.Channel.V1.ChannelDescription();
             }
             input.ReadMessage(description_);
             break;
@@ -965,7 +965,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<ChannelState> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1021,19 +1021,19 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(26, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
     /// <summary>Field number for the "invitation" field.</summary>
     public const int InvitationFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Bnet.Invitation> _repeated_invitation_codec
-        = pb::FieldCodec.ForMessage(34, global::Bnet.Invitation.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Invitation> invitation_ = new pbc::RepeatedField<global::Bnet.Invitation>();
-    public pbc::RepeatedField<global::Bnet.Invitation> Invitation {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Invitation> _repeated_invitation_codec
+        = pb::FieldCodec.ForMessage(34, global::Bgs.Protocol.Invitation.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Invitation> invitation_ = new pbc::RepeatedField<global::Bgs.Protocol.Invitation>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Invitation> Invitation {
       get { return invitation_; }
     }
 
@@ -1059,8 +1059,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "privacy_level" field.</summary>
     public const int PrivacyLevelFieldNumber = 7;
-    private global::Bnet.Channel.V1.ChannelState.Types.PrivacyLevel privacyLevel_ = global::Bnet.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE;
-    public global::Bnet.Channel.V1.ChannelState.Types.PrivacyLevel PrivacyLevel {
+    private global::Bgs.Protocol.Channel.V1.ChannelState.Types.PrivacyLevel privacyLevel_ = global::Bgs.Protocol.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE;
+    public global::Bgs.Protocol.Channel.V1.ChannelState.Types.PrivacyLevel PrivacyLevel {
       get { return privacyLevel_; }
       set {
         privacyLevel_ = value;
@@ -1173,7 +1173,7 @@ namespace Bnet.Channel.V1 {
       hash ^= invitation_.GetHashCode();
       if (MaxInvitations != 0) hash ^= MaxInvitations.GetHashCode();
       if (Reason != 0) hash ^= Reason.GetHashCode();
-      if (PrivacyLevel != global::Bnet.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE) hash ^= PrivacyLevel.GetHashCode();
+      if (PrivacyLevel != global::Bgs.Protocol.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE) hash ^= PrivacyLevel.GetHashCode();
       if (Name.Length != 0) hash ^= Name.GetHashCode();
       if (DelegateName.Length != 0) hash ^= DelegateName.GetHashCode();
       if (ChannelType.Length != 0) hash ^= ChannelType.GetHashCode();
@@ -1207,7 +1207,7 @@ namespace Bnet.Channel.V1 {
         output.WriteRawTag(48);
         output.WriteUInt32(Reason);
       }
-      if (PrivacyLevel != global::Bnet.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE) {
+      if (PrivacyLevel != global::Bgs.Protocol.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE) {
         output.WriteRawTag(56);
         output.WriteEnum((int) PrivacyLevel);
       }
@@ -1257,7 +1257,7 @@ namespace Bnet.Channel.V1 {
       if (Reason != 0) {
         size += 1 + pb::CodedOutputStream.ComputeUInt32Size(Reason);
       }
-      if (PrivacyLevel != global::Bnet.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE) {
+      if (PrivacyLevel != global::Bgs.Protocol.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) PrivacyLevel);
       }
       if (Name.Length != 0) {
@@ -1302,7 +1302,7 @@ namespace Bnet.Channel.V1 {
       if (other.Reason != 0) {
         Reason = other.Reason;
       }
-      if (other.PrivacyLevel != global::Bnet.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE) {
+      if (other.PrivacyLevel != global::Bgs.Protocol.Channel.V1.ChannelState.Types.PrivacyLevel.PRIVACY_LEVEL_NONE) {
         PrivacyLevel = other.PrivacyLevel;
       }
       if (other.Name.Length != 0) {
@@ -1360,7 +1360,7 @@ namespace Bnet.Channel.V1 {
             break;
           }
           case 56: {
-            privacyLevel_ = (global::Bnet.Channel.V1.ChannelState.Types.PrivacyLevel) input.ReadEnum();
+            privacyLevel_ = (global::Bgs.Protocol.Channel.V1.ChannelState.Types.PrivacyLevel) input.ReadEnum();
             break;
           }
           case 66: {
@@ -1418,7 +1418,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<MemberState> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1445,10 +1445,10 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -1473,8 +1473,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "info" field.</summary>
     public const int InfoFieldNumber = 4;
-    private global::Bnet.AccountInfo info_;
-    public global::Bnet.AccountInfo Info {
+    private global::Bgs.Protocol.AccountInfo info_;
+    public global::Bgs.Protocol.AccountInfo Info {
       get { return info_; }
       set {
         info_ = value;
@@ -1569,7 +1569,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.info_ != null) {
         if (info_ == null) {
-          info_ = new global::Bnet.AccountInfo();
+          info_ = new global::Bgs.Protocol.AccountInfo();
         }
         Info.MergeFrom(other.Info);
       }
@@ -1600,7 +1600,7 @@ namespace Bnet.Channel.V1 {
           }
           case 34: {
             if (info_ == null) {
-              info_ = new global::Bnet.AccountInfo();
+              info_ = new global::Bgs.Protocol.AccountInfo();
             }
             input.ReadMessage(info_);
             break;
@@ -1621,7 +1621,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<Member> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1645,8 +1645,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "identity" field.</summary>
     public const int IdentityFieldNumber = 1;
-    private global::Bnet.Identity identity_;
-    public global::Bnet.Identity Identity {
+    private global::Bgs.Protocol.Identity identity_;
+    public global::Bgs.Protocol.Identity Identity {
       get { return identity_; }
       set {
         identity_ = value;
@@ -1655,8 +1655,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "state" field.</summary>
     public const int StateFieldNumber = 2;
-    private global::Bnet.Channel.V1.MemberState state_;
-    public global::Bnet.Channel.V1.MemberState State {
+    private global::Bgs.Protocol.Channel.V1.MemberState state_;
+    public global::Bgs.Protocol.Channel.V1.MemberState State {
       get { return state_; }
       set {
         state_ = value;
@@ -1718,13 +1718,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.identity_ != null) {
         if (identity_ == null) {
-          identity_ = new global::Bnet.Identity();
+          identity_ = new global::Bgs.Protocol.Identity();
         }
         Identity.MergeFrom(other.Identity);
       }
       if (other.state_ != null) {
         if (state_ == null) {
-          state_ = new global::Bnet.Channel.V1.MemberState();
+          state_ = new global::Bgs.Protocol.Channel.V1.MemberState();
         }
         State.MergeFrom(other.State);
       }
@@ -1739,14 +1739,14 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (identity_ == null) {
-              identity_ = new global::Bnet.Identity();
+              identity_ = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(identity_);
             break;
           }
           case 18: {
             if (state_ == null) {
-              state_ = new global::Bnet.Channel.V1.MemberState();
+              state_ = new global::Bgs.Protocol.Channel.V1.MemberState();
             }
             input.ReadMessage(state_);
             break;

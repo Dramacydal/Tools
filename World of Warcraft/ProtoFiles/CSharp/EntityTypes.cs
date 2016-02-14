@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet {
+namespace Bgs.Protocol {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/entity_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -35,11 +35,11 @@ namespace Bnet {
             "bnRfbXV0ZWQYBiABKAhCHgoNYm5ldC5wcm90b2NvbEILRW50aXR5UHJvdG9I",
             "AmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.FieldOptionsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.FieldOptionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.EntityId), global::Bnet.EntityId.Parser, new[]{ "High", "Low" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Identity), global::Bnet.Identity.Parser, new[]{ "AccountId", "GameAccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.AccountInfo), global::Bnet.AccountInfo.Parser, new[]{ "AccountPaid", "CountryId", "BattleTag", "ManualReview", "Identity", "AccountMuted" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.EntityId), global::Bgs.Protocol.EntityId.Parser, new[]{ "High", "Low" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Identity), global::Bgs.Protocol.Identity.Parser, new[]{ "AccountId", "GameAccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.AccountInfo), global::Bgs.Protocol.AccountInfo.Parser, new[]{ "AccountPaid", "CountryId", "BattleTag", "ManualReview", "Identity", "AccountMuted" }, null, null, null)
           }));
     }
     #endregion
@@ -52,7 +52,7 @@ namespace Bnet {
     public static pb::MessageParser<EntityId> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.EntityTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.EntityTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -182,7 +182,7 @@ namespace Bnet {
     public static pb::MessageParser<Identity> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.EntityTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.EntityTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -206,8 +206,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 1;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -216,8 +216,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 2;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -279,13 +279,13 @@ namespace Bnet {
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
@@ -300,14 +300,14 @@ namespace Bnet {
             break;
           case 10: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
           }
           case 18: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
@@ -324,7 +324,7 @@ namespace Bnet {
     public static pb::MessageParser<AccountInfo> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.EntityTypesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.EntityTypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -392,8 +392,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "identity" field.</summary>
     public const int IdentityFieldNumber = 5;
-    private global::Bnet.Identity identity_;
-    public global::Bnet.Identity Identity {
+    private global::Bgs.Protocol.Identity identity_;
+    public global::Bgs.Protocol.Identity Identity {
       get { return identity_; }
       set {
         identity_ = value;
@@ -513,7 +513,7 @@ namespace Bnet {
       }
       if (other.identity_ != null) {
         if (identity_ == null) {
-          identity_ = new global::Bnet.Identity();
+          identity_ = new global::Bgs.Protocol.Identity();
         }
         Identity.MergeFrom(other.Identity);
       }
@@ -547,7 +547,7 @@ namespace Bnet {
           }
           case 42: {
             if (identity_ == null) {
-              identity_ = new global::Bnet.Identity();
+              identity_ = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(identity_);
             break;

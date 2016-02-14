@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Connection.V1 {
+namespace Bgs.Protocol.Connection.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/connection_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -72,19 +72,19 @@ namespace Bnet.Connection.V1 {
             "b2wuTk9fUkVTUE9OU0VCPQobYm5ldC5wcm90b2NvbC5jb25uZWN0aW9uLnYx",
             "QhZDb25uZWN0aW9uU2VydmljZVByb3RvSAKAAQCIAQFiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.ContentHandleTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.ContentHandleTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.ConnectRequest), global::Bnet.Connection.V1.ConnectRequest.Parser, new[]{ "ClientId", "BindRequest", "UseBindlessRpc" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.ConnectionMeteringContentHandles), global::Bnet.Connection.V1.ConnectionMeteringContentHandles.Parser, new[]{ "ContentHandle" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.ConnectResponse), global::Bnet.Connection.V1.ConnectResponse.Parser, new[]{ "ServerId", "ClientId", "BindResult", "BindResponse", "ContentHandleArray", "ServerTime", "UseBindlessRpc", "BinaryContentHandleArray" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.BoundService), global::Bnet.Connection.V1.BoundService.Parser, new[]{ "Hash", "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.BindRequest), global::Bnet.Connection.V1.BindRequest.Parser, new[]{ "DeprecatedImportedServiceHash", "DeprecatedExportedService", "ExportedService", "ImportedService" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.BindResponse), global::Bnet.Connection.V1.BindResponse.Parser, new[]{ "ImportedServiceId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.EchoRequest), global::Bnet.Connection.V1.EchoRequest.Parser, new[]{ "Time", "NetworkOnly", "Payload" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.EchoResponse), global::Bnet.Connection.V1.EchoResponse.Parser, new[]{ "Time", "Payload" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.DisconnectRequest), global::Bnet.Connection.V1.DisconnectRequest.Parser, new[]{ "ErrorCode" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.DisconnectNotification), global::Bnet.Connection.V1.DisconnectNotification.Parser, new[]{ "ErrorCode", "Reason" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Connection.V1.EncryptRequest), global::Bnet.Connection.V1.EncryptRequest.Parser, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.ConnectRequest), global::Bgs.Protocol.Connection.V1.ConnectRequest.Parser, new[]{ "ClientId", "BindRequest", "UseBindlessRpc" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles), global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles.Parser, new[]{ "ContentHandle" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.ConnectResponse), global::Bgs.Protocol.Connection.V1.ConnectResponse.Parser, new[]{ "ServerId", "ClientId", "BindResult", "BindResponse", "ContentHandleArray", "ServerTime", "UseBindlessRpc", "BinaryContentHandleArray" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.BoundService), global::Bgs.Protocol.Connection.V1.BoundService.Parser, new[]{ "Hash", "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.BindRequest), global::Bgs.Protocol.Connection.V1.BindRequest.Parser, new[]{ "DeprecatedImportedServiceHash", "DeprecatedExportedService", "ExportedService", "ImportedService" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.BindResponse), global::Bgs.Protocol.Connection.V1.BindResponse.Parser, new[]{ "ImportedServiceId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.EchoRequest), global::Bgs.Protocol.Connection.V1.EchoRequest.Parser, new[]{ "Time", "NetworkOnly", "Payload" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.EchoResponse), global::Bgs.Protocol.Connection.V1.EchoResponse.Parser, new[]{ "Time", "Payload" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.DisconnectRequest), global::Bgs.Protocol.Connection.V1.DisconnectRequest.Parser, new[]{ "ErrorCode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.DisconnectNotification), global::Bgs.Protocol.Connection.V1.DisconnectNotification.Parser, new[]{ "ErrorCode", "Reason" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Connection.V1.EncryptRequest), global::Bgs.Protocol.Connection.V1.EncryptRequest.Parser, null, null, null, null)
           }));
     }
     #endregion
@@ -97,7 +97,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<ConnectRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -122,8 +122,8 @@ namespace Bnet.Connection.V1 {
 
     /// <summary>Field number for the "client_id" field.</summary>
     public const int ClientIdFieldNumber = 1;
-    private global::Bnet.ProcessId clientId_;
-    public global::Bnet.ProcessId ClientId {
+    private global::Bgs.Protocol.ProcessId clientId_;
+    public global::Bgs.Protocol.ProcessId ClientId {
       get { return clientId_; }
       set {
         clientId_ = value;
@@ -132,8 +132,8 @@ namespace Bnet.Connection.V1 {
 
     /// <summary>Field number for the "bind_request" field.</summary>
     public const int BindRequestFieldNumber = 2;
-    private global::Bnet.Connection.V1.BindRequest bindRequest_;
-    public global::Bnet.Connection.V1.BindRequest BindRequest {
+    private global::Bgs.Protocol.Connection.V1.BindRequest bindRequest_;
+    public global::Bgs.Protocol.Connection.V1.BindRequest BindRequest {
       get { return bindRequest_; }
       set {
         bindRequest_ = value;
@@ -214,13 +214,13 @@ namespace Bnet.Connection.V1 {
       }
       if (other.clientId_ != null) {
         if (clientId_ == null) {
-          clientId_ = new global::Bnet.ProcessId();
+          clientId_ = new global::Bgs.Protocol.ProcessId();
         }
         ClientId.MergeFrom(other.ClientId);
       }
       if (other.bindRequest_ != null) {
         if (bindRequest_ == null) {
-          bindRequest_ = new global::Bnet.Connection.V1.BindRequest();
+          bindRequest_ = new global::Bgs.Protocol.Connection.V1.BindRequest();
         }
         BindRequest.MergeFrom(other.BindRequest);
       }
@@ -238,14 +238,14 @@ namespace Bnet.Connection.V1 {
             break;
           case 10: {
             if (clientId_ == null) {
-              clientId_ = new global::Bnet.ProcessId();
+              clientId_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(clientId_);
             break;
           }
           case 18: {
             if (bindRequest_ == null) {
-              bindRequest_ = new global::Bnet.Connection.V1.BindRequest();
+              bindRequest_ = new global::Bgs.Protocol.Connection.V1.BindRequest();
             }
             input.ReadMessage(bindRequest_);
             break;
@@ -266,7 +266,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<ConnectionMeteringContentHandles> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -289,10 +289,10 @@ namespace Bnet.Connection.V1 {
 
     /// <summary>Field number for the "content_handle" field.</summary>
     public const int ContentHandleFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.ContentHandle> _repeated_contentHandle_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.ContentHandle.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.ContentHandle> contentHandle_ = new pbc::RepeatedField<global::Bnet.ContentHandle>();
-    public pbc::RepeatedField<global::Bnet.ContentHandle> ContentHandle {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.ContentHandle> _repeated_contentHandle_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.ContentHandle.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.ContentHandle> contentHandle_ = new pbc::RepeatedField<global::Bgs.Protocol.ContentHandle>();
+    public pbc::RepeatedField<global::Bgs.Protocol.ContentHandle> ContentHandle {
       get { return contentHandle_; }
     }
 
@@ -361,7 +361,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<ConnectResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -391,8 +391,8 @@ namespace Bnet.Connection.V1 {
 
     /// <summary>Field number for the "server_id" field.</summary>
     public const int ServerIdFieldNumber = 1;
-    private global::Bnet.ProcessId serverId_;
-    public global::Bnet.ProcessId ServerId {
+    private global::Bgs.Protocol.ProcessId serverId_;
+    public global::Bgs.Protocol.ProcessId ServerId {
       get { return serverId_; }
       set {
         serverId_ = value;
@@ -401,8 +401,8 @@ namespace Bnet.Connection.V1 {
 
     /// <summary>Field number for the "client_id" field.</summary>
     public const int ClientIdFieldNumber = 2;
-    private global::Bnet.ProcessId clientId_;
-    public global::Bnet.ProcessId ClientId {
+    private global::Bgs.Protocol.ProcessId clientId_;
+    public global::Bgs.Protocol.ProcessId ClientId {
       get { return clientId_; }
       set {
         clientId_ = value;
@@ -421,8 +421,8 @@ namespace Bnet.Connection.V1 {
 
     /// <summary>Field number for the "bind_response" field.</summary>
     public const int BindResponseFieldNumber = 4;
-    private global::Bnet.Connection.V1.BindResponse bindResponse_;
-    public global::Bnet.Connection.V1.BindResponse BindResponse {
+    private global::Bgs.Protocol.Connection.V1.BindResponse bindResponse_;
+    public global::Bgs.Protocol.Connection.V1.BindResponse BindResponse {
       get { return bindResponse_; }
       set {
         bindResponse_ = value;
@@ -431,8 +431,8 @@ namespace Bnet.Connection.V1 {
 
     /// <summary>Field number for the "content_handle_array" field.</summary>
     public const int ContentHandleArrayFieldNumber = 5;
-    private global::Bnet.Connection.V1.ConnectionMeteringContentHandles contentHandleArray_;
-    public global::Bnet.Connection.V1.ConnectionMeteringContentHandles ContentHandleArray {
+    private global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles contentHandleArray_;
+    public global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles ContentHandleArray {
       get { return contentHandleArray_; }
       set {
         contentHandleArray_ = value;
@@ -461,8 +461,8 @@ namespace Bnet.Connection.V1 {
 
     /// <summary>Field number for the "binary_content_handle_array" field.</summary>
     public const int BinaryContentHandleArrayFieldNumber = 8;
-    private global::Bnet.Connection.V1.ConnectionMeteringContentHandles binaryContentHandleArray_;
-    public global::Bnet.Connection.V1.ConnectionMeteringContentHandles BinaryContentHandleArray {
+    private global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles binaryContentHandleArray_;
+    public global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles BinaryContentHandleArray {
       get { return binaryContentHandleArray_; }
       set {
         binaryContentHandleArray_ = value;
@@ -578,13 +578,13 @@ namespace Bnet.Connection.V1 {
       }
       if (other.serverId_ != null) {
         if (serverId_ == null) {
-          serverId_ = new global::Bnet.ProcessId();
+          serverId_ = new global::Bgs.Protocol.ProcessId();
         }
         ServerId.MergeFrom(other.ServerId);
       }
       if (other.clientId_ != null) {
         if (clientId_ == null) {
-          clientId_ = new global::Bnet.ProcessId();
+          clientId_ = new global::Bgs.Protocol.ProcessId();
         }
         ClientId.MergeFrom(other.ClientId);
       }
@@ -593,13 +593,13 @@ namespace Bnet.Connection.V1 {
       }
       if (other.bindResponse_ != null) {
         if (bindResponse_ == null) {
-          bindResponse_ = new global::Bnet.Connection.V1.BindResponse();
+          bindResponse_ = new global::Bgs.Protocol.Connection.V1.BindResponse();
         }
         BindResponse.MergeFrom(other.BindResponse);
       }
       if (other.contentHandleArray_ != null) {
         if (contentHandleArray_ == null) {
-          contentHandleArray_ = new global::Bnet.Connection.V1.ConnectionMeteringContentHandles();
+          contentHandleArray_ = new global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles();
         }
         ContentHandleArray.MergeFrom(other.ContentHandleArray);
       }
@@ -611,7 +611,7 @@ namespace Bnet.Connection.V1 {
       }
       if (other.binaryContentHandleArray_ != null) {
         if (binaryContentHandleArray_ == null) {
-          binaryContentHandleArray_ = new global::Bnet.Connection.V1.ConnectionMeteringContentHandles();
+          binaryContentHandleArray_ = new global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles();
         }
         BinaryContentHandleArray.MergeFrom(other.BinaryContentHandleArray);
       }
@@ -626,14 +626,14 @@ namespace Bnet.Connection.V1 {
             break;
           case 10: {
             if (serverId_ == null) {
-              serverId_ = new global::Bnet.ProcessId();
+              serverId_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(serverId_);
             break;
           }
           case 18: {
             if (clientId_ == null) {
-              clientId_ = new global::Bnet.ProcessId();
+              clientId_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(clientId_);
             break;
@@ -644,14 +644,14 @@ namespace Bnet.Connection.V1 {
           }
           case 34: {
             if (bindResponse_ == null) {
-              bindResponse_ = new global::Bnet.Connection.V1.BindResponse();
+              bindResponse_ = new global::Bgs.Protocol.Connection.V1.BindResponse();
             }
             input.ReadMessage(bindResponse_);
             break;
           }
           case 42: {
             if (contentHandleArray_ == null) {
-              contentHandleArray_ = new global::Bnet.Connection.V1.ConnectionMeteringContentHandles();
+              contentHandleArray_ = new global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles();
             }
             input.ReadMessage(contentHandleArray_);
             break;
@@ -666,7 +666,7 @@ namespace Bnet.Connection.V1 {
           }
           case 66: {
             if (binaryContentHandleArray_ == null) {
-              binaryContentHandleArray_ = new global::Bnet.Connection.V1.ConnectionMeteringContentHandles();
+              binaryContentHandleArray_ = new global::Bgs.Protocol.Connection.V1.ConnectionMeteringContentHandles();
             }
             input.ReadMessage(binaryContentHandleArray_);
             break;
@@ -683,7 +683,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<BoundService> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -813,7 +813,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<BindRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -849,29 +849,29 @@ namespace Bnet.Connection.V1 {
 
     /// <summary>Field number for the "deprecated_exported_service" field.</summary>
     public const int DeprecatedExportedServiceFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Connection.V1.BoundService> _repeated_deprecatedExportedService_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Connection.V1.BoundService.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Connection.V1.BoundService> deprecatedExportedService_ = new pbc::RepeatedField<global::Bnet.Connection.V1.BoundService>();
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Connection.V1.BoundService> _repeated_deprecatedExportedService_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Connection.V1.BoundService.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Connection.V1.BoundService> deprecatedExportedService_ = new pbc::RepeatedField<global::Bgs.Protocol.Connection.V1.BoundService>();
     [global::System.ObsoleteAttribute()]
-    public pbc::RepeatedField<global::Bnet.Connection.V1.BoundService> DeprecatedExportedService {
+    public pbc::RepeatedField<global::Bgs.Protocol.Connection.V1.BoundService> DeprecatedExportedService {
       get { return deprecatedExportedService_; }
     }
 
     /// <summary>Field number for the "exported_service" field.</summary>
     public const int ExportedServiceFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Bnet.Connection.V1.BoundService> _repeated_exportedService_codec
-        = pb::FieldCodec.ForMessage(26, global::Bnet.Connection.V1.BoundService.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Connection.V1.BoundService> exportedService_ = new pbc::RepeatedField<global::Bnet.Connection.V1.BoundService>();
-    public pbc::RepeatedField<global::Bnet.Connection.V1.BoundService> ExportedService {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Connection.V1.BoundService> _repeated_exportedService_codec
+        = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.Connection.V1.BoundService.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Connection.V1.BoundService> exportedService_ = new pbc::RepeatedField<global::Bgs.Protocol.Connection.V1.BoundService>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Connection.V1.BoundService> ExportedService {
       get { return exportedService_; }
     }
 
     /// <summary>Field number for the "imported_service" field.</summary>
     public const int ImportedServiceFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Bnet.Connection.V1.BoundService> _repeated_importedService_codec
-        = pb::FieldCodec.ForMessage(34, global::Bnet.Connection.V1.BoundService.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Connection.V1.BoundService> importedService_ = new pbc::RepeatedField<global::Bnet.Connection.V1.BoundService>();
-    public pbc::RepeatedField<global::Bnet.Connection.V1.BoundService> ImportedService {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Connection.V1.BoundService> _repeated_importedService_codec
+        = pb::FieldCodec.ForMessage(34, global::Bgs.Protocol.Connection.V1.BoundService.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Connection.V1.BoundService> importedService_ = new pbc::RepeatedField<global::Bgs.Protocol.Connection.V1.BoundService>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Connection.V1.BoundService> ImportedService {
       get { return importedService_; }
     }
 
@@ -968,7 +968,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<BindResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1065,7 +1065,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<EchoRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1222,7 +1222,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<EchoResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1352,7 +1352,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<DisconnectRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1455,7 +1455,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<DisconnectNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1585,7 +1585,7 @@ namespace Bnet.Connection.V1 {
     public static pb::MessageParser<EncryptRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bgs.Protocol.Connection.V1.ConnectionServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

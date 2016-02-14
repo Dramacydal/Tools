@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Presence.V1 {
+namespace Bgs.Protocol.Presence.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/presence_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -43,13 +43,13 @@ namespace Bnet.Presence.V1 {
             "AyABKAgSOAoIcHJlc2VuY2UYZSABKAsyJi5iZ3MucHJvdG9jb2wucHJlc2Vu",
             "Y2UudjEuQ2hhbm5lbFN0YXRlQgJIAmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.AttributeTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.AttributeTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.RichPresenceLocalizationKey), global::Bnet.Presence.V1.RichPresenceLocalizationKey.Parser, new[]{ "Program", "Stream", "LocalizationId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.FieldKey), global::Bnet.Presence.V1.FieldKey.Parser, new[]{ "Program", "Group", "Field", "UniqueId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.Field), global::Bnet.Presence.V1.Field.Parser, new[]{ "Key", "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.FieldOperation), global::Bnet.Presence.V1.FieldOperation.Parser, new[]{ "Field", "Operation" }, null, new[]{ typeof(global::Bnet.Presence.V1.FieldOperation.Types.OperationType) }, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.ChannelState), global::Bnet.Presence.V1.ChannelState.Parser, new[]{ "EntityId", "FieldOperation", "Healing", "Presence" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.RichPresenceLocalizationKey), global::Bgs.Protocol.Presence.V1.RichPresenceLocalizationKey.Parser, new[]{ "Program", "Stream", "LocalizationId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.FieldKey), global::Bgs.Protocol.Presence.V1.FieldKey.Parser, new[]{ "Program", "Group", "Field", "UniqueId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.Field), global::Bgs.Protocol.Presence.V1.Field.Parser, new[]{ "Key", "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.FieldOperation), global::Bgs.Protocol.Presence.V1.FieldOperation.Parser, new[]{ "Field", "Operation" }, null, new[]{ typeof(global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType) }, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.ChannelState), global::Bgs.Protocol.Presence.V1.ChannelState.Parser, new[]{ "EntityId", "FieldOperation", "Healing", "Presence" }, null, null, null)
           }));
     }
     #endregion
@@ -62,7 +62,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<RichPresenceLocalizationKey> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -219,7 +219,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<FieldKey> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -403,7 +403,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<Field> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -427,8 +427,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "key" field.</summary>
     public const int KeyFieldNumber = 1;
-    private global::Bnet.Presence.V1.FieldKey key_;
-    public global::Bnet.Presence.V1.FieldKey Key {
+    private global::Bgs.Protocol.Presence.V1.FieldKey key_;
+    public global::Bgs.Protocol.Presence.V1.FieldKey Key {
       get { return key_; }
       set {
         key_ = value;
@@ -437,8 +437,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 2;
-    private global::Bnet.Variant value_;
-    public global::Bnet.Variant Value {
+    private global::Bgs.Protocol.Variant value_;
+    public global::Bgs.Protocol.Variant Value {
       get { return value_; }
       set {
         value_ = value;
@@ -500,13 +500,13 @@ namespace Bnet.Presence.V1 {
       }
       if (other.key_ != null) {
         if (key_ == null) {
-          key_ = new global::Bnet.Presence.V1.FieldKey();
+          key_ = new global::Bgs.Protocol.Presence.V1.FieldKey();
         }
         Key.MergeFrom(other.Key);
       }
       if (other.value_ != null) {
         if (value_ == null) {
-          value_ = new global::Bnet.Variant();
+          value_ = new global::Bgs.Protocol.Variant();
         }
         Value.MergeFrom(other.Value);
       }
@@ -521,14 +521,14 @@ namespace Bnet.Presence.V1 {
             break;
           case 10: {
             if (key_ == null) {
-              key_ = new global::Bnet.Presence.V1.FieldKey();
+              key_ = new global::Bgs.Protocol.Presence.V1.FieldKey();
             }
             input.ReadMessage(key_);
             break;
           }
           case 18: {
             if (value_ == null) {
-              value_ = new global::Bnet.Variant();
+              value_ = new global::Bgs.Protocol.Variant();
             }
             input.ReadMessage(value_);
             break;
@@ -545,7 +545,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<FieldOperation> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -569,8 +569,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "field" field.</summary>
     public const int FieldFieldNumber = 1;
-    private global::Bnet.Presence.V1.Field field_;
-    public global::Bnet.Presence.V1.Field Field {
+    private global::Bgs.Protocol.Presence.V1.Field field_;
+    public global::Bgs.Protocol.Presence.V1.Field Field {
       get { return field_; }
       set {
         field_ = value;
@@ -579,8 +579,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "operation" field.</summary>
     public const int OperationFieldNumber = 2;
-    private global::Bnet.Presence.V1.FieldOperation.Types.OperationType operation_ = global::Bnet.Presence.V1.FieldOperation.Types.OperationType.SET;
-    public global::Bnet.Presence.V1.FieldOperation.Types.OperationType Operation {
+    private global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType operation_ = global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType.SET;
+    public global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType Operation {
       get { return operation_; }
       set {
         operation_ = value;
@@ -606,7 +606,7 @@ namespace Bnet.Presence.V1 {
     public override int GetHashCode() {
       int hash = 1;
       if (field_ != null) hash ^= Field.GetHashCode();
-      if (Operation != global::Bnet.Presence.V1.FieldOperation.Types.OperationType.SET) hash ^= Operation.GetHashCode();
+      if (Operation != global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType.SET) hash ^= Operation.GetHashCode();
       return hash;
     }
 
@@ -619,7 +619,7 @@ namespace Bnet.Presence.V1 {
         output.WriteRawTag(10);
         output.WriteMessage(Field);
       }
-      if (Operation != global::Bnet.Presence.V1.FieldOperation.Types.OperationType.SET) {
+      if (Operation != global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType.SET) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Operation);
       }
@@ -630,7 +630,7 @@ namespace Bnet.Presence.V1 {
       if (field_ != null) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(Field);
       }
-      if (Operation != global::Bnet.Presence.V1.FieldOperation.Types.OperationType.SET) {
+      if (Operation != global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType.SET) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Operation);
       }
       return size;
@@ -642,11 +642,11 @@ namespace Bnet.Presence.V1 {
       }
       if (other.field_ != null) {
         if (field_ == null) {
-          field_ = new global::Bnet.Presence.V1.Field();
+          field_ = new global::Bgs.Protocol.Presence.V1.Field();
         }
         Field.MergeFrom(other.Field);
       }
-      if (other.Operation != global::Bnet.Presence.V1.FieldOperation.Types.OperationType.SET) {
+      if (other.Operation != global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType.SET) {
         Operation = other.Operation;
       }
     }
@@ -660,13 +660,13 @@ namespace Bnet.Presence.V1 {
             break;
           case 10: {
             if (field_ == null) {
-              field_ = new global::Bnet.Presence.V1.Field();
+              field_ = new global::Bgs.Protocol.Presence.V1.Field();
             }
             input.ReadMessage(field_);
             break;
           }
           case 16: {
-            operation_ = (global::Bnet.Presence.V1.FieldOperation.Types.OperationType) input.ReadEnum();
+            operation_ = (global::Bgs.Protocol.Presence.V1.FieldOperation.Types.OperationType) input.ReadEnum();
             break;
           }
         }
@@ -693,7 +693,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<ChannelState> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -719,8 +719,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -729,10 +729,10 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "field_operation" field.</summary>
     public const int FieldOperationFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Presence.V1.FieldOperation> _repeated_fieldOperation_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Presence.V1.FieldOperation.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Presence.V1.FieldOperation> fieldOperation_ = new pbc::RepeatedField<global::Bnet.Presence.V1.FieldOperation>();
-    public pbc::RepeatedField<global::Bnet.Presence.V1.FieldOperation> FieldOperation {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Presence.V1.FieldOperation> _repeated_fieldOperation_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Presence.V1.FieldOperation.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation> fieldOperation_ = new pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation> FieldOperation {
       get { return fieldOperation_; }
     }
 
@@ -748,8 +748,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "presence" field.</summary>
     public const int PresenceFieldNumber = 101;
-    private global::Bnet.Presence.V1.ChannelState presence_;
-    public global::Bnet.Presence.V1.ChannelState Presence {
+    private global::Bgs.Protocol.Presence.V1.ChannelState presence_;
+    public global::Bgs.Protocol.Presence.V1.ChannelState Presence {
       get { return presence_; }
       set {
         presence_ = value;
@@ -824,7 +824,7 @@ namespace Bnet.Presence.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -834,7 +834,7 @@ namespace Bnet.Presence.V1 {
       }
       if (other.presence_ != null) {
         if (presence_ == null) {
-          presence_ = new global::Bnet.Presence.V1.ChannelState();
+          presence_ = new global::Bgs.Protocol.Presence.V1.ChannelState();
         }
         Presence.MergeFrom(other.Presence);
       }
@@ -849,7 +849,7 @@ namespace Bnet.Presence.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -864,7 +864,7 @@ namespace Bnet.Presence.V1 {
           }
           case 810: {
             if (presence_ == null) {
-              presence_ = new global::Bnet.Presence.V1.ChannelState();
+              presence_ = new global::Bgs.Protocol.Presence.V1.ChannelState();
             }
             input.ReadMessage(presence_);
             break;

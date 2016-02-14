@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.GameUtilities.V1 {
+namespace Bgs.Protocol.GameUtilities.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/game_utilities_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -34,10 +34,10 @@ namespace Bnet.GameUtilities.V1 {
             "bC5nYW1lX3V0aWxpdGllcy52MUIXR2FtZVV0aWxpdGllc1R5cGVzUHJvdG9I",
             "AmIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.AttributeTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.AttributeTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.PlayerVariables), global::Bnet.GameUtilities.V1.PlayerVariables.Parser, new[]{ "Identity", "Rating", "Attribute" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.ClientInfo), global::Bnet.GameUtilities.V1.ClientInfo.Parser, new[]{ "ClientAddress", "PrivilegedNetwork" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.PlayerVariables), global::Bgs.Protocol.GameUtilities.V1.PlayerVariables.Parser, new[]{ "Identity", "Rating", "Attribute" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.ClientInfo), global::Bgs.Protocol.GameUtilities.V1.ClientInfo.Parser, new[]{ "ClientAddress", "PrivilegedNetwork" }, null, null, null)
           }));
     }
     #endregion
@@ -50,7 +50,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<PlayerVariables> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -75,8 +75,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "identity" field.</summary>
     public const int IdentityFieldNumber = 1;
-    private global::Bnet.Identity identity_;
-    public global::Bnet.Identity Identity {
+    private global::Bgs.Protocol.Identity identity_;
+    public global::Bgs.Protocol.Identity Identity {
       get { return identity_; }
       set {
         identity_ = value;
@@ -95,10 +95,10 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(26, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -161,7 +161,7 @@ namespace Bnet.GameUtilities.V1 {
       }
       if (other.identity_ != null) {
         if (identity_ == null) {
-          identity_ = new global::Bnet.Identity();
+          identity_ = new global::Bgs.Protocol.Identity();
         }
         Identity.MergeFrom(other.Identity);
       }
@@ -180,7 +180,7 @@ namespace Bnet.GameUtilities.V1 {
             break;
           case 10: {
             if (identity_ == null) {
-              identity_ = new global::Bnet.Identity();
+              identity_ = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(identity_);
             break;
@@ -205,7 +205,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<ClientInfo> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

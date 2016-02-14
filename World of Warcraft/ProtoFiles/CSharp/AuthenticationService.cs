@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Authentication.V1 {
+namespace Bgs.Protocol.Authentication.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/authentication_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -118,28 +118,28 @@ namespace Bnet.Authentication.V1 {
             "MS5HZW5lcmF0ZVdlYkNyZWRlbnRpYWxzUmVzcG9uc2VCBUgCgAEAYgZwcm90",
             "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.Account.V1.AccountTypesReflection.Descriptor, global::Bnet.ContentHandleTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.Account.V1.AccountTypesReflection.Descriptor, global::Bgs.Protocol.ContentHandleTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.ModuleLoadRequest), global::Bnet.Authentication.V1.ModuleLoadRequest.Parser, new[]{ "ModuleHandle", "Message" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.ModuleNotification), global::Bnet.Authentication.V1.ModuleNotification.Parser, new[]{ "ModuleId", "Result" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.ModuleMessageRequest), global::Bnet.Authentication.V1.ModuleMessageRequest.Parser, new[]{ "ModuleId", "Message" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.LogonRequest), global::Bnet.Authentication.V1.LogonRequest.Parser, new[]{ "Program", "Platform", "Locale", "Email", "Version", "ApplicationVersion", "PublicComputer", "SsoId", "DisconnectOnCookieFail", "AllowLogonQueueNotifications", "WebClientVerification", "CachedWebCredentials", "EnableCookie", "UserAgent" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.LogonResult), global::Bnet.Authentication.V1.LogonResult.Parser, new[]{ "ErrorCode", "AccountId", "GameAccountId", "Email", "AvailableRegion", "ConnectedRegion", "BattleTag", "GeoipCountry", "SessionKey", "RestrictedMode" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.GenerateSSOTokenRequest), global::Bnet.Authentication.V1.GenerateSSOTokenRequest.Parser, new[]{ "Program" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.GenerateSSOTokenResponse), global::Bnet.Authentication.V1.GenerateSSOTokenResponse.Parser, new[]{ "SsoId", "SsoSecret" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.LogonUpdateRequest), global::Bnet.Authentication.V1.LogonUpdateRequest.Parser, new[]{ "ErrorCode" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.LogonQueueUpdateRequest), global::Bnet.Authentication.V1.LogonQueueUpdateRequest.Parser, new[]{ "Position", "EstimatedTime", "EtaDeviationInSec" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.AccountSettingsNotification), global::Bnet.Authentication.V1.AccountSettingsNotification.Parser, new[]{ "Licenses", "IsUsingRid", "IsPlayingFromIgr", "CanReceiveVoice", "CanSendVoice" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.ServerStateChangeRequest), global::Bnet.Authentication.V1.ServerStateChangeRequest.Parser, new[]{ "State", "EventTime" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.VersionInfo), global::Bnet.Authentication.V1.VersionInfo.Parser, new[]{ "Number", "Patch", "IsOptional", "KickTime" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.VersionInfoNotification), global::Bnet.Authentication.V1.VersionInfoNotification.Parser, new[]{ "VersionInfo" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.MemModuleLoadRequest), global::Bnet.Authentication.V1.MemModuleLoadRequest.Parser, new[]{ "Handle", "Key", "Input" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.MemModuleLoadResponse), global::Bnet.Authentication.V1.MemModuleLoadResponse.Parser, new[]{ "Data" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.SelectGameAccountRequest), global::Bnet.Authentication.V1.SelectGameAccountRequest.Parser, new[]{ "GameAccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.GameAccountSelectedRequest), global::Bnet.Authentication.V1.GameAccountSelectedRequest.Parser, new[]{ "Result", "GameAccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.GenerateWebCredentialsRequest), global::Bnet.Authentication.V1.GenerateWebCredentialsRequest.Parser, new[]{ "Program" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.GenerateWebCredentialsResponse), global::Bnet.Authentication.V1.GenerateWebCredentialsResponse.Parser, new[]{ "WebCredentials" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Authentication.V1.VerifyWebCredentialsRequest), global::Bnet.Authentication.V1.VerifyWebCredentialsRequest.Parser, new[]{ "WebCredentials" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.ModuleLoadRequest), global::Bgs.Protocol.Authentication.V1.ModuleLoadRequest.Parser, new[]{ "ModuleHandle", "Message" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.ModuleNotification), global::Bgs.Protocol.Authentication.V1.ModuleNotification.Parser, new[]{ "ModuleId", "Result" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.ModuleMessageRequest), global::Bgs.Protocol.Authentication.V1.ModuleMessageRequest.Parser, new[]{ "ModuleId", "Message" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.LogonRequest), global::Bgs.Protocol.Authentication.V1.LogonRequest.Parser, new[]{ "Program", "Platform", "Locale", "Email", "Version", "ApplicationVersion", "PublicComputer", "SsoId", "DisconnectOnCookieFail", "AllowLogonQueueNotifications", "WebClientVerification", "CachedWebCredentials", "EnableCookie", "UserAgent" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.LogonResult), global::Bgs.Protocol.Authentication.V1.LogonResult.Parser, new[]{ "ErrorCode", "AccountId", "GameAccountId", "Email", "AvailableRegion", "ConnectedRegion", "BattleTag", "GeoipCountry", "SessionKey", "RestrictedMode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.GenerateSSOTokenRequest), global::Bgs.Protocol.Authentication.V1.GenerateSSOTokenRequest.Parser, new[]{ "Program" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.GenerateSSOTokenResponse), global::Bgs.Protocol.Authentication.V1.GenerateSSOTokenResponse.Parser, new[]{ "SsoId", "SsoSecret" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.LogonUpdateRequest), global::Bgs.Protocol.Authentication.V1.LogonUpdateRequest.Parser, new[]{ "ErrorCode" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.LogonQueueUpdateRequest), global::Bgs.Protocol.Authentication.V1.LogonQueueUpdateRequest.Parser, new[]{ "Position", "EstimatedTime", "EtaDeviationInSec" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.AccountSettingsNotification), global::Bgs.Protocol.Authentication.V1.AccountSettingsNotification.Parser, new[]{ "Licenses", "IsUsingRid", "IsPlayingFromIgr", "CanReceiveVoice", "CanSendVoice" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.ServerStateChangeRequest), global::Bgs.Protocol.Authentication.V1.ServerStateChangeRequest.Parser, new[]{ "State", "EventTime" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.VersionInfo), global::Bgs.Protocol.Authentication.V1.VersionInfo.Parser, new[]{ "Number", "Patch", "IsOptional", "KickTime" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.VersionInfoNotification), global::Bgs.Protocol.Authentication.V1.VersionInfoNotification.Parser, new[]{ "VersionInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.MemModuleLoadRequest), global::Bgs.Protocol.Authentication.V1.MemModuleLoadRequest.Parser, new[]{ "Handle", "Key", "Input" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.MemModuleLoadResponse), global::Bgs.Protocol.Authentication.V1.MemModuleLoadResponse.Parser, new[]{ "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.SelectGameAccountRequest), global::Bgs.Protocol.Authentication.V1.SelectGameAccountRequest.Parser, new[]{ "GameAccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.GameAccountSelectedRequest), global::Bgs.Protocol.Authentication.V1.GameAccountSelectedRequest.Parser, new[]{ "Result", "GameAccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.GenerateWebCredentialsRequest), global::Bgs.Protocol.Authentication.V1.GenerateWebCredentialsRequest.Parser, new[]{ "Program" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.GenerateWebCredentialsResponse), global::Bgs.Protocol.Authentication.V1.GenerateWebCredentialsResponse.Parser, new[]{ "WebCredentials" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Authentication.V1.VerifyWebCredentialsRequest), global::Bgs.Protocol.Authentication.V1.VerifyWebCredentialsRequest.Parser, new[]{ "WebCredentials" }, null, null, null)
           }));
     }
     #endregion
@@ -152,7 +152,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<ModuleLoadRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -176,8 +176,8 @@ namespace Bnet.Authentication.V1 {
 
     /// <summary>Field number for the "module_handle" field.</summary>
     public const int ModuleHandleFieldNumber = 1;
-    private global::Bnet.ContentHandle moduleHandle_;
-    public global::Bnet.ContentHandle ModuleHandle {
+    private global::Bgs.Protocol.ContentHandle moduleHandle_;
+    public global::Bgs.Protocol.ContentHandle ModuleHandle {
       get { return moduleHandle_; }
       set {
         moduleHandle_ = value;
@@ -249,7 +249,7 @@ namespace Bnet.Authentication.V1 {
       }
       if (other.moduleHandle_ != null) {
         if (moduleHandle_ == null) {
-          moduleHandle_ = new global::Bnet.ContentHandle();
+          moduleHandle_ = new global::Bgs.Protocol.ContentHandle();
         }
         ModuleHandle.MergeFrom(other.ModuleHandle);
       }
@@ -267,7 +267,7 @@ namespace Bnet.Authentication.V1 {
             break;
           case 10: {
             if (moduleHandle_ == null) {
-              moduleHandle_ = new global::Bnet.ContentHandle();
+              moduleHandle_ = new global::Bgs.Protocol.ContentHandle();
             }
             input.ReadMessage(moduleHandle_);
             break;
@@ -288,7 +288,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<ModuleNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -418,7 +418,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<ModuleMessageRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -548,7 +548,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<LogonRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1002,7 +1002,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<LogonResult> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1044,8 +1044,8 @@ namespace Bnet.Authentication.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 2;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -1054,10 +1054,10 @@ namespace Bnet.Authentication.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Bnet.EntityId> _repeated_gameAccountId_codec
-        = pb::FieldCodec.ForMessage(26, global::Bnet.EntityId.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.EntityId> gameAccountId_ = new pbc::RepeatedField<global::Bnet.EntityId>();
-    public pbc::RepeatedField<global::Bnet.EntityId> GameAccountId {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.EntityId> _repeated_gameAccountId_codec
+        = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.EntityId.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.EntityId> gameAccountId_ = new pbc::RepeatedField<global::Bgs.Protocol.EntityId>();
+    public pbc::RepeatedField<global::Bgs.Protocol.EntityId> GameAccountId {
       get { return gameAccountId_; }
     }
 
@@ -1250,7 +1250,7 @@ namespace Bnet.Authentication.V1 {
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -1289,7 +1289,7 @@ namespace Bnet.Authentication.V1 {
           }
           case 18: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
@@ -1339,7 +1339,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<GenerateSSOTokenRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1442,7 +1442,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<GenerateSSOTokenResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1572,7 +1572,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<LogonUpdateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1675,7 +1675,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<LogonQueueUpdateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1832,7 +1832,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<AccountSettingsNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1859,10 +1859,10 @@ namespace Bnet.Authentication.V1 {
 
     /// <summary>Field number for the "licenses" field.</summary>
     public const int LicensesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Account.V1.AccountLicense> _repeated_licenses_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Account.V1.AccountLicense.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Account.V1.AccountLicense> licenses_ = new pbc::RepeatedField<global::Bnet.Account.V1.AccountLicense>();
-    public pbc::RepeatedField<global::Bnet.Account.V1.AccountLicense> Licenses {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Account.V1.AccountLicense> _repeated_licenses_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Account.V1.AccountLicense.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountLicense> licenses_ = new pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountLicense>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Account.V1.AccountLicense> Licenses {
       get { return licenses_; }
     }
 
@@ -2035,7 +2035,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<ServerStateChangeRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2165,7 +2165,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<VersionInfo> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[11]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2349,7 +2349,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<VersionInfoNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[12]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2372,8 +2372,8 @@ namespace Bnet.Authentication.V1 {
 
     /// <summary>Field number for the "version_info" field.</summary>
     public const int VersionInfoFieldNumber = 1;
-    private global::Bnet.Authentication.V1.VersionInfo versionInfo_;
-    public global::Bnet.Authentication.V1.VersionInfo VersionInfo {
+    private global::Bgs.Protocol.Authentication.V1.VersionInfo versionInfo_;
+    public global::Bgs.Protocol.Authentication.V1.VersionInfo VersionInfo {
       get { return versionInfo_; }
       set {
         versionInfo_ = value;
@@ -2426,7 +2426,7 @@ namespace Bnet.Authentication.V1 {
       }
       if (other.versionInfo_ != null) {
         if (versionInfo_ == null) {
-          versionInfo_ = new global::Bnet.Authentication.V1.VersionInfo();
+          versionInfo_ = new global::Bgs.Protocol.Authentication.V1.VersionInfo();
         }
         VersionInfo.MergeFrom(other.VersionInfo);
       }
@@ -2441,7 +2441,7 @@ namespace Bnet.Authentication.V1 {
             break;
           case 10: {
             if (versionInfo_ == null) {
-              versionInfo_ = new global::Bnet.Authentication.V1.VersionInfo();
+              versionInfo_ = new global::Bgs.Protocol.Authentication.V1.VersionInfo();
             }
             input.ReadMessage(versionInfo_);
             break;
@@ -2458,7 +2458,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<MemModuleLoadRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[13]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2483,8 +2483,8 @@ namespace Bnet.Authentication.V1 {
 
     /// <summary>Field number for the "handle" field.</summary>
     public const int HandleFieldNumber = 1;
-    private global::Bnet.ContentHandle handle_;
-    public global::Bnet.ContentHandle Handle {
+    private global::Bgs.Protocol.ContentHandle handle_;
+    public global::Bgs.Protocol.ContentHandle Handle {
       get { return handle_; }
       set {
         handle_ = value;
@@ -2575,7 +2575,7 @@ namespace Bnet.Authentication.V1 {
       }
       if (other.handle_ != null) {
         if (handle_ == null) {
-          handle_ = new global::Bnet.ContentHandle();
+          handle_ = new global::Bgs.Protocol.ContentHandle();
         }
         Handle.MergeFrom(other.Handle);
       }
@@ -2596,7 +2596,7 @@ namespace Bnet.Authentication.V1 {
             break;
           case 10: {
             if (handle_ == null) {
-              handle_ = new global::Bnet.ContentHandle();
+              handle_ = new global::Bgs.Protocol.ContentHandle();
             }
             input.ReadMessage(handle_);
             break;
@@ -2621,7 +2621,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<MemModuleLoadResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[14]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2724,7 +2724,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<SelectGameAccountRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[15]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[15]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2747,8 +2747,8 @@ namespace Bnet.Authentication.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 1;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -2801,7 +2801,7 @@ namespace Bnet.Authentication.V1 {
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
@@ -2816,7 +2816,7 @@ namespace Bnet.Authentication.V1 {
             break;
           case 10: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
@@ -2833,7 +2833,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<GameAccountSelectedRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[16]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[16]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2867,8 +2867,8 @@ namespace Bnet.Authentication.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 2;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -2933,7 +2933,7 @@ namespace Bnet.Authentication.V1 {
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
@@ -2952,7 +2952,7 @@ namespace Bnet.Authentication.V1 {
           }
           case 18: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
@@ -2969,7 +2969,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<GenerateWebCredentialsRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[17]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[17]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3072,7 +3072,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<GenerateWebCredentialsResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[18]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[18]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -3175,7 +3175,7 @@ namespace Bnet.Authentication.V1 {
     public static pb::MessageParser<VerifyWebCredentialsRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[19]; }
+      get { return global::Bgs.Protocol.Authentication.V1.AuthenticationServiceReflection.Descriptor.MessageTypes[19]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

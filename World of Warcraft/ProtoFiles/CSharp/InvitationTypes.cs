@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet {
+namespace Bgs.Protocol {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/invitation_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -59,16 +59,16 @@ namespace Bnet {
             "KA1CAhABEg4KBnJlYXNvbhgIIAEoDUInCg1ibmV0LnByb3RvY29sQhRJbnZp",
             "dGF0aW9uVHlwZXNQcm90b0gCYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.EntityTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.EntityTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Invitation), global::Bnet.Invitation.Parser, new[]{ "Id", "InviterIdentity", "InviteeIdentity", "InviterName", "InviteeName", "InvitationMessage", "CreationTime", "ExpirationTime" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.InvitationSuggestion), global::Bnet.InvitationSuggestion.Parser, new[]{ "ChannelId", "SuggesterId", "SuggesteeId", "SuggesterName", "SuggesteeName", "SuggesterAccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.InvitationTarget), global::Bnet.InvitationTarget.Parser, new[]{ "Identity", "Email", "BattleTag" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.InvitationParams), global::Bnet.InvitationParams.Parser, new[]{ "InvitationMessage", "ExpirationTime" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.SendInvitationRequest), global::Bnet.SendInvitationRequest.Parser, new[]{ "AgentIdentity", "TargetId", "Params", "AgentInfo", "Target" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.SendInvitationResponse), global::Bnet.SendInvitationResponse.Parser, new[]{ "Invitation" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UpdateInvitationRequest), global::Bnet.UpdateInvitationRequest.Parser, new[]{ "AgentIdentity", "InvitationId", "Params" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GenericInvitationRequest), global::Bnet.GenericInvitationRequest.Parser, new[]{ "AgentId", "TargetId", "InvitationId", "InviteeName", "InviterName", "PreviousRole", "DesiredRole", "Reason" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Invitation), global::Bgs.Protocol.Invitation.Parser, new[]{ "Id", "InviterIdentity", "InviteeIdentity", "InviterName", "InviteeName", "InvitationMessage", "CreationTime", "ExpirationTime" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.InvitationSuggestion), global::Bgs.Protocol.InvitationSuggestion.Parser, new[]{ "ChannelId", "SuggesterId", "SuggesteeId", "SuggesterName", "SuggesteeName", "SuggesterAccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.InvitationTarget), global::Bgs.Protocol.InvitationTarget.Parser, new[]{ "Identity", "Email", "BattleTag" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.InvitationParams), global::Bgs.Protocol.InvitationParams.Parser, new[]{ "InvitationMessage", "ExpirationTime" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.SendInvitationRequest), global::Bgs.Protocol.SendInvitationRequest.Parser, new[]{ "AgentIdentity", "TargetId", "Params", "AgentInfo", "Target" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.SendInvitationResponse), global::Bgs.Protocol.SendInvitationResponse.Parser, new[]{ "Invitation" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UpdateInvitationRequest), global::Bgs.Protocol.UpdateInvitationRequest.Parser, new[]{ "AgentIdentity", "InvitationId", "Params" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GenericInvitationRequest), global::Bgs.Protocol.GenericInvitationRequest.Parser, new[]{ "AgentId", "TargetId", "InvitationId", "InviteeName", "InviterName", "PreviousRole", "DesiredRole", "Reason" }, null, null, null)
           }));
     }
     #endregion
@@ -81,7 +81,7 @@ namespace Bnet {
     public static pb::MessageParser<Invitation> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.InvitationTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -121,8 +121,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "inviter_identity" field.</summary>
     public const int InviterIdentityFieldNumber = 2;
-    private global::Bnet.Identity inviterIdentity_;
-    public global::Bnet.Identity InviterIdentity {
+    private global::Bgs.Protocol.Identity inviterIdentity_;
+    public global::Bgs.Protocol.Identity InviterIdentity {
       get { return inviterIdentity_; }
       set {
         inviterIdentity_ = value;
@@ -131,8 +131,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "invitee_identity" field.</summary>
     public const int InviteeIdentityFieldNumber = 3;
-    private global::Bnet.Identity inviteeIdentity_;
-    public global::Bnet.Identity InviteeIdentity {
+    private global::Bgs.Protocol.Identity inviteeIdentity_;
+    public global::Bgs.Protocol.Identity InviteeIdentity {
       get { return inviteeIdentity_; }
       set {
         inviteeIdentity_ = value;
@@ -301,13 +301,13 @@ namespace Bnet {
       }
       if (other.inviterIdentity_ != null) {
         if (inviterIdentity_ == null) {
-          inviterIdentity_ = new global::Bnet.Identity();
+          inviterIdentity_ = new global::Bgs.Protocol.Identity();
         }
         InviterIdentity.MergeFrom(other.InviterIdentity);
       }
       if (other.inviteeIdentity_ != null) {
         if (inviteeIdentity_ == null) {
-          inviteeIdentity_ = new global::Bnet.Identity();
+          inviteeIdentity_ = new global::Bgs.Protocol.Identity();
         }
         InviteeIdentity.MergeFrom(other.InviteeIdentity);
       }
@@ -341,14 +341,14 @@ namespace Bnet {
           }
           case 18: {
             if (inviterIdentity_ == null) {
-              inviterIdentity_ = new global::Bnet.Identity();
+              inviterIdentity_ = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(inviterIdentity_);
             break;
           }
           case 26: {
             if (inviteeIdentity_ == null) {
-              inviteeIdentity_ = new global::Bnet.Identity();
+              inviteeIdentity_ = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(inviteeIdentity_);
             break;
@@ -385,7 +385,7 @@ namespace Bnet {
     public static pb::MessageParser<InvitationSuggestion> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.InvitationTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -413,8 +413,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "channel_id" field.</summary>
     public const int ChannelIdFieldNumber = 1;
-    private global::Bnet.EntityId channelId_;
-    public global::Bnet.EntityId ChannelId {
+    private global::Bgs.Protocol.EntityId channelId_;
+    public global::Bgs.Protocol.EntityId ChannelId {
       get { return channelId_; }
       set {
         channelId_ = value;
@@ -423,8 +423,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "suggester_id" field.</summary>
     public const int SuggesterIdFieldNumber = 2;
-    private global::Bnet.EntityId suggesterId_;
-    public global::Bnet.EntityId SuggesterId {
+    private global::Bgs.Protocol.EntityId suggesterId_;
+    public global::Bgs.Protocol.EntityId SuggesterId {
       get { return suggesterId_; }
       set {
         suggesterId_ = value;
@@ -433,8 +433,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "suggestee_id" field.</summary>
     public const int SuggesteeIdFieldNumber = 3;
-    private global::Bnet.EntityId suggesteeId_;
-    public global::Bnet.EntityId SuggesteeId {
+    private global::Bgs.Protocol.EntityId suggesteeId_;
+    public global::Bgs.Protocol.EntityId SuggesteeId {
       get { return suggesteeId_; }
       set {
         suggesteeId_ = value;
@@ -463,8 +463,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "suggester_account_id" field.</summary>
     public const int SuggesterAccountIdFieldNumber = 6;
-    private global::Bnet.EntityId suggesterAccountId_;
-    public global::Bnet.EntityId SuggesterAccountId {
+    private global::Bgs.Protocol.EntityId suggesterAccountId_;
+    public global::Bgs.Protocol.EntityId SuggesterAccountId {
       get { return suggesterAccountId_; }
       set {
         suggesterAccountId_ = value;
@@ -562,19 +562,19 @@ namespace Bnet {
       }
       if (other.channelId_ != null) {
         if (channelId_ == null) {
-          channelId_ = new global::Bnet.EntityId();
+          channelId_ = new global::Bgs.Protocol.EntityId();
         }
         ChannelId.MergeFrom(other.ChannelId);
       }
       if (other.suggesterId_ != null) {
         if (suggesterId_ == null) {
-          suggesterId_ = new global::Bnet.EntityId();
+          suggesterId_ = new global::Bgs.Protocol.EntityId();
         }
         SuggesterId.MergeFrom(other.SuggesterId);
       }
       if (other.suggesteeId_ != null) {
         if (suggesteeId_ == null) {
-          suggesteeId_ = new global::Bnet.EntityId();
+          suggesteeId_ = new global::Bgs.Protocol.EntityId();
         }
         SuggesteeId.MergeFrom(other.SuggesteeId);
       }
@@ -586,7 +586,7 @@ namespace Bnet {
       }
       if (other.suggesterAccountId_ != null) {
         if (suggesterAccountId_ == null) {
-          suggesterAccountId_ = new global::Bnet.EntityId();
+          suggesterAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         SuggesterAccountId.MergeFrom(other.SuggesterAccountId);
       }
@@ -601,21 +601,21 @@ namespace Bnet {
             break;
           case 10: {
             if (channelId_ == null) {
-              channelId_ = new global::Bnet.EntityId();
+              channelId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(channelId_);
             break;
           }
           case 18: {
             if (suggesterId_ == null) {
-              suggesterId_ = new global::Bnet.EntityId();
+              suggesterId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(suggesterId_);
             break;
           }
           case 26: {
             if (suggesteeId_ == null) {
-              suggesteeId_ = new global::Bnet.EntityId();
+              suggesteeId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(suggesteeId_);
             break;
@@ -630,7 +630,7 @@ namespace Bnet {
           }
           case 50: {
             if (suggesterAccountId_ == null) {
-              suggesterAccountId_ = new global::Bnet.EntityId();
+              suggesterAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(suggesterAccountId_);
             break;
@@ -647,7 +647,7 @@ namespace Bnet {
     public static pb::MessageParser<InvitationTarget> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.InvitationTypesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -672,8 +672,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "identity" field.</summary>
     public const int IdentityFieldNumber = 1;
-    private global::Bnet.Identity identity_;
-    public global::Bnet.Identity Identity {
+    private global::Bgs.Protocol.Identity identity_;
+    public global::Bgs.Protocol.Identity Identity {
       get { return identity_; }
       set {
         identity_ = value;
@@ -764,7 +764,7 @@ namespace Bnet {
       }
       if (other.identity_ != null) {
         if (identity_ == null) {
-          identity_ = new global::Bnet.Identity();
+          identity_ = new global::Bgs.Protocol.Identity();
         }
         Identity.MergeFrom(other.Identity);
       }
@@ -785,7 +785,7 @@ namespace Bnet {
             break;
           case 10: {
             if (identity_ == null) {
-              identity_ = new global::Bnet.Identity();
+              identity_ = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(identity_);
             break;
@@ -810,7 +810,7 @@ namespace Bnet {
     public static pb::MessageParser<InvitationParams> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.InvitationTypesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -940,7 +940,7 @@ namespace Bnet {
     public static pb::MessageParser<SendInvitationRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.InvitationTypesReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -967,8 +967,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "agent_identity" field.</summary>
     public const int AgentIdentityFieldNumber = 1;
-    private global::Bnet.Identity agentIdentity_;
-    public global::Bnet.Identity AgentIdentity {
+    private global::Bgs.Protocol.Identity agentIdentity_;
+    public global::Bgs.Protocol.Identity AgentIdentity {
       get { return agentIdentity_; }
       set {
         agentIdentity_ = value;
@@ -977,9 +977,9 @@ namespace Bnet {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 2;
-    private global::Bnet.EntityId targetId_;
+    private global::Bgs.Protocol.EntityId targetId_;
     [global::System.ObsoleteAttribute()]
-    public global::Bnet.EntityId TargetId {
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -988,8 +988,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "params" field.</summary>
     public const int ParamsFieldNumber = 3;
-    private global::Bnet.InvitationParams params_;
-    public global::Bnet.InvitationParams Params {
+    private global::Bgs.Protocol.InvitationParams params_;
+    public global::Bgs.Protocol.InvitationParams Params {
       get { return params_; }
       set {
         params_ = value;
@@ -998,8 +998,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "agent_info" field.</summary>
     public const int AgentInfoFieldNumber = 4;
-    private global::Bnet.AccountInfo agentInfo_;
-    public global::Bnet.AccountInfo AgentInfo {
+    private global::Bgs.Protocol.AccountInfo agentInfo_;
+    public global::Bgs.Protocol.AccountInfo AgentInfo {
       get { return agentInfo_; }
       set {
         agentInfo_ = value;
@@ -1008,8 +1008,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "target" field.</summary>
     public const int TargetFieldNumber = 5;
-    private global::Bnet.InvitationTarget target_;
-    public global::Bnet.InvitationTarget Target {
+    private global::Bgs.Protocol.InvitationTarget target_;
+    public global::Bgs.Protocol.InvitationTarget Target {
       get { return target_; }
       set {
         target_ = value;
@@ -1098,31 +1098,31 @@ namespace Bnet {
       }
       if (other.agentIdentity_ != null) {
         if (agentIdentity_ == null) {
-          agentIdentity_ = new global::Bnet.Identity();
+          agentIdentity_ = new global::Bgs.Protocol.Identity();
         }
         AgentIdentity.MergeFrom(other.AgentIdentity);
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
       if (other.params_ != null) {
         if (params_ == null) {
-          params_ = new global::Bnet.InvitationParams();
+          params_ = new global::Bgs.Protocol.InvitationParams();
         }
         Params.MergeFrom(other.Params);
       }
       if (other.agentInfo_ != null) {
         if (agentInfo_ == null) {
-          agentInfo_ = new global::Bnet.AccountInfo();
+          agentInfo_ = new global::Bgs.Protocol.AccountInfo();
         }
         AgentInfo.MergeFrom(other.AgentInfo);
       }
       if (other.target_ != null) {
         if (target_ == null) {
-          target_ = new global::Bnet.InvitationTarget();
+          target_ = new global::Bgs.Protocol.InvitationTarget();
         }
         Target.MergeFrom(other.Target);
       }
@@ -1137,35 +1137,35 @@ namespace Bnet {
             break;
           case 10: {
             if (agentIdentity_ == null) {
-              agentIdentity_ = new global::Bnet.Identity();
+              agentIdentity_ = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(agentIdentity_);
             break;
           }
           case 18: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;
           }
           case 26: {
             if (params_ == null) {
-              params_ = new global::Bnet.InvitationParams();
+              params_ = new global::Bgs.Protocol.InvitationParams();
             }
             input.ReadMessage(params_);
             break;
           }
           case 34: {
             if (agentInfo_ == null) {
-              agentInfo_ = new global::Bnet.AccountInfo();
+              agentInfo_ = new global::Bgs.Protocol.AccountInfo();
             }
             input.ReadMessage(agentInfo_);
             break;
           }
           case 42: {
             if (target_ == null) {
-              target_ = new global::Bnet.InvitationTarget();
+              target_ = new global::Bgs.Protocol.InvitationTarget();
             }
             input.ReadMessage(target_);
             break;
@@ -1182,7 +1182,7 @@ namespace Bnet {
     public static pb::MessageParser<SendInvitationResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.InvitationTypesReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1205,8 +1205,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "invitation" field.</summary>
     public const int InvitationFieldNumber = 2;
-    private global::Bnet.Invitation invitation_;
-    public global::Bnet.Invitation Invitation {
+    private global::Bgs.Protocol.Invitation invitation_;
+    public global::Bgs.Protocol.Invitation Invitation {
       get { return invitation_; }
       set {
         invitation_ = value;
@@ -1259,7 +1259,7 @@ namespace Bnet {
       }
       if (other.invitation_ != null) {
         if (invitation_ == null) {
-          invitation_ = new global::Bnet.Invitation();
+          invitation_ = new global::Bgs.Protocol.Invitation();
         }
         Invitation.MergeFrom(other.Invitation);
       }
@@ -1274,7 +1274,7 @@ namespace Bnet {
             break;
           case 18: {
             if (invitation_ == null) {
-              invitation_ = new global::Bnet.Invitation();
+              invitation_ = new global::Bgs.Protocol.Invitation();
             }
             input.ReadMessage(invitation_);
             break;
@@ -1291,7 +1291,7 @@ namespace Bnet {
     public static pb::MessageParser<UpdateInvitationRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.InvitationTypesReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1316,8 +1316,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "agent_identity" field.</summary>
     public const int AgentIdentityFieldNumber = 1;
-    private global::Bnet.Identity agentIdentity_;
-    public global::Bnet.Identity AgentIdentity {
+    private global::Bgs.Protocol.Identity agentIdentity_;
+    public global::Bgs.Protocol.Identity AgentIdentity {
       get { return agentIdentity_; }
       set {
         agentIdentity_ = value;
@@ -1336,8 +1336,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "params" field.</summary>
     public const int ParamsFieldNumber = 3;
-    private global::Bnet.InvitationParams params_;
-    public global::Bnet.InvitationParams Params {
+    private global::Bgs.Protocol.InvitationParams params_;
+    public global::Bgs.Protocol.InvitationParams Params {
       get { return params_; }
       set {
         params_ = value;
@@ -1408,7 +1408,7 @@ namespace Bnet {
       }
       if (other.agentIdentity_ != null) {
         if (agentIdentity_ == null) {
-          agentIdentity_ = new global::Bnet.Identity();
+          agentIdentity_ = new global::Bgs.Protocol.Identity();
         }
         AgentIdentity.MergeFrom(other.AgentIdentity);
       }
@@ -1417,7 +1417,7 @@ namespace Bnet {
       }
       if (other.params_ != null) {
         if (params_ == null) {
-          params_ = new global::Bnet.InvitationParams();
+          params_ = new global::Bgs.Protocol.InvitationParams();
         }
         Params.MergeFrom(other.Params);
       }
@@ -1432,7 +1432,7 @@ namespace Bnet {
             break;
           case 10: {
             if (agentIdentity_ == null) {
-              agentIdentity_ = new global::Bnet.Identity();
+              agentIdentity_ = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(agentIdentity_);
             break;
@@ -1443,7 +1443,7 @@ namespace Bnet {
           }
           case 26: {
             if (params_ == null) {
-              params_ = new global::Bnet.InvitationParams();
+              params_ = new global::Bgs.Protocol.InvitationParams();
             }
             input.ReadMessage(params_);
             break;
@@ -1460,7 +1460,7 @@ namespace Bnet {
     public static pb::MessageParser<GenericInvitationRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.InvitationTypesReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.InvitationTypesReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1490,8 +1490,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1500,8 +1500,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 2;
-    private global::Bnet.EntityId targetId_;
-    public global::Bnet.EntityId TargetId {
+    private global::Bgs.Protocol.EntityId targetId_;
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -1665,13 +1665,13 @@ namespace Bnet {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
@@ -1700,14 +1700,14 @@ namespace Bnet {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.UserManager.V1 {
+namespace Bgs.Protocol.UserManager.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/user_manager_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -35,10 +35,10 @@ namespace Bnet.UserManager.V1 {
             "EhAKBHJvbGUYAyADKA1CAhABEhIKCnByaXZpbGVnZXMYBCABKARCAkgCYgZw",
             "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.AttributeTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.AttributeTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.RecentPlayer), global::Bnet.UserManager.V1.RecentPlayer.Parser, new[]{ "EntityId", "Program", "TimestampPlayed", "Attributes", "Id", "Counter" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.BlockedPlayer), global::Bnet.UserManager.V1.BlockedPlayer.Parser, new[]{ "AccountId", "Name", "Role", "Privileges" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.RecentPlayer), global::Bgs.Protocol.UserManager.V1.RecentPlayer.Parser, new[]{ "EntityId", "Program", "TimestampPlayed", "Attributes", "Id", "Counter" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.BlockedPlayer), global::Bgs.Protocol.UserManager.V1.BlockedPlayer.Parser, new[]{ "AccountId", "Name", "Role", "Privileges" }, null, null, null)
           }));
     }
     #endregion
@@ -51,7 +51,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<RecentPlayer> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -79,8 +79,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -109,10 +109,10 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "attributes" field.</summary>
     public const int AttributesFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attributes_codec
-        = pb::FieldCodec.ForMessage(34, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attributes_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attributes {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attributes_codec
+        = pb::FieldCodec.ForMessage(34, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attributes_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attributes {
       get { return attributes_; }
     }
 
@@ -222,7 +222,7 @@ namespace Bnet.UserManager.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -250,7 +250,7 @@ namespace Bnet.UserManager.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -287,7 +287,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<BlockedPlayer> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -313,8 +313,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 1;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -418,7 +418,7 @@ namespace Bnet.UserManager.V1 {
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -440,7 +440,7 @@ namespace Bnet.UserManager.V1 {
             break;
           case 10: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet {
+namespace Bgs.Protocol {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/attribute_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -39,11 +39,11 @@ namespace Bnet {
             "SUZJQxADQiEKDWJuZXQucHJvdG9jb2xCDkF0dHJpYnV0ZVByb3RvSAJiBnBy",
             "b3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.EntityTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.EntityTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Variant), global::Bnet.Variant.Parser, new[]{ "BoolValue", "IntValue", "FloatValue", "StringValue", "BlobValue", "MessageValue", "FourccValue", "UintValue", "EntityIdValue" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Attribute), global::Bnet.Attribute.Parser, new[]{ "Name", "Value" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.AttributeFilter), global::Bnet.AttributeFilter.Parser, new[]{ "Op", "Attribute" }, null, new[]{ typeof(global::Bnet.AttributeFilter.Types.Operation) }, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Variant), global::Bgs.Protocol.Variant.Parser, new[]{ "BoolValue", "IntValue", "FloatValue", "StringValue", "BlobValue", "MessageValue", "FourccValue", "UintValue", "EntityIdValue" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Attribute), global::Bgs.Protocol.Attribute.Parser, new[]{ "Name", "Value" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.AttributeFilter), global::Bgs.Protocol.AttributeFilter.Parser, new[]{ "Op", "Attribute" }, null, new[]{ typeof(global::Bgs.Protocol.AttributeFilter.Types.Operation) }, null)
           }));
     }
     #endregion
@@ -56,7 +56,7 @@ namespace Bnet {
     public static pb::MessageParser<Variant> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.AttributeTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.AttributeTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -167,8 +167,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "entity_id_value" field.</summary>
     public const int EntityIdValueFieldNumber = 10;
-    private global::Bnet.EntityId entityIdValue_;
-    public global::Bnet.EntityId EntityIdValue {
+    private global::Bgs.Protocol.EntityId entityIdValue_;
+    public global::Bgs.Protocol.EntityId EntityIdValue {
       get { return entityIdValue_; }
       set {
         entityIdValue_ = value;
@@ -317,7 +317,7 @@ namespace Bnet {
       }
       if (other.entityIdValue_ != null) {
         if (entityIdValue_ == null) {
-          entityIdValue_ = new global::Bnet.EntityId();
+          entityIdValue_ = new global::Bgs.Protocol.EntityId();
         }
         EntityIdValue.MergeFrom(other.EntityIdValue);
       }
@@ -364,7 +364,7 @@ namespace Bnet {
           }
           case 82: {
             if (entityIdValue_ == null) {
-              entityIdValue_ = new global::Bnet.EntityId();
+              entityIdValue_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityIdValue_);
             break;
@@ -381,7 +381,7 @@ namespace Bnet {
     public static pb::MessageParser<Attribute> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.AttributeTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.AttributeTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -415,8 +415,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "value" field.</summary>
     public const int ValueFieldNumber = 2;
-    private global::Bnet.Variant value_;
-    public global::Bnet.Variant Value {
+    private global::Bgs.Protocol.Variant value_;
+    public global::Bgs.Protocol.Variant Value {
       get { return value_; }
       set {
         value_ = value;
@@ -481,7 +481,7 @@ namespace Bnet {
       }
       if (other.value_ != null) {
         if (value_ == null) {
-          value_ = new global::Bnet.Variant();
+          value_ = new global::Bgs.Protocol.Variant();
         }
         Value.MergeFrom(other.Value);
       }
@@ -500,7 +500,7 @@ namespace Bnet {
           }
           case 18: {
             if (value_ == null) {
-              value_ = new global::Bnet.Variant();
+              value_ = new global::Bgs.Protocol.Variant();
             }
             input.ReadMessage(value_);
             break;
@@ -517,7 +517,7 @@ namespace Bnet {
     public static pb::MessageParser<AttributeFilter> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.AttributeTypesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.AttributeTypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -541,8 +541,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "op" field.</summary>
     public const int OpFieldNumber = 1;
-    private global::Bnet.AttributeFilter.Types.Operation op_ = global::Bnet.AttributeFilter.Types.Operation.MATCH_NONE;
-    public global::Bnet.AttributeFilter.Types.Operation Op {
+    private global::Bgs.Protocol.AttributeFilter.Types.Operation op_ = global::Bgs.Protocol.AttributeFilter.Types.Operation.MATCH_NONE;
+    public global::Bgs.Protocol.AttributeFilter.Types.Operation Op {
       get { return op_; }
       set {
         op_ = value;
@@ -551,10 +551,10 @@ namespace Bnet {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -576,7 +576,7 @@ namespace Bnet {
 
     public override int GetHashCode() {
       int hash = 1;
-      if (Op != global::Bnet.AttributeFilter.Types.Operation.MATCH_NONE) hash ^= Op.GetHashCode();
+      if (Op != global::Bgs.Protocol.AttributeFilter.Types.Operation.MATCH_NONE) hash ^= Op.GetHashCode();
       hash ^= attribute_.GetHashCode();
       return hash;
     }
@@ -586,7 +586,7 @@ namespace Bnet {
     }
 
     public void WriteTo(pb::CodedOutputStream output) {
-      if (Op != global::Bnet.AttributeFilter.Types.Operation.MATCH_NONE) {
+      if (Op != global::Bgs.Protocol.AttributeFilter.Types.Operation.MATCH_NONE) {
         output.WriteRawTag(8);
         output.WriteEnum((int) Op);
       }
@@ -595,7 +595,7 @@ namespace Bnet {
 
     public int CalculateSize() {
       int size = 0;
-      if (Op != global::Bnet.AttributeFilter.Types.Operation.MATCH_NONE) {
+      if (Op != global::Bgs.Protocol.AttributeFilter.Types.Operation.MATCH_NONE) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Op);
       }
       size += attribute_.CalculateSize(_repeated_attribute_codec);
@@ -606,7 +606,7 @@ namespace Bnet {
       if (other == null) {
         return;
       }
-      if (other.Op != global::Bnet.AttributeFilter.Types.Operation.MATCH_NONE) {
+      if (other.Op != global::Bgs.Protocol.AttributeFilter.Types.Operation.MATCH_NONE) {
         Op = other.Op;
       }
       attribute_.Add(other.attribute_);
@@ -620,7 +620,7 @@ namespace Bnet {
             input.SkipLastField();
             break;
           case 8: {
-            op_ = (global::Bnet.AttributeFilter.Types.Operation) input.ReadEnum();
+            op_ = (global::Bgs.Protocol.AttributeFilter.Types.Operation) input.ReadEnum();
             break;
           }
           case 18: {

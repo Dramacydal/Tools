@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Resources.V1 {
+namespace Bgs.Protocol.Resources.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/resource_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -32,9 +32,9 @@ namespace Bnet.Resources.V1 {
             "LnByb3RvY29sLnJlc291cmNlcy52MS5Db250ZW50SGFuZGxlUmVxdWVzdBob",
             "LmJncy5wcm90b2NvbC5Db250ZW50SGFuZGxlQgVIAoABAGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.ContentHandleTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.ContentHandleTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Resources.V1.ContentHandleRequest), global::Bnet.Resources.V1.ContentHandleRequest.Parser, new[]{ "Program", "Stream", "Version" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Resources.V1.ContentHandleRequest), global::Bgs.Protocol.Resources.V1.ContentHandleRequest.Parser, new[]{ "Program", "Stream", "Version" }, null, null, null)
           }));
     }
     #endregion
@@ -47,7 +47,7 @@ namespace Bnet.Resources.V1 {
     public static pb::MessageParser<ContentHandleRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Resources.V1.ResourceServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Resources.V1.ResourceServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

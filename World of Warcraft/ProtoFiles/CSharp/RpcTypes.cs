@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet {
+namespace Bgs.Protocol {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/rpc_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -43,15 +43,15 @@ namespace Bnet {
             "cm9jZXNzSWQSFAoMc2VydmljZV9oYXNoGAsgASgHQhsKDWJuZXQucHJvdG9j",
             "b2xCCFJwY1Byb3RvSAJQAFABUAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.MethodOptionsReflection.Descriptor, global::Bnet.ServiceOptionsReflection.Descriptor, global::Bnet.FieldOptionsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.MethodOptionsReflection.Descriptor, global::Bgs.Protocol.ServiceOptionsReflection.Descriptor, global::Bgs.Protocol.FieldOptionsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.NO_RESPONSE), global::Bnet.NO_RESPONSE.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Address), global::Bnet.Address.Parser, new[]{ "Address_", "Port" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.ProcessId), global::Bnet.ProcessId.Parser, new[]{ "Label", "Epoch" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.ObjectAddress), global::Bnet.ObjectAddress.Parser, new[]{ "Host", "ObjectId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.NoData), global::Bnet.NoData.Parser, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.ErrorInfo), global::Bnet.ErrorInfo.Parser, new[]{ "ObjectAddress", "Status", "ServiceHash", "MethodId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Header), global::Bnet.Header.Parser, new[]{ "ServiceId", "MethodId", "Token", "ObjectId", "Size", "Status", "Error", "Timeout", "IsResponse", "ForwardTargets", "ServiceHash" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.NO_RESPONSE), global::Bgs.Protocol.NO_RESPONSE.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Address), global::Bgs.Protocol.Address.Parser, new[]{ "Address_", "Port" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.ProcessId), global::Bgs.Protocol.ProcessId.Parser, new[]{ "Label", "Epoch" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.ObjectAddress), global::Bgs.Protocol.ObjectAddress.Parser, new[]{ "Host", "ObjectId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.NoData), global::Bgs.Protocol.NoData.Parser, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.ErrorInfo), global::Bgs.Protocol.ErrorInfo.Parser, new[]{ "ObjectAddress", "Status", "ServiceHash", "MethodId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Header), global::Bgs.Protocol.Header.Parser, new[]{ "ServiceId", "MethodId", "Token", "ObjectId", "Size", "Status", "Error", "Timeout", "IsResponse", "ForwardTargets", "ServiceHash" }, null, null, null)
           }));
     }
     #endregion
@@ -64,7 +64,7 @@ namespace Bnet {
     public static pb::MessageParser<NO_RESPONSE> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.RpcTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.RpcTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -140,7 +140,7 @@ namespace Bnet {
     public static pb::MessageParser<Address> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.RpcTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.RpcTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -270,7 +270,7 @@ namespace Bnet {
     public static pb::MessageParser<ProcessId> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.RpcTypesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.RpcTypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -400,7 +400,7 @@ namespace Bnet {
     public static pb::MessageParser<ObjectAddress> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.RpcTypesReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.RpcTypesReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -424,8 +424,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 1;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -497,7 +497,7 @@ namespace Bnet {
       }
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
@@ -515,7 +515,7 @@ namespace Bnet {
             break;
           case 10: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
@@ -536,7 +536,7 @@ namespace Bnet {
     public static pb::MessageParser<NoData> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.RpcTypesReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.RpcTypesReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -612,7 +612,7 @@ namespace Bnet {
     public static pb::MessageParser<ErrorInfo> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.RpcTypesReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.RpcTypesReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -638,8 +638,8 @@ namespace Bnet {
 
     /// <summary>Field number for the "object_address" field.</summary>
     public const int ObjectAddressFieldNumber = 1;
-    private global::Bnet.ObjectAddress objectAddress_;
-    public global::Bnet.ObjectAddress ObjectAddress {
+    private global::Bgs.Protocol.ObjectAddress objectAddress_;
+    public global::Bgs.Protocol.ObjectAddress ObjectAddress {
       get { return objectAddress_; }
       set {
         objectAddress_ = value;
@@ -749,7 +749,7 @@ namespace Bnet {
       }
       if (other.objectAddress_ != null) {
         if (objectAddress_ == null) {
-          objectAddress_ = new global::Bnet.ObjectAddress();
+          objectAddress_ = new global::Bgs.Protocol.ObjectAddress();
         }
         ObjectAddress.MergeFrom(other.ObjectAddress);
       }
@@ -773,7 +773,7 @@ namespace Bnet {
             break;
           case 10: {
             if (objectAddress_ == null) {
-              objectAddress_ = new global::Bnet.ObjectAddress();
+              objectAddress_ = new global::Bgs.Protocol.ObjectAddress();
             }
             input.ReadMessage(objectAddress_);
             break;
@@ -802,7 +802,7 @@ namespace Bnet {
     public static pb::MessageParser<Header> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.RpcTypesReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.RpcTypesReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -895,10 +895,10 @@ namespace Bnet {
 
     /// <summary>Field number for the "error" field.</summary>
     public const int ErrorFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Bnet.ErrorInfo> _repeated_error_codec
-        = pb::FieldCodec.ForMessage(58, global::Bnet.ErrorInfo.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.ErrorInfo> error_ = new pbc::RepeatedField<global::Bnet.ErrorInfo>();
-    public pbc::RepeatedField<global::Bnet.ErrorInfo> Error {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.ErrorInfo> _repeated_error_codec
+        = pb::FieldCodec.ForMessage(58, global::Bgs.Protocol.ErrorInfo.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.ErrorInfo> error_ = new pbc::RepeatedField<global::Bgs.Protocol.ErrorInfo>();
+    public pbc::RepeatedField<global::Bgs.Protocol.ErrorInfo> Error {
       get { return error_; }
     }
 
@@ -924,10 +924,10 @@ namespace Bnet {
 
     /// <summary>Field number for the "forward_targets" field.</summary>
     public const int ForwardTargetsFieldNumber = 10;
-    private static readonly pb::FieldCodec<global::Bnet.ProcessId> _repeated_forwardTargets_codec
-        = pb::FieldCodec.ForMessage(82, global::Bnet.ProcessId.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.ProcessId> forwardTargets_ = new pbc::RepeatedField<global::Bnet.ProcessId>();
-    public pbc::RepeatedField<global::Bnet.ProcessId> ForwardTargets {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.ProcessId> _repeated_forwardTargets_codec
+        = pb::FieldCodec.ForMessage(82, global::Bgs.Protocol.ProcessId.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.ProcessId> forwardTargets_ = new pbc::RepeatedField<global::Bgs.Protocol.ProcessId>();
+    public pbc::RepeatedField<global::Bgs.Protocol.ProcessId> ForwardTargets {
       get { return forwardTargets_; }
     }
 

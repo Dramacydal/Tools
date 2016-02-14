@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Friends.V1 {
+namespace Bgs.Protocol.Friends.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/friends_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -113,20 +113,20 @@ namespace Bnet.Friends.V1 {
             "bC5OT19SRVNQT05TRUI3ChhibmV0LnByb3RvY29sLmZyaWVuZHMudjFCE0Zy",
             "aWVuZHNTZXJ2aWNlUHJvdG9IAoABAIgBAWIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.AttributeTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.Friends.V1.FriendsTypesReflection.Descriptor, global::Bnet.InvitationTypesReflection.Descriptor, global::Bnet.RoleTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.AttributeTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.Friends.V1.FriendsTypesReflection.Descriptor, global::Bgs.Protocol.InvitationTypesReflection.Descriptor, global::Bgs.Protocol.RoleTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.SubscribeRequest), global::Bnet.Friends.V1.SubscribeRequest.Parser, new[]{ "AgentId", "ObjectId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.SubscribeResponse), global::Bnet.Friends.V1.SubscribeResponse.Parser, new[]{ "MaxFriends", "MaxReceivedInvitations", "MaxSentInvitations", "Role", "Friends", "SentInvitations", "ReceivedInvitations" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.UnsubscribeRequest), global::Bnet.Friends.V1.UnsubscribeRequest.Parser, new[]{ "AgentId", "ObjectId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.GenericFriendRequest), global::Bnet.Friends.V1.GenericFriendRequest.Parser, new[]{ "AgentId", "TargetId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.GenericFriendResponse), global::Bnet.Friends.V1.GenericFriendResponse.Parser, new[]{ "TargetFriend" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.AssignRoleRequest), global::Bnet.Friends.V1.AssignRoleRequest.Parser, new[]{ "AgentId", "TargetId", "Role" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.ViewFriendsRequest), global::Bnet.Friends.V1.ViewFriendsRequest.Parser, new[]{ "AgentId", "TargetId", "Role" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.ViewFriendsResponse), global::Bnet.Friends.V1.ViewFriendsResponse.Parser, new[]{ "Friends" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.UpdateFriendStateRequest), global::Bnet.Friends.V1.UpdateFriendStateRequest.Parser, new[]{ "AgentId", "TargetId", "Attribute", "AttributesEpoch" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.FriendNotification), global::Bnet.Friends.V1.FriendNotification.Parser, new[]{ "Target", "GameAccountId", "Peer", "AccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.UpdateFriendStateNotification), global::Bnet.Friends.V1.UpdateFriendStateNotification.Parser, new[]{ "ChangedFriend", "GameAccountId", "Peer", "AccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Friends.V1.InvitationNotification), global::Bnet.Friends.V1.InvitationNotification.Parser, new[]{ "Invitation", "GameAccountId", "Reason", "Peer", "AccountId" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.SubscribeRequest), global::Bgs.Protocol.Friends.V1.SubscribeRequest.Parser, new[]{ "AgentId", "ObjectId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.SubscribeResponse), global::Bgs.Protocol.Friends.V1.SubscribeResponse.Parser, new[]{ "MaxFriends", "MaxReceivedInvitations", "MaxSentInvitations", "Role", "Friends", "SentInvitations", "ReceivedInvitations" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.UnsubscribeRequest), global::Bgs.Protocol.Friends.V1.UnsubscribeRequest.Parser, new[]{ "AgentId", "ObjectId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.GenericFriendRequest), global::Bgs.Protocol.Friends.V1.GenericFriendRequest.Parser, new[]{ "AgentId", "TargetId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.GenericFriendResponse), global::Bgs.Protocol.Friends.V1.GenericFriendResponse.Parser, new[]{ "TargetFriend" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.AssignRoleRequest), global::Bgs.Protocol.Friends.V1.AssignRoleRequest.Parser, new[]{ "AgentId", "TargetId", "Role" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.ViewFriendsRequest), global::Bgs.Protocol.Friends.V1.ViewFriendsRequest.Parser, new[]{ "AgentId", "TargetId", "Role" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.ViewFriendsResponse), global::Bgs.Protocol.Friends.V1.ViewFriendsResponse.Parser, new[]{ "Friends" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.UpdateFriendStateRequest), global::Bgs.Protocol.Friends.V1.UpdateFriendStateRequest.Parser, new[]{ "AgentId", "TargetId", "Attribute", "AttributesEpoch" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.FriendNotification), global::Bgs.Protocol.Friends.V1.FriendNotification.Parser, new[]{ "Target", "GameAccountId", "Peer", "AccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.UpdateFriendStateNotification), global::Bgs.Protocol.Friends.V1.UpdateFriendStateNotification.Parser, new[]{ "ChangedFriend", "GameAccountId", "Peer", "AccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Friends.V1.InvitationNotification), global::Bgs.Protocol.Friends.V1.InvitationNotification.Parser, new[]{ "Invitation", "GameAccountId", "Reason", "Peer", "AccountId" }, null, null, null)
           }));
     }
     #endregion
@@ -139,7 +139,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<SubscribeRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -163,8 +163,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -236,7 +236,7 @@ namespace Bnet.Friends.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -254,7 +254,7 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -275,7 +275,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<SubscribeResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -334,37 +334,37 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "role" field.</summary>
     public const int RoleFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Bnet.Role> _repeated_role_codec
-        = pb::FieldCodec.ForMessage(34, global::Bnet.Role.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Role> role_ = new pbc::RepeatedField<global::Bnet.Role>();
-    public pbc::RepeatedField<global::Bnet.Role> Role {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Role> _repeated_role_codec
+        = pb::FieldCodec.ForMessage(34, global::Bgs.Protocol.Role.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Role> role_ = new pbc::RepeatedField<global::Bgs.Protocol.Role>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Role> Role {
       get { return role_; }
     }
 
     /// <summary>Field number for the "friends" field.</summary>
     public const int FriendsFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Bnet.Friends.V1.Friend> _repeated_friends_codec
-        = pb::FieldCodec.ForMessage(42, global::Bnet.Friends.V1.Friend.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Friends.V1.Friend> friends_ = new pbc::RepeatedField<global::Bnet.Friends.V1.Friend>();
-    public pbc::RepeatedField<global::Bnet.Friends.V1.Friend> Friends {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Friends.V1.Friend> _repeated_friends_codec
+        = pb::FieldCodec.ForMessage(42, global::Bgs.Protocol.Friends.V1.Friend.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Friends.V1.Friend> friends_ = new pbc::RepeatedField<global::Bgs.Protocol.Friends.V1.Friend>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Friends.V1.Friend> Friends {
       get { return friends_; }
     }
 
     /// <summary>Field number for the "sent_invitations" field.</summary>
     public const int SentInvitationsFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Bnet.Invitation> _repeated_sentInvitations_codec
-        = pb::FieldCodec.ForMessage(50, global::Bnet.Invitation.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Invitation> sentInvitations_ = new pbc::RepeatedField<global::Bnet.Invitation>();
-    public pbc::RepeatedField<global::Bnet.Invitation> SentInvitations {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Invitation> _repeated_sentInvitations_codec
+        = pb::FieldCodec.ForMessage(50, global::Bgs.Protocol.Invitation.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Invitation> sentInvitations_ = new pbc::RepeatedField<global::Bgs.Protocol.Invitation>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Invitation> SentInvitations {
       get { return sentInvitations_; }
     }
 
     /// <summary>Field number for the "received_invitations" field.</summary>
     public const int ReceivedInvitationsFieldNumber = 7;
-    private static readonly pb::FieldCodec<global::Bnet.Invitation> _repeated_receivedInvitations_codec
-        = pb::FieldCodec.ForMessage(58, global::Bnet.Invitation.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Invitation> receivedInvitations_ = new pbc::RepeatedField<global::Bnet.Invitation>();
-    public pbc::RepeatedField<global::Bnet.Invitation> ReceivedInvitations {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Invitation> _repeated_receivedInvitations_codec
+        = pb::FieldCodec.ForMessage(58, global::Bgs.Protocol.Invitation.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Invitation> receivedInvitations_ = new pbc::RepeatedField<global::Bgs.Protocol.Invitation>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Invitation> ReceivedInvitations {
       get { return receivedInvitations_; }
     }
 
@@ -508,7 +508,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<UnsubscribeRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -532,8 +532,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -605,7 +605,7 @@ namespace Bnet.Friends.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -623,7 +623,7 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -644,7 +644,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<GenericFriendRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -668,8 +668,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -678,8 +678,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 2;
-    private global::Bnet.EntityId targetId_;
-    public global::Bnet.EntityId TargetId {
+    private global::Bgs.Protocol.EntityId targetId_;
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -741,13 +741,13 @@ namespace Bnet.Friends.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
@@ -762,14 +762,14 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;
@@ -786,7 +786,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<GenericFriendResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -809,8 +809,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "target_friend" field.</summary>
     public const int TargetFriendFieldNumber = 1;
-    private global::Bnet.Friends.V1.Friend targetFriend_;
-    public global::Bnet.Friends.V1.Friend TargetFriend {
+    private global::Bgs.Protocol.Friends.V1.Friend targetFriend_;
+    public global::Bgs.Protocol.Friends.V1.Friend TargetFriend {
       get { return targetFriend_; }
       set {
         targetFriend_ = value;
@@ -863,7 +863,7 @@ namespace Bnet.Friends.V1 {
       }
       if (other.targetFriend_ != null) {
         if (targetFriend_ == null) {
-          targetFriend_ = new global::Bnet.Friends.V1.Friend();
+          targetFriend_ = new global::Bgs.Protocol.Friends.V1.Friend();
         }
         TargetFriend.MergeFrom(other.TargetFriend);
       }
@@ -878,7 +878,7 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (targetFriend_ == null) {
-              targetFriend_ = new global::Bnet.Friends.V1.Friend();
+              targetFriend_ = new global::Bgs.Protocol.Friends.V1.Friend();
             }
             input.ReadMessage(targetFriend_);
             break;
@@ -895,7 +895,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<AssignRoleRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -920,8 +920,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -930,8 +930,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 2;
-    private global::Bnet.EntityId targetId_;
-    public global::Bnet.EntityId TargetId {
+    private global::Bgs.Protocol.EntityId targetId_;
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -1006,13 +1006,13 @@ namespace Bnet.Friends.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
@@ -1028,14 +1028,14 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;
@@ -1057,7 +1057,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<ViewFriendsRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1082,8 +1082,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1092,8 +1092,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 2;
-    private global::Bnet.EntityId targetId_;
-    public global::Bnet.EntityId TargetId {
+    private global::Bgs.Protocol.EntityId targetId_;
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -1168,13 +1168,13 @@ namespace Bnet.Friends.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
@@ -1190,14 +1190,14 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;
@@ -1219,7 +1219,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<ViewFriendsResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1242,10 +1242,10 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "friends" field.</summary>
     public const int FriendsFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Friends.V1.Friend> _repeated_friends_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Friends.V1.Friend.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Friends.V1.Friend> friends_ = new pbc::RepeatedField<global::Bnet.Friends.V1.Friend>();
-    public pbc::RepeatedField<global::Bnet.Friends.V1.Friend> Friends {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Friends.V1.Friend> _repeated_friends_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Friends.V1.Friend.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Friends.V1.Friend> friends_ = new pbc::RepeatedField<global::Bgs.Protocol.Friends.V1.Friend>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Friends.V1.Friend> Friends {
       get { return friends_; }
     }
 
@@ -1314,7 +1314,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<UpdateFriendStateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1340,8 +1340,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1350,8 +1350,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 2;
-    private global::Bnet.EntityId targetId_;
-    public global::Bnet.EntityId TargetId {
+    private global::Bgs.Protocol.EntityId targetId_;
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -1360,10 +1360,10 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(26, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -1445,13 +1445,13 @@ namespace Bnet.Friends.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
@@ -1470,14 +1470,14 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;
@@ -1502,7 +1502,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<FriendNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1528,8 +1528,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "target" field.</summary>
     public const int TargetFieldNumber = 1;
-    private global::Bnet.Friends.V1.Friend target_;
-    public global::Bnet.Friends.V1.Friend Target {
+    private global::Bgs.Protocol.Friends.V1.Friend target_;
+    public global::Bgs.Protocol.Friends.V1.Friend Target {
       get { return target_; }
       set {
         target_ = value;
@@ -1538,8 +1538,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 2;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -1548,8 +1548,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "peer" field.</summary>
     public const int PeerFieldNumber = 4;
-    private global::Bnet.ProcessId peer_;
-    public global::Bnet.ProcessId Peer {
+    private global::Bgs.Protocol.ProcessId peer_;
+    public global::Bgs.Protocol.ProcessId Peer {
       get { return peer_; }
       set {
         peer_ = value;
@@ -1558,8 +1558,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 5;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -1639,25 +1639,25 @@ namespace Bnet.Friends.V1 {
       }
       if (other.target_ != null) {
         if (target_ == null) {
-          target_ = new global::Bnet.Friends.V1.Friend();
+          target_ = new global::Bgs.Protocol.Friends.V1.Friend();
         }
         Target.MergeFrom(other.Target);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
       if (other.peer_ != null) {
         if (peer_ == null) {
-          peer_ = new global::Bnet.ProcessId();
+          peer_ = new global::Bgs.Protocol.ProcessId();
         }
         Peer.MergeFrom(other.Peer);
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -1672,28 +1672,28 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (target_ == null) {
-              target_ = new global::Bnet.Friends.V1.Friend();
+              target_ = new global::Bgs.Protocol.Friends.V1.Friend();
             }
             input.ReadMessage(target_);
             break;
           }
           case 18: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
           }
           case 34: {
             if (peer_ == null) {
-              peer_ = new global::Bnet.ProcessId();
+              peer_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(peer_);
             break;
           }
           case 42: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
@@ -1710,7 +1710,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<UpdateFriendStateNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1736,8 +1736,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "changed_friend" field.</summary>
     public const int ChangedFriendFieldNumber = 1;
-    private global::Bnet.Friends.V1.Friend changedFriend_;
-    public global::Bnet.Friends.V1.Friend ChangedFriend {
+    private global::Bgs.Protocol.Friends.V1.Friend changedFriend_;
+    public global::Bgs.Protocol.Friends.V1.Friend ChangedFriend {
       get { return changedFriend_; }
       set {
         changedFriend_ = value;
@@ -1746,8 +1746,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 2;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -1756,8 +1756,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "peer" field.</summary>
     public const int PeerFieldNumber = 4;
-    private global::Bnet.ProcessId peer_;
-    public global::Bnet.ProcessId Peer {
+    private global::Bgs.Protocol.ProcessId peer_;
+    public global::Bgs.Protocol.ProcessId Peer {
       get { return peer_; }
       set {
         peer_ = value;
@@ -1766,8 +1766,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 5;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -1847,25 +1847,25 @@ namespace Bnet.Friends.V1 {
       }
       if (other.changedFriend_ != null) {
         if (changedFriend_ == null) {
-          changedFriend_ = new global::Bnet.Friends.V1.Friend();
+          changedFriend_ = new global::Bgs.Protocol.Friends.V1.Friend();
         }
         ChangedFriend.MergeFrom(other.ChangedFriend);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
       if (other.peer_ != null) {
         if (peer_ == null) {
-          peer_ = new global::Bnet.ProcessId();
+          peer_ = new global::Bgs.Protocol.ProcessId();
         }
         Peer.MergeFrom(other.Peer);
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -1880,28 +1880,28 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (changedFriend_ == null) {
-              changedFriend_ = new global::Bnet.Friends.V1.Friend();
+              changedFriend_ = new global::Bgs.Protocol.Friends.V1.Friend();
             }
             input.ReadMessage(changedFriend_);
             break;
           }
           case 18: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
           }
           case 34: {
             if (peer_ == null) {
-              peer_ = new global::Bnet.ProcessId();
+              peer_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(peer_);
             break;
           }
           case 42: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
@@ -1918,7 +1918,7 @@ namespace Bnet.Friends.V1 {
     public static pb::MessageParser<InvitationNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Bgs.Protocol.Friends.V1.FriendsServiceReflection.Descriptor.MessageTypes[11]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1945,8 +1945,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "invitation" field.</summary>
     public const int InvitationFieldNumber = 1;
-    private global::Bnet.Invitation invitation_;
-    public global::Bnet.Invitation Invitation {
+    private global::Bgs.Protocol.Invitation invitation_;
+    public global::Bgs.Protocol.Invitation Invitation {
       get { return invitation_; }
       set {
         invitation_ = value;
@@ -1955,8 +1955,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 2;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -1975,8 +1975,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "peer" field.</summary>
     public const int PeerFieldNumber = 4;
-    private global::Bnet.ProcessId peer_;
-    public global::Bnet.ProcessId Peer {
+    private global::Bgs.Protocol.ProcessId peer_;
+    public global::Bgs.Protocol.ProcessId Peer {
       get { return peer_; }
       set {
         peer_ = value;
@@ -1985,8 +1985,8 @@ namespace Bnet.Friends.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 5;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -2075,13 +2075,13 @@ namespace Bnet.Friends.V1 {
       }
       if (other.invitation_ != null) {
         if (invitation_ == null) {
-          invitation_ = new global::Bnet.Invitation();
+          invitation_ = new global::Bgs.Protocol.Invitation();
         }
         Invitation.MergeFrom(other.Invitation);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
@@ -2090,13 +2090,13 @@ namespace Bnet.Friends.V1 {
       }
       if (other.peer_ != null) {
         if (peer_ == null) {
-          peer_ = new global::Bnet.ProcessId();
+          peer_ = new global::Bgs.Protocol.ProcessId();
         }
         Peer.MergeFrom(other.Peer);
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -2111,14 +2111,14 @@ namespace Bnet.Friends.V1 {
             break;
           case 10: {
             if (invitation_ == null) {
-              invitation_ = new global::Bnet.Invitation();
+              invitation_ = new global::Bgs.Protocol.Invitation();
             }
             input.ReadMessage(invitation_);
             break;
           }
           case 18: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
@@ -2129,14 +2129,14 @@ namespace Bnet.Friends.V1 {
           }
           case 34: {
             if (peer_ == null) {
-              peer_ = new global::Bnet.ProcessId();
+              peer_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(peer_);
             break;
           }
           case 42: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;

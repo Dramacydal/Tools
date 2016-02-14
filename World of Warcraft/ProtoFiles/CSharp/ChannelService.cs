@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Channel.V1 {
+namespace Bgs.Protocol.Channel.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/channel_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -123,23 +123,23 @@ namespace Bnet.Channel.V1 {
             "djEuVXBkYXRlTWVtYmVyU3RhdGVOb3RpZmljYXRpb24aGS5iZ3MucHJvdG9j",
             "b2wuTk9fUkVTUE9OU0VCBUgCgAEAYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.Account.V1.AccountTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.Channel.V1.ChannelTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.Account.V1.AccountTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.Channel.V1.ChannelTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.AddMemberRequest), global::Bnet.Channel.V1.AddMemberRequest.Parser, new[]{ "AgentId", "MemberIdentity", "MemberState", "ObjectId", "Subscribe" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.RemoveMemberRequest), global::Bnet.Channel.V1.RemoveMemberRequest.Parser, new[]{ "AgentId", "MemberId", "Reason" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.UnsubscribeMemberRequest), global::Bnet.Channel.V1.UnsubscribeMemberRequest.Parser, new[]{ "AgentId", "MemberId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.SendMessageRequest), global::Bnet.Channel.V1.SendMessageRequest.Parser, new[]{ "AgentId", "Message", "RequiredPrivileges" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.UpdateChannelStateRequest), global::Bnet.Channel.V1.UpdateChannelStateRequest.Parser, new[]{ "AgentId", "StateChange" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.UpdateMemberStateRequest), global::Bnet.Channel.V1.UpdateMemberStateRequest.Parser, new[]{ "AgentId", "StateChange", "RemovedRole" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.DissolveRequest), global::Bnet.Channel.V1.DissolveRequest.Parser, new[]{ "AgentId", "Reason" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.SetRolesRequest), global::Bnet.Channel.V1.SetRolesRequest.Parser, new[]{ "AgentId", "Role", "MemberId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.JoinNotification), global::Bnet.Channel.V1.JoinNotification.Parser, new[]{ "Self", "Member", "ChannelState", "ChannelId", "Subscriber" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.MemberAddedNotification), global::Bnet.Channel.V1.MemberAddedNotification.Parser, new[]{ "Member", "ChannelId", "Subscriber" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.LeaveNotification), global::Bnet.Channel.V1.LeaveNotification.Parser, new[]{ "AgentId", "MemberId", "Reason", "ChannelId", "Subscriber" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.MemberRemovedNotification), global::Bnet.Channel.V1.MemberRemovedNotification.Parser, new[]{ "AgentId", "MemberId", "Reason", "ChannelId", "Subscriber" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.SendMessageNotification), global::Bnet.Channel.V1.SendMessageNotification.Parser, new[]{ "AgentId", "Message", "RequiredPrivileges", "Identity", "ChannelId", "Subscriber" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.UpdateChannelStateNotification), global::Bnet.Channel.V1.UpdateChannelStateNotification.Parser, new[]{ "AgentId", "StateChange", "ChannelId", "Subscriber" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Channel.V1.UpdateMemberStateNotification), global::Bnet.Channel.V1.UpdateMemberStateNotification.Parser, new[]{ "AgentId", "StateChange", "RemovedRole", "ChannelId", "Subscriber" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.AddMemberRequest), global::Bgs.Protocol.Channel.V1.AddMemberRequest.Parser, new[]{ "AgentId", "MemberIdentity", "MemberState", "ObjectId", "Subscribe" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.RemoveMemberRequest), global::Bgs.Protocol.Channel.V1.RemoveMemberRequest.Parser, new[]{ "AgentId", "MemberId", "Reason" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.UnsubscribeMemberRequest), global::Bgs.Protocol.Channel.V1.UnsubscribeMemberRequest.Parser, new[]{ "AgentId", "MemberId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.SendMessageRequest), global::Bgs.Protocol.Channel.V1.SendMessageRequest.Parser, new[]{ "AgentId", "Message", "RequiredPrivileges" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.UpdateChannelStateRequest), global::Bgs.Protocol.Channel.V1.UpdateChannelStateRequest.Parser, new[]{ "AgentId", "StateChange" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.UpdateMemberStateRequest), global::Bgs.Protocol.Channel.V1.UpdateMemberStateRequest.Parser, new[]{ "AgentId", "StateChange", "RemovedRole" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.DissolveRequest), global::Bgs.Protocol.Channel.V1.DissolveRequest.Parser, new[]{ "AgentId", "Reason" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.SetRolesRequest), global::Bgs.Protocol.Channel.V1.SetRolesRequest.Parser, new[]{ "AgentId", "Role", "MemberId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.JoinNotification), global::Bgs.Protocol.Channel.V1.JoinNotification.Parser, new[]{ "Self", "Member", "ChannelState", "ChannelId", "Subscriber" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.MemberAddedNotification), global::Bgs.Protocol.Channel.V1.MemberAddedNotification.Parser, new[]{ "Member", "ChannelId", "Subscriber" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.LeaveNotification), global::Bgs.Protocol.Channel.V1.LeaveNotification.Parser, new[]{ "AgentId", "MemberId", "Reason", "ChannelId", "Subscriber" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.MemberRemovedNotification), global::Bgs.Protocol.Channel.V1.MemberRemovedNotification.Parser, new[]{ "AgentId", "MemberId", "Reason", "ChannelId", "Subscriber" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.SendMessageNotification), global::Bgs.Protocol.Channel.V1.SendMessageNotification.Parser, new[]{ "AgentId", "Message", "RequiredPrivileges", "Identity", "ChannelId", "Subscriber" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.UpdateChannelStateNotification), global::Bgs.Protocol.Channel.V1.UpdateChannelStateNotification.Parser, new[]{ "AgentId", "StateChange", "ChannelId", "Subscriber" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Channel.V1.UpdateMemberStateNotification), global::Bgs.Protocol.Channel.V1.UpdateMemberStateNotification.Parser, new[]{ "AgentId", "StateChange", "RemovedRole", "ChannelId", "Subscriber" }, null, null, null)
           }));
     }
     #endregion
@@ -152,7 +152,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<AddMemberRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -179,8 +179,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -189,8 +189,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member_identity" field.</summary>
     public const int MemberIdentityFieldNumber = 2;
-    private global::Bnet.Identity memberIdentity_;
-    public global::Bnet.Identity MemberIdentity {
+    private global::Bgs.Protocol.Identity memberIdentity_;
+    public global::Bgs.Protocol.Identity MemberIdentity {
       get { return memberIdentity_; }
       set {
         memberIdentity_ = value;
@@ -199,8 +199,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member_state" field.</summary>
     public const int MemberStateFieldNumber = 3;
-    private global::Bnet.Channel.V1.MemberState memberState_;
-    public global::Bnet.Channel.V1.MemberState MemberState {
+    private global::Bgs.Protocol.Channel.V1.MemberState memberState_;
+    public global::Bgs.Protocol.Channel.V1.MemberState MemberState {
       get { return memberState_; }
       set {
         memberState_ = value;
@@ -309,19 +309,19 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.memberIdentity_ != null) {
         if (memberIdentity_ == null) {
-          memberIdentity_ = new global::Bnet.Identity();
+          memberIdentity_ = new global::Bgs.Protocol.Identity();
         }
         MemberIdentity.MergeFrom(other.MemberIdentity);
       }
       if (other.memberState_ != null) {
         if (memberState_ == null) {
-          memberState_ = new global::Bnet.Channel.V1.MemberState();
+          memberState_ = new global::Bgs.Protocol.Channel.V1.MemberState();
         }
         MemberState.MergeFrom(other.MemberState);
       }
@@ -342,21 +342,21 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (memberIdentity_ == null) {
-              memberIdentity_ = new global::Bnet.Identity();
+              memberIdentity_ = new global::Bgs.Protocol.Identity();
             }
             input.ReadMessage(memberIdentity_);
             break;
           }
           case 26: {
             if (memberState_ == null) {
-              memberState_ = new global::Bnet.Channel.V1.MemberState();
+              memberState_ = new global::Bgs.Protocol.Channel.V1.MemberState();
             }
             input.ReadMessage(memberState_);
             break;
@@ -381,7 +381,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<RemoveMemberRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -406,8 +406,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -416,8 +416,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member_id" field.</summary>
     public const int MemberIdFieldNumber = 2;
-    private global::Bnet.EntityId memberId_;
-    public global::Bnet.EntityId MemberId {
+    private global::Bgs.Protocol.EntityId memberId_;
+    public global::Bgs.Protocol.EntityId MemberId {
       get { return memberId_; }
       set {
         memberId_ = value;
@@ -498,13 +498,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.memberId_ != null) {
         if (memberId_ == null) {
-          memberId_ = new global::Bnet.EntityId();
+          memberId_ = new global::Bgs.Protocol.EntityId();
         }
         MemberId.MergeFrom(other.MemberId);
       }
@@ -522,14 +522,14 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (memberId_ == null) {
-              memberId_ = new global::Bnet.EntityId();
+              memberId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(memberId_);
             break;
@@ -550,7 +550,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<UnsubscribeMemberRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -574,8 +574,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -584,8 +584,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member_id" field.</summary>
     public const int MemberIdFieldNumber = 2;
-    private global::Bnet.EntityId memberId_;
-    public global::Bnet.EntityId MemberId {
+    private global::Bgs.Protocol.EntityId memberId_;
+    public global::Bgs.Protocol.EntityId MemberId {
       get { return memberId_; }
       set {
         memberId_ = value;
@@ -647,13 +647,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.memberId_ != null) {
         if (memberId_ == null) {
-          memberId_ = new global::Bnet.EntityId();
+          memberId_ = new global::Bgs.Protocol.EntityId();
         }
         MemberId.MergeFrom(other.MemberId);
       }
@@ -668,14 +668,14 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (memberId_ == null) {
-              memberId_ = new global::Bnet.EntityId();
+              memberId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(memberId_);
             break;
@@ -692,7 +692,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<SendMessageRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -717,8 +717,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -727,8 +727,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "message" field.</summary>
     public const int MessageFieldNumber = 2;
-    private global::Bnet.Channel.V1.Message message_;
-    public global::Bnet.Channel.V1.Message Message {
+    private global::Bgs.Protocol.Channel.V1.Message message_;
+    public global::Bgs.Protocol.Channel.V1.Message Message {
       get { return message_; }
       set {
         message_ = value;
@@ -809,13 +809,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.message_ != null) {
         if (message_ == null) {
-          message_ = new global::Bnet.Channel.V1.Message();
+          message_ = new global::Bgs.Protocol.Channel.V1.Message();
         }
         Message.MergeFrom(other.Message);
       }
@@ -833,14 +833,14 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (message_ == null) {
-              message_ = new global::Bnet.Channel.V1.Message();
+              message_ = new global::Bgs.Protocol.Channel.V1.Message();
             }
             input.ReadMessage(message_);
             break;
@@ -861,7 +861,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<UpdateChannelStateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -885,8 +885,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -895,8 +895,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "state_change" field.</summary>
     public const int StateChangeFieldNumber = 2;
-    private global::Bnet.Channel.V1.ChannelState stateChange_;
-    public global::Bnet.Channel.V1.ChannelState StateChange {
+    private global::Bgs.Protocol.Channel.V1.ChannelState stateChange_;
+    public global::Bgs.Protocol.Channel.V1.ChannelState StateChange {
       get { return stateChange_; }
       set {
         stateChange_ = value;
@@ -958,13 +958,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.stateChange_ != null) {
         if (stateChange_ == null) {
-          stateChange_ = new global::Bnet.Channel.V1.ChannelState();
+          stateChange_ = new global::Bgs.Protocol.Channel.V1.ChannelState();
         }
         StateChange.MergeFrom(other.StateChange);
       }
@@ -979,14 +979,14 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (stateChange_ == null) {
-              stateChange_ = new global::Bnet.Channel.V1.ChannelState();
+              stateChange_ = new global::Bgs.Protocol.Channel.V1.ChannelState();
             }
             input.ReadMessage(stateChange_);
             break;
@@ -1003,7 +1003,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<UpdateMemberStateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1028,8 +1028,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1038,10 +1038,10 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "state_change" field.</summary>
     public const int StateChangeFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Channel.V1.Member> _repeated_stateChange_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Channel.V1.Member.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Channel.V1.Member> stateChange_ = new pbc::RepeatedField<global::Bnet.Channel.V1.Member>();
-    public pbc::RepeatedField<global::Bnet.Channel.V1.Member> StateChange {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Channel.V1.Member> _repeated_stateChange_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Channel.V1.Member.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member> stateChange_ = new pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member> StateChange {
       get { return stateChange_; }
     }
 
@@ -1108,7 +1108,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -1125,7 +1125,7 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -1151,7 +1151,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<DissolveRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1175,8 +1175,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1248,7 +1248,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -1266,7 +1266,7 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -1287,7 +1287,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<SetRolesRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1312,8 +1312,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1331,10 +1331,10 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member_id" field.</summary>
     public const int MemberIdFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Bnet.EntityId> _repeated_memberId_codec
-        = pb::FieldCodec.ForMessage(26, global::Bnet.EntityId.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.EntityId> memberId_ = new pbc::RepeatedField<global::Bnet.EntityId>();
-    public pbc::RepeatedField<global::Bnet.EntityId> MemberId {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.EntityId> _repeated_memberId_codec
+        = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.EntityId.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.EntityId> memberId_ = new pbc::RepeatedField<global::Bgs.Protocol.EntityId>();
+    public pbc::RepeatedField<global::Bgs.Protocol.EntityId> MemberId {
       get { return memberId_; }
     }
 
@@ -1392,7 +1392,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -1409,7 +1409,7 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -1435,7 +1435,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<JoinNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1462,8 +1462,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "self" field.</summary>
     public const int SelfFieldNumber = 1;
-    private global::Bnet.Channel.V1.Member self_;
-    public global::Bnet.Channel.V1.Member Self {
+    private global::Bgs.Protocol.Channel.V1.Member self_;
+    public global::Bgs.Protocol.Channel.V1.Member Self {
       get { return self_; }
       set {
         self_ = value;
@@ -1472,17 +1472,17 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member" field.</summary>
     public const int MemberFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Channel.V1.Member> _repeated_member_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Channel.V1.Member.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Channel.V1.Member> member_ = new pbc::RepeatedField<global::Bnet.Channel.V1.Member>();
-    public pbc::RepeatedField<global::Bnet.Channel.V1.Member> Member {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Channel.V1.Member> _repeated_member_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Channel.V1.Member.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member> member_ = new pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member> Member {
       get { return member_; }
     }
 
     /// <summary>Field number for the "channel_state" field.</summary>
     public const int ChannelStateFieldNumber = 3;
-    private global::Bnet.Channel.V1.ChannelState channelState_;
-    public global::Bnet.Channel.V1.ChannelState ChannelState {
+    private global::Bgs.Protocol.Channel.V1.ChannelState channelState_;
+    public global::Bgs.Protocol.Channel.V1.ChannelState ChannelState {
       get { return channelState_; }
       set {
         channelState_ = value;
@@ -1491,8 +1491,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "channel_id" field.</summary>
     public const int ChannelIdFieldNumber = 4;
-    private global::Bnet.Channel.V1.ChannelId channelId_;
-    public global::Bnet.Channel.V1.ChannelId ChannelId {
+    private global::Bgs.Protocol.Channel.V1.ChannelId channelId_;
+    public global::Bgs.Protocol.Channel.V1.ChannelId ChannelId {
       get { return channelId_; }
       set {
         channelId_ = value;
@@ -1501,8 +1501,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "subscriber" field.</summary>
     public const int SubscriberFieldNumber = 5;
-    private global::Bnet.Account.V1.Identity subscriber_;
-    public global::Bnet.Account.V1.Identity Subscriber {
+    private global::Bgs.Protocol.Account.V1.Identity subscriber_;
+    public global::Bgs.Protocol.Account.V1.Identity Subscriber {
       get { return subscriber_; }
       set {
         subscriber_ = value;
@@ -1586,26 +1586,26 @@ namespace Bnet.Channel.V1 {
       }
       if (other.self_ != null) {
         if (self_ == null) {
-          self_ = new global::Bnet.Channel.V1.Member();
+          self_ = new global::Bgs.Protocol.Channel.V1.Member();
         }
         Self.MergeFrom(other.Self);
       }
       member_.Add(other.member_);
       if (other.channelState_ != null) {
         if (channelState_ == null) {
-          channelState_ = new global::Bnet.Channel.V1.ChannelState();
+          channelState_ = new global::Bgs.Protocol.Channel.V1.ChannelState();
         }
         ChannelState.MergeFrom(other.ChannelState);
       }
       if (other.channelId_ != null) {
         if (channelId_ == null) {
-          channelId_ = new global::Bnet.Channel.V1.ChannelId();
+          channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
         }
         ChannelId.MergeFrom(other.ChannelId);
       }
       if (other.subscriber_ != null) {
         if (subscriber_ == null) {
-          subscriber_ = new global::Bnet.Account.V1.Identity();
+          subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         Subscriber.MergeFrom(other.Subscriber);
       }
@@ -1620,7 +1620,7 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (self_ == null) {
-              self_ = new global::Bnet.Channel.V1.Member();
+              self_ = new global::Bgs.Protocol.Channel.V1.Member();
             }
             input.ReadMessage(self_);
             break;
@@ -1631,21 +1631,21 @@ namespace Bnet.Channel.V1 {
           }
           case 26: {
             if (channelState_ == null) {
-              channelState_ = new global::Bnet.Channel.V1.ChannelState();
+              channelState_ = new global::Bgs.Protocol.Channel.V1.ChannelState();
             }
             input.ReadMessage(channelState_);
             break;
           }
           case 34: {
             if (channelId_ == null) {
-              channelId_ = new global::Bnet.Channel.V1.ChannelId();
+              channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
             }
             input.ReadMessage(channelId_);
             break;
           }
           case 42: {
             if (subscriber_ == null) {
-              subscriber_ = new global::Bnet.Account.V1.Identity();
+              subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(subscriber_);
             break;
@@ -1662,7 +1662,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<MemberAddedNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1687,8 +1687,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member" field.</summary>
     public const int MemberFieldNumber = 1;
-    private global::Bnet.Channel.V1.Member member_;
-    public global::Bnet.Channel.V1.Member Member {
+    private global::Bgs.Protocol.Channel.V1.Member member_;
+    public global::Bgs.Protocol.Channel.V1.Member Member {
       get { return member_; }
       set {
         member_ = value;
@@ -1697,8 +1697,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "channel_id" field.</summary>
     public const int ChannelIdFieldNumber = 2;
-    private global::Bnet.Channel.V1.ChannelId channelId_;
-    public global::Bnet.Channel.V1.ChannelId ChannelId {
+    private global::Bgs.Protocol.Channel.V1.ChannelId channelId_;
+    public global::Bgs.Protocol.Channel.V1.ChannelId ChannelId {
       get { return channelId_; }
       set {
         channelId_ = value;
@@ -1707,8 +1707,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "subscriber" field.</summary>
     public const int SubscriberFieldNumber = 3;
-    private global::Bnet.Account.V1.Identity subscriber_;
-    public global::Bnet.Account.V1.Identity Subscriber {
+    private global::Bgs.Protocol.Account.V1.Identity subscriber_;
+    public global::Bgs.Protocol.Account.V1.Identity Subscriber {
       get { return subscriber_; }
       set {
         subscriber_ = value;
@@ -1779,19 +1779,19 @@ namespace Bnet.Channel.V1 {
       }
       if (other.member_ != null) {
         if (member_ == null) {
-          member_ = new global::Bnet.Channel.V1.Member();
+          member_ = new global::Bgs.Protocol.Channel.V1.Member();
         }
         Member.MergeFrom(other.Member);
       }
       if (other.channelId_ != null) {
         if (channelId_ == null) {
-          channelId_ = new global::Bnet.Channel.V1.ChannelId();
+          channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
         }
         ChannelId.MergeFrom(other.ChannelId);
       }
       if (other.subscriber_ != null) {
         if (subscriber_ == null) {
-          subscriber_ = new global::Bnet.Account.V1.Identity();
+          subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         Subscriber.MergeFrom(other.Subscriber);
       }
@@ -1806,21 +1806,21 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (member_ == null) {
-              member_ = new global::Bnet.Channel.V1.Member();
+              member_ = new global::Bgs.Protocol.Channel.V1.Member();
             }
             input.ReadMessage(member_);
             break;
           }
           case 18: {
             if (channelId_ == null) {
-              channelId_ = new global::Bnet.Channel.V1.ChannelId();
+              channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
             }
             input.ReadMessage(channelId_);
             break;
           }
           case 26: {
             if (subscriber_ == null) {
-              subscriber_ = new global::Bnet.Account.V1.Identity();
+              subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(subscriber_);
             break;
@@ -1837,7 +1837,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<LeaveNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1864,8 +1864,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1874,8 +1874,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member_id" field.</summary>
     public const int MemberIdFieldNumber = 2;
-    private global::Bnet.EntityId memberId_;
-    public global::Bnet.EntityId MemberId {
+    private global::Bgs.Protocol.EntityId memberId_;
+    public global::Bgs.Protocol.EntityId MemberId {
       get { return memberId_; }
       set {
         memberId_ = value;
@@ -1894,8 +1894,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "channel_id" field.</summary>
     public const int ChannelIdFieldNumber = 4;
-    private global::Bnet.Channel.V1.ChannelId channelId_;
-    public global::Bnet.Channel.V1.ChannelId ChannelId {
+    private global::Bgs.Protocol.Channel.V1.ChannelId channelId_;
+    public global::Bgs.Protocol.Channel.V1.ChannelId ChannelId {
       get { return channelId_; }
       set {
         channelId_ = value;
@@ -1904,8 +1904,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "subscriber" field.</summary>
     public const int SubscriberFieldNumber = 5;
-    private global::Bnet.Account.V1.Identity subscriber_;
-    public global::Bnet.Account.V1.Identity Subscriber {
+    private global::Bgs.Protocol.Account.V1.Identity subscriber_;
+    public global::Bgs.Protocol.Account.V1.Identity Subscriber {
       get { return subscriber_; }
       set {
         subscriber_ = value;
@@ -1994,13 +1994,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.memberId_ != null) {
         if (memberId_ == null) {
-          memberId_ = new global::Bnet.EntityId();
+          memberId_ = new global::Bgs.Protocol.EntityId();
         }
         MemberId.MergeFrom(other.MemberId);
       }
@@ -2009,13 +2009,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.channelId_ != null) {
         if (channelId_ == null) {
-          channelId_ = new global::Bnet.Channel.V1.ChannelId();
+          channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
         }
         ChannelId.MergeFrom(other.ChannelId);
       }
       if (other.subscriber_ != null) {
         if (subscriber_ == null) {
-          subscriber_ = new global::Bnet.Account.V1.Identity();
+          subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         Subscriber.MergeFrom(other.Subscriber);
       }
@@ -2030,14 +2030,14 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (memberId_ == null) {
-              memberId_ = new global::Bnet.EntityId();
+              memberId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(memberId_);
             break;
@@ -2048,14 +2048,14 @@ namespace Bnet.Channel.V1 {
           }
           case 34: {
             if (channelId_ == null) {
-              channelId_ = new global::Bnet.Channel.V1.ChannelId();
+              channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
             }
             input.ReadMessage(channelId_);
             break;
           }
           case 42: {
             if (subscriber_ == null) {
-              subscriber_ = new global::Bnet.Account.V1.Identity();
+              subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(subscriber_);
             break;
@@ -2072,7 +2072,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<MemberRemovedNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[11]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2099,8 +2099,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -2109,8 +2109,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "member_id" field.</summary>
     public const int MemberIdFieldNumber = 2;
-    private global::Bnet.EntityId memberId_;
-    public global::Bnet.EntityId MemberId {
+    private global::Bgs.Protocol.EntityId memberId_;
+    public global::Bgs.Protocol.EntityId MemberId {
       get { return memberId_; }
       set {
         memberId_ = value;
@@ -2129,8 +2129,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "channel_id" field.</summary>
     public const int ChannelIdFieldNumber = 4;
-    private global::Bnet.Channel.V1.ChannelId channelId_;
-    public global::Bnet.Channel.V1.ChannelId ChannelId {
+    private global::Bgs.Protocol.Channel.V1.ChannelId channelId_;
+    public global::Bgs.Protocol.Channel.V1.ChannelId ChannelId {
       get { return channelId_; }
       set {
         channelId_ = value;
@@ -2139,8 +2139,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "subscriber" field.</summary>
     public const int SubscriberFieldNumber = 5;
-    private global::Bnet.Account.V1.Identity subscriber_;
-    public global::Bnet.Account.V1.Identity Subscriber {
+    private global::Bgs.Protocol.Account.V1.Identity subscriber_;
+    public global::Bgs.Protocol.Account.V1.Identity Subscriber {
       get { return subscriber_; }
       set {
         subscriber_ = value;
@@ -2229,13 +2229,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.memberId_ != null) {
         if (memberId_ == null) {
-          memberId_ = new global::Bnet.EntityId();
+          memberId_ = new global::Bgs.Protocol.EntityId();
         }
         MemberId.MergeFrom(other.MemberId);
       }
@@ -2244,13 +2244,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.channelId_ != null) {
         if (channelId_ == null) {
-          channelId_ = new global::Bnet.Channel.V1.ChannelId();
+          channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
         }
         ChannelId.MergeFrom(other.ChannelId);
       }
       if (other.subscriber_ != null) {
         if (subscriber_ == null) {
-          subscriber_ = new global::Bnet.Account.V1.Identity();
+          subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         Subscriber.MergeFrom(other.Subscriber);
       }
@@ -2265,14 +2265,14 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (memberId_ == null) {
-              memberId_ = new global::Bnet.EntityId();
+              memberId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(memberId_);
             break;
@@ -2283,14 +2283,14 @@ namespace Bnet.Channel.V1 {
           }
           case 34: {
             if (channelId_ == null) {
-              channelId_ = new global::Bnet.Channel.V1.ChannelId();
+              channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
             }
             input.ReadMessage(channelId_);
             break;
           }
           case 42: {
             if (subscriber_ == null) {
-              subscriber_ = new global::Bnet.Account.V1.Identity();
+              subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(subscriber_);
             break;
@@ -2307,7 +2307,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<SendMessageNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[12]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2335,8 +2335,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -2345,8 +2345,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "message" field.</summary>
     public const int MessageFieldNumber = 2;
-    private global::Bnet.Channel.V1.Message message_;
-    public global::Bnet.Channel.V1.Message Message {
+    private global::Bgs.Protocol.Channel.V1.Message message_;
+    public global::Bgs.Protocol.Channel.V1.Message Message {
       get { return message_; }
       set {
         message_ = value;
@@ -2375,8 +2375,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "channel_id" field.</summary>
     public const int ChannelIdFieldNumber = 5;
-    private global::Bnet.Channel.V1.ChannelId channelId_;
-    public global::Bnet.Channel.V1.ChannelId ChannelId {
+    private global::Bgs.Protocol.Channel.V1.ChannelId channelId_;
+    public global::Bgs.Protocol.Channel.V1.ChannelId ChannelId {
       get { return channelId_; }
       set {
         channelId_ = value;
@@ -2385,8 +2385,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "subscriber" field.</summary>
     public const int SubscriberFieldNumber = 6;
-    private global::Bnet.Account.V1.Identity subscriber_;
-    public global::Bnet.Account.V1.Identity Subscriber {
+    private global::Bgs.Protocol.Account.V1.Identity subscriber_;
+    public global::Bgs.Protocol.Account.V1.Identity Subscriber {
       get { return subscriber_; }
       set {
         subscriber_ = value;
@@ -2484,13 +2484,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.message_ != null) {
         if (message_ == null) {
-          message_ = new global::Bnet.Channel.V1.Message();
+          message_ = new global::Bgs.Protocol.Channel.V1.Message();
         }
         Message.MergeFrom(other.Message);
       }
@@ -2502,13 +2502,13 @@ namespace Bnet.Channel.V1 {
       }
       if (other.channelId_ != null) {
         if (channelId_ == null) {
-          channelId_ = new global::Bnet.Channel.V1.ChannelId();
+          channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
         }
         ChannelId.MergeFrom(other.ChannelId);
       }
       if (other.subscriber_ != null) {
         if (subscriber_ == null) {
-          subscriber_ = new global::Bnet.Account.V1.Identity();
+          subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         Subscriber.MergeFrom(other.Subscriber);
       }
@@ -2523,14 +2523,14 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (message_ == null) {
-              message_ = new global::Bnet.Channel.V1.Message();
+              message_ = new global::Bgs.Protocol.Channel.V1.Message();
             }
             input.ReadMessage(message_);
             break;
@@ -2545,14 +2545,14 @@ namespace Bnet.Channel.V1 {
           }
           case 42: {
             if (channelId_ == null) {
-              channelId_ = new global::Bnet.Channel.V1.ChannelId();
+              channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
             }
             input.ReadMessage(channelId_);
             break;
           }
           case 50: {
             if (subscriber_ == null) {
-              subscriber_ = new global::Bnet.Account.V1.Identity();
+              subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(subscriber_);
             break;
@@ -2569,7 +2569,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<UpdateChannelStateNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[13]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[13]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2595,8 +2595,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -2605,8 +2605,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "state_change" field.</summary>
     public const int StateChangeFieldNumber = 2;
-    private global::Bnet.Channel.V1.ChannelState stateChange_;
-    public global::Bnet.Channel.V1.ChannelState StateChange {
+    private global::Bgs.Protocol.Channel.V1.ChannelState stateChange_;
+    public global::Bgs.Protocol.Channel.V1.ChannelState StateChange {
       get { return stateChange_; }
       set {
         stateChange_ = value;
@@ -2615,8 +2615,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "channel_id" field.</summary>
     public const int ChannelIdFieldNumber = 3;
-    private global::Bnet.Channel.V1.ChannelId channelId_;
-    public global::Bnet.Channel.V1.ChannelId ChannelId {
+    private global::Bgs.Protocol.Channel.V1.ChannelId channelId_;
+    public global::Bgs.Protocol.Channel.V1.ChannelId ChannelId {
       get { return channelId_; }
       set {
         channelId_ = value;
@@ -2625,8 +2625,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "subscriber" field.</summary>
     public const int SubscriberFieldNumber = 4;
-    private global::Bnet.Account.V1.Identity subscriber_;
-    public global::Bnet.Account.V1.Identity Subscriber {
+    private global::Bgs.Protocol.Account.V1.Identity subscriber_;
+    public global::Bgs.Protocol.Account.V1.Identity Subscriber {
       get { return subscriber_; }
       set {
         subscriber_ = value;
@@ -2706,25 +2706,25 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.stateChange_ != null) {
         if (stateChange_ == null) {
-          stateChange_ = new global::Bnet.Channel.V1.ChannelState();
+          stateChange_ = new global::Bgs.Protocol.Channel.V1.ChannelState();
         }
         StateChange.MergeFrom(other.StateChange);
       }
       if (other.channelId_ != null) {
         if (channelId_ == null) {
-          channelId_ = new global::Bnet.Channel.V1.ChannelId();
+          channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
         }
         ChannelId.MergeFrom(other.ChannelId);
       }
       if (other.subscriber_ != null) {
         if (subscriber_ == null) {
-          subscriber_ = new global::Bnet.Account.V1.Identity();
+          subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         Subscriber.MergeFrom(other.Subscriber);
       }
@@ -2739,28 +2739,28 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (stateChange_ == null) {
-              stateChange_ = new global::Bnet.Channel.V1.ChannelState();
+              stateChange_ = new global::Bgs.Protocol.Channel.V1.ChannelState();
             }
             input.ReadMessage(stateChange_);
             break;
           }
           case 26: {
             if (channelId_ == null) {
-              channelId_ = new global::Bnet.Channel.V1.ChannelId();
+              channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
             }
             input.ReadMessage(channelId_);
             break;
           }
           case 34: {
             if (subscriber_ == null) {
-              subscriber_ = new global::Bnet.Account.V1.Identity();
+              subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(subscriber_);
             break;
@@ -2777,7 +2777,7 @@ namespace Bnet.Channel.V1 {
     public static pb::MessageParser<UpdateMemberStateNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[14]; }
+      get { return global::Bgs.Protocol.Channel.V1.ChannelServiceReflection.Descriptor.MessageTypes[14]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -2804,8 +2804,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -2814,10 +2814,10 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "state_change" field.</summary>
     public const int StateChangeFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Channel.V1.Member> _repeated_stateChange_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Channel.V1.Member.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Channel.V1.Member> stateChange_ = new pbc::RepeatedField<global::Bnet.Channel.V1.Member>();
-    public pbc::RepeatedField<global::Bnet.Channel.V1.Member> StateChange {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Channel.V1.Member> _repeated_stateChange_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Channel.V1.Member.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member> stateChange_ = new pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Channel.V1.Member> StateChange {
       get { return stateChange_; }
     }
 
@@ -2832,8 +2832,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "channel_id" field.</summary>
     public const int ChannelIdFieldNumber = 4;
-    private global::Bnet.Channel.V1.ChannelId channelId_;
-    public global::Bnet.Channel.V1.ChannelId ChannelId {
+    private global::Bgs.Protocol.Channel.V1.ChannelId channelId_;
+    public global::Bgs.Protocol.Channel.V1.ChannelId ChannelId {
       get { return channelId_; }
       set {
         channelId_ = value;
@@ -2842,8 +2842,8 @@ namespace Bnet.Channel.V1 {
 
     /// <summary>Field number for the "subscriber" field.</summary>
     public const int SubscriberFieldNumber = 5;
-    private global::Bnet.Account.V1.Identity subscriber_;
-    public global::Bnet.Account.V1.Identity Subscriber {
+    private global::Bgs.Protocol.Account.V1.Identity subscriber_;
+    public global::Bgs.Protocol.Account.V1.Identity Subscriber {
       get { return subscriber_; }
       set {
         subscriber_ = value;
@@ -2922,7 +2922,7 @@ namespace Bnet.Channel.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -2930,13 +2930,13 @@ namespace Bnet.Channel.V1 {
       removedRole_.Add(other.removedRole_);
       if (other.channelId_ != null) {
         if (channelId_ == null) {
-          channelId_ = new global::Bnet.Channel.V1.ChannelId();
+          channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
         }
         ChannelId.MergeFrom(other.ChannelId);
       }
       if (other.subscriber_ != null) {
         if (subscriber_ == null) {
-          subscriber_ = new global::Bnet.Account.V1.Identity();
+          subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         Subscriber.MergeFrom(other.Subscriber);
       }
@@ -2951,7 +2951,7 @@ namespace Bnet.Channel.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -2967,14 +2967,14 @@ namespace Bnet.Channel.V1 {
           }
           case 34: {
             if (channelId_ == null) {
-              channelId_ = new global::Bnet.Channel.V1.ChannelId();
+              channelId_ = new global::Bgs.Protocol.Channel.V1.ChannelId();
             }
             input.ReadMessage(channelId_);
             break;
           }
           case 42: {
             if (subscriber_ == null) {
-              subscriber_ = new global::Bnet.Account.V1.Identity();
+              subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(subscriber_);
             break;

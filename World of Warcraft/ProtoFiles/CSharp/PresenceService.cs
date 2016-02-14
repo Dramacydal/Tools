@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Presence.V1 {
+namespace Bgs.Protocol.Presence.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/presence_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -60,15 +60,15 @@ namespace Bnet.Presence.V1 {
             "Tm90aWZpY2F0aW9uUmVxdWVzdBoULmJncy5wcm90b2NvbC5Ob0RhdGFCBUgC",
             "gAEAYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.Presence.V1.PresenceTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.Presence.V1.PresenceTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.SubscribeRequest), global::Bnet.Presence.V1.SubscribeRequest.Parser, new[]{ "AgentId", "EntityId", "ObjectId", "Program", "FlagPublic" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.SubscribeNotificationRequest), global::Bnet.Presence.V1.SubscribeNotificationRequest.Parser, new[]{ "EntityId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.UnsubscribeRequest), global::Bnet.Presence.V1.UnsubscribeRequest.Parser, new[]{ "AgentId", "EntityId", "ObjectId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.UpdateRequest), global::Bnet.Presence.V1.UpdateRequest.Parser, new[]{ "EntityId", "FieldOperation", "NoCreate", "AgentId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.QueryRequest), global::Bnet.Presence.V1.QueryRequest.Parser, new[]{ "EntityId", "Key", "AgentId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.QueryResponse), global::Bnet.Presence.V1.QueryResponse.Parser, new[]{ "Field" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Presence.V1.OwnershipRequest), global::Bnet.Presence.V1.OwnershipRequest.Parser, new[]{ "EntityId", "ReleaseOwnership" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.SubscribeRequest), global::Bgs.Protocol.Presence.V1.SubscribeRequest.Parser, new[]{ "AgentId", "EntityId", "ObjectId", "Program", "FlagPublic" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.SubscribeNotificationRequest), global::Bgs.Protocol.Presence.V1.SubscribeNotificationRequest.Parser, new[]{ "EntityId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.UnsubscribeRequest), global::Bgs.Protocol.Presence.V1.UnsubscribeRequest.Parser, new[]{ "AgentId", "EntityId", "ObjectId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.UpdateRequest), global::Bgs.Protocol.Presence.V1.UpdateRequest.Parser, new[]{ "EntityId", "FieldOperation", "NoCreate", "AgentId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.QueryRequest), global::Bgs.Protocol.Presence.V1.QueryRequest.Parser, new[]{ "EntityId", "Key", "AgentId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.QueryResponse), global::Bgs.Protocol.Presence.V1.QueryResponse.Parser, new[]{ "Field" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Presence.V1.OwnershipRequest), global::Bgs.Protocol.Presence.V1.OwnershipRequest.Parser, new[]{ "EntityId", "ReleaseOwnership" }, null, null, null)
           }));
     }
     #endregion
@@ -81,7 +81,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<SubscribeRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -108,8 +108,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -118,8 +118,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 2;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -233,13 +233,13 @@ namespace Bnet.Presence.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -261,14 +261,14 @@ namespace Bnet.Presence.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -298,7 +298,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<SubscribeNotificationRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -321,8 +321,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -375,7 +375,7 @@ namespace Bnet.Presence.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -390,7 +390,7 @@ namespace Bnet.Presence.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -407,7 +407,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<UnsubscribeRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -432,8 +432,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -442,8 +442,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 2;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -524,13 +524,13 @@ namespace Bnet.Presence.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -548,14 +548,14 @@ namespace Bnet.Presence.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -576,7 +576,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<UpdateRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -602,8 +602,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -612,10 +612,10 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "field_operation" field.</summary>
     public const int FieldOperationFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Presence.V1.FieldOperation> _repeated_fieldOperation_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Presence.V1.FieldOperation.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Presence.V1.FieldOperation> fieldOperation_ = new pbc::RepeatedField<global::Bnet.Presence.V1.FieldOperation>();
-    public pbc::RepeatedField<global::Bnet.Presence.V1.FieldOperation> FieldOperation {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Presence.V1.FieldOperation> _repeated_fieldOperation_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Presence.V1.FieldOperation.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation> fieldOperation_ = new pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldOperation> FieldOperation {
       get { return fieldOperation_; }
     }
 
@@ -631,8 +631,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 4;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -707,7 +707,7 @@ namespace Bnet.Presence.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -717,7 +717,7 @@ namespace Bnet.Presence.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -732,7 +732,7 @@ namespace Bnet.Presence.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -747,7 +747,7 @@ namespace Bnet.Presence.V1 {
           }
           case 34: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -764,7 +764,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<QueryRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -789,8 +789,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -799,17 +799,17 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "key" field.</summary>
     public const int KeyFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Presence.V1.FieldKey> _repeated_key_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Presence.V1.FieldKey.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Presence.V1.FieldKey> key_ = new pbc::RepeatedField<global::Bnet.Presence.V1.FieldKey>();
-    public pbc::RepeatedField<global::Bnet.Presence.V1.FieldKey> Key {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Presence.V1.FieldKey> _repeated_key_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Presence.V1.FieldKey.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldKey> key_ = new pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldKey>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.FieldKey> Key {
       get { return key_; }
     }
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 3;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -875,14 +875,14 @@ namespace Bnet.Presence.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
       key_.Add(other.key_);
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -897,7 +897,7 @@ namespace Bnet.Presence.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;
@@ -908,7 +908,7 @@ namespace Bnet.Presence.V1 {
           }
           case 26: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -925,7 +925,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<QueryResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -948,10 +948,10 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "field" field.</summary>
     public const int FieldFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Presence.V1.Field> _repeated_field_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Presence.V1.Field.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Presence.V1.Field> field_ = new pbc::RepeatedField<global::Bnet.Presence.V1.Field>();
-    public pbc::RepeatedField<global::Bnet.Presence.V1.Field> Field {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Presence.V1.Field> _repeated_field_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Presence.V1.Field.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.Field> field_ = new pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.Field>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Presence.V1.Field> Field {
       get { return field_; }
     }
 
@@ -1020,7 +1020,7 @@ namespace Bnet.Presence.V1 {
     public static pb::MessageParser<OwnershipRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.Presence.V1.PresenceServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1044,8 +1044,8 @@ namespace Bnet.Presence.V1 {
 
     /// <summary>Field number for the "entity_id" field.</summary>
     public const int EntityIdFieldNumber = 1;
-    private global::Bnet.EntityId entityId_;
-    public global::Bnet.EntityId EntityId {
+    private global::Bgs.Protocol.EntityId entityId_;
+    public global::Bgs.Protocol.EntityId EntityId {
       get { return entityId_; }
       set {
         entityId_ = value;
@@ -1117,7 +1117,7 @@ namespace Bnet.Presence.V1 {
       }
       if (other.entityId_ != null) {
         if (entityId_ == null) {
-          entityId_ = new global::Bnet.EntityId();
+          entityId_ = new global::Bgs.Protocol.EntityId();
         }
         EntityId.MergeFrom(other.EntityId);
       }
@@ -1135,7 +1135,7 @@ namespace Bnet.Presence.V1 {
             break;
           case 10: {
             if (entityId_ == null) {
-              entityId_ = new global::Bnet.EntityId();
+              entityId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(entityId_);
             break;

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.UserManager.V1 {
+namespace Bgs.Protocol.UserManager.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/user_manager_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -94,21 +94,21 @@ namespace Bnet.UserManager.V1 {
             "eWVyc1JlbW92ZWROb3RpZmljYXRpb24aGS5iZ3MucHJvdG9jb2wuTk9fUkVT",
             "UE9OU0VCBUgCgAEAYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.UserManager.V1.UserManagerTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.RoleTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.UserManager.V1.UserManagerTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.RoleTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.SubscribeRequest), global::Bnet.UserManager.V1.SubscribeRequest.Parser, new[]{ "AgentId", "ObjectId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.SubscribeResponse), global::Bnet.UserManager.V1.SubscribeResponse.Parser, new[]{ "BlockedPlayers", "RecentPlayers", "Role" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.UnsubscribeRequest), global::Bnet.UserManager.V1.UnsubscribeRequest.Parser, new[]{ "AgentId", "ObjectId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.AddRecentPlayersRequest), global::Bnet.UserManager.V1.AddRecentPlayersRequest.Parser, new[]{ "Players", "AgentId", "Program" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.AddRecentPlayersResponse), global::Bnet.UserManager.V1.AddRecentPlayersResponse.Parser, new[]{ "PlayersAdded", "PlayersRemoved" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.ClearRecentPlayersRequest), global::Bnet.UserManager.V1.ClearRecentPlayersRequest.Parser, new[]{ "AgentId", "Program" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.ClearRecentPlayersResponse), global::Bnet.UserManager.V1.ClearRecentPlayersResponse.Parser, new[]{ "PlayersRemoved" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.BlockPlayerRequest), global::Bnet.UserManager.V1.BlockPlayerRequest.Parser, new[]{ "AgentId", "TargetId", "Role" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.UnblockPlayerRequest), global::Bnet.UserManager.V1.UnblockPlayerRequest.Parser, new[]{ "AgentId", "TargetId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.BlockedPlayerAddedNotification), global::Bnet.UserManager.V1.BlockedPlayerAddedNotification.Parser, new[]{ "Player", "GameAccountId", "AccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.BlockedPlayerRemovedNotification), global::Bnet.UserManager.V1.BlockedPlayerRemovedNotification.Parser, new[]{ "Player", "GameAccountId", "AccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.RecentPlayersAddedNotification), global::Bnet.UserManager.V1.RecentPlayersAddedNotification.Parser, new[]{ "Player" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.UserManager.V1.RecentPlayersRemovedNotification), global::Bnet.UserManager.V1.RecentPlayersRemovedNotification.Parser, new[]{ "Player" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.SubscribeRequest), global::Bgs.Protocol.UserManager.V1.SubscribeRequest.Parser, new[]{ "AgentId", "ObjectId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.SubscribeResponse), global::Bgs.Protocol.UserManager.V1.SubscribeResponse.Parser, new[]{ "BlockedPlayers", "RecentPlayers", "Role" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.UnsubscribeRequest), global::Bgs.Protocol.UserManager.V1.UnsubscribeRequest.Parser, new[]{ "AgentId", "ObjectId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.AddRecentPlayersRequest), global::Bgs.Protocol.UserManager.V1.AddRecentPlayersRequest.Parser, new[]{ "Players", "AgentId", "Program" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.AddRecentPlayersResponse), global::Bgs.Protocol.UserManager.V1.AddRecentPlayersResponse.Parser, new[]{ "PlayersAdded", "PlayersRemoved" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.ClearRecentPlayersRequest), global::Bgs.Protocol.UserManager.V1.ClearRecentPlayersRequest.Parser, new[]{ "AgentId", "Program" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.ClearRecentPlayersResponse), global::Bgs.Protocol.UserManager.V1.ClearRecentPlayersResponse.Parser, new[]{ "PlayersRemoved" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.BlockPlayerRequest), global::Bgs.Protocol.UserManager.V1.BlockPlayerRequest.Parser, new[]{ "AgentId", "TargetId", "Role" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.UnblockPlayerRequest), global::Bgs.Protocol.UserManager.V1.UnblockPlayerRequest.Parser, new[]{ "AgentId", "TargetId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.BlockedPlayerAddedNotification), global::Bgs.Protocol.UserManager.V1.BlockedPlayerAddedNotification.Parser, new[]{ "Player", "GameAccountId", "AccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.BlockedPlayerRemovedNotification), global::Bgs.Protocol.UserManager.V1.BlockedPlayerRemovedNotification.Parser, new[]{ "Player", "GameAccountId", "AccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.RecentPlayersAddedNotification), global::Bgs.Protocol.UserManager.V1.RecentPlayersAddedNotification.Parser, new[]{ "Player" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.UserManager.V1.RecentPlayersRemovedNotification), global::Bgs.Protocol.UserManager.V1.RecentPlayersRemovedNotification.Parser, new[]{ "Player" }, null, null, null)
           }));
     }
     #endregion
@@ -121,7 +121,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<SubscribeRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -145,8 +145,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -218,7 +218,7 @@ namespace Bnet.UserManager.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -236,7 +236,7 @@ namespace Bnet.UserManager.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -257,7 +257,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<SubscribeResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -282,28 +282,28 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "blocked_players" field.</summary>
     public const int BlockedPlayersFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.UserManager.V1.BlockedPlayer> _repeated_blockedPlayers_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.UserManager.V1.BlockedPlayer.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.UserManager.V1.BlockedPlayer> blockedPlayers_ = new pbc::RepeatedField<global::Bnet.UserManager.V1.BlockedPlayer>();
-    public pbc::RepeatedField<global::Bnet.UserManager.V1.BlockedPlayer> BlockedPlayers {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.UserManager.V1.BlockedPlayer> _repeated_blockedPlayers_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.UserManager.V1.BlockedPlayer.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.BlockedPlayer> blockedPlayers_ = new pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.BlockedPlayer>();
+    public pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.BlockedPlayer> BlockedPlayers {
       get { return blockedPlayers_; }
     }
 
     /// <summary>Field number for the "recent_players" field.</summary>
     public const int RecentPlayersFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.UserManager.V1.RecentPlayer> _repeated_recentPlayers_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.UserManager.V1.RecentPlayer.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> recentPlayers_ = new pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer>();
-    public pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> RecentPlayers {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.UserManager.V1.RecentPlayer> _repeated_recentPlayers_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.UserManager.V1.RecentPlayer.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> recentPlayers_ = new pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer>();
+    public pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> RecentPlayers {
       get { return recentPlayers_; }
     }
 
     /// <summary>Field number for the "role" field.</summary>
     public const int RoleFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Bnet.Role> _repeated_role_codec
-        = pb::FieldCodec.ForMessage(26, global::Bnet.Role.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Role> role_ = new pbc::RepeatedField<global::Bnet.Role>();
-    public pbc::RepeatedField<global::Bnet.Role> Role {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Role> _repeated_role_codec
+        = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.Role.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Role> role_ = new pbc::RepeatedField<global::Bgs.Protocol.Role>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Role> Role {
       get { return role_; }
     }
 
@@ -390,7 +390,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<UnsubscribeRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -414,8 +414,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -487,7 +487,7 @@ namespace Bnet.UserManager.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -505,7 +505,7 @@ namespace Bnet.UserManager.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -526,7 +526,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<AddRecentPlayersRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -551,17 +551,17 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "players" field.</summary>
     public const int PlayersFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.UserManager.V1.RecentPlayer> _repeated_players_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.UserManager.V1.RecentPlayer.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> players_ = new pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer>();
-    public pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> Players {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.UserManager.V1.RecentPlayer> _repeated_players_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.UserManager.V1.RecentPlayer.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> players_ = new pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer>();
+    public pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> Players {
       get { return players_; }
     }
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 2;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -638,7 +638,7 @@ namespace Bnet.UserManager.V1 {
       players_.Add(other.players_);
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -660,7 +660,7 @@ namespace Bnet.UserManager.V1 {
           }
           case 18: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -681,7 +681,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<AddRecentPlayersResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -705,10 +705,10 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "players_added" field.</summary>
     public const int PlayersAddedFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.UserManager.V1.RecentPlayer> _repeated_playersAdded_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.UserManager.V1.RecentPlayer.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> playersAdded_ = new pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer>();
-    public pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> PlayersAdded {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.UserManager.V1.RecentPlayer> _repeated_playersAdded_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.UserManager.V1.RecentPlayer.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> playersAdded_ = new pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer>();
+    public pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> PlayersAdded {
       get { return playersAdded_; }
     }
 
@@ -796,7 +796,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<ClearRecentPlayersRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -820,8 +820,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -893,7 +893,7 @@ namespace Bnet.UserManager.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -911,7 +911,7 @@ namespace Bnet.UserManager.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -932,7 +932,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<ClearRecentPlayersResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1028,7 +1028,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<BlockPlayerRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1053,8 +1053,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1063,8 +1063,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 2;
-    private global::Bnet.EntityId targetId_;
-    public global::Bnet.EntityId TargetId {
+    private global::Bgs.Protocol.EntityId targetId_;
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -1145,13 +1145,13 @@ namespace Bnet.UserManager.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
@@ -1169,14 +1169,14 @@ namespace Bnet.UserManager.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;
@@ -1197,7 +1197,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<UnblockPlayerRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1221,8 +1221,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 1;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1231,8 +1231,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 2;
-    private global::Bnet.EntityId targetId_;
-    public global::Bnet.EntityId TargetId {
+    private global::Bgs.Protocol.EntityId targetId_;
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -1294,13 +1294,13 @@ namespace Bnet.UserManager.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
@@ -1315,14 +1315,14 @@ namespace Bnet.UserManager.V1 {
             break;
           case 10: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
           }
           case 18: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;
@@ -1339,7 +1339,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<BlockedPlayerAddedNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1364,8 +1364,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "player" field.</summary>
     public const int PlayerFieldNumber = 1;
-    private global::Bnet.UserManager.V1.BlockedPlayer player_;
-    public global::Bnet.UserManager.V1.BlockedPlayer Player {
+    private global::Bgs.Protocol.UserManager.V1.BlockedPlayer player_;
+    public global::Bgs.Protocol.UserManager.V1.BlockedPlayer Player {
       get { return player_; }
       set {
         player_ = value;
@@ -1374,8 +1374,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 2;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -1384,8 +1384,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 3;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -1456,19 +1456,19 @@ namespace Bnet.UserManager.V1 {
       }
       if (other.player_ != null) {
         if (player_ == null) {
-          player_ = new global::Bnet.UserManager.V1.BlockedPlayer();
+          player_ = new global::Bgs.Protocol.UserManager.V1.BlockedPlayer();
         }
         Player.MergeFrom(other.Player);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -1483,21 +1483,21 @@ namespace Bnet.UserManager.V1 {
             break;
           case 10: {
             if (player_ == null) {
-              player_ = new global::Bnet.UserManager.V1.BlockedPlayer();
+              player_ = new global::Bgs.Protocol.UserManager.V1.BlockedPlayer();
             }
             input.ReadMessage(player_);
             break;
           }
           case 18: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
           }
           case 26: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
@@ -1514,7 +1514,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<BlockedPlayerRemovedNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1539,8 +1539,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "player" field.</summary>
     public const int PlayerFieldNumber = 1;
-    private global::Bnet.UserManager.V1.BlockedPlayer player_;
-    public global::Bnet.UserManager.V1.BlockedPlayer Player {
+    private global::Bgs.Protocol.UserManager.V1.BlockedPlayer player_;
+    public global::Bgs.Protocol.UserManager.V1.BlockedPlayer Player {
       get { return player_; }
       set {
         player_ = value;
@@ -1549,8 +1549,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 2;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -1559,8 +1559,8 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 3;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -1631,19 +1631,19 @@ namespace Bnet.UserManager.V1 {
       }
       if (other.player_ != null) {
         if (player_ == null) {
-          player_ = new global::Bnet.UserManager.V1.BlockedPlayer();
+          player_ = new global::Bgs.Protocol.UserManager.V1.BlockedPlayer();
         }
         Player.MergeFrom(other.Player);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -1658,21 +1658,21 @@ namespace Bnet.UserManager.V1 {
             break;
           case 10: {
             if (player_ == null) {
-              player_ = new global::Bnet.UserManager.V1.BlockedPlayer();
+              player_ = new global::Bgs.Protocol.UserManager.V1.BlockedPlayer();
             }
             input.ReadMessage(player_);
             break;
           }
           case 18: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
           }
           case 26: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
@@ -1689,7 +1689,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<RecentPlayersAddedNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[11]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1712,10 +1712,10 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "player" field.</summary>
     public const int PlayerFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.UserManager.V1.RecentPlayer> _repeated_player_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.UserManager.V1.RecentPlayer.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> player_ = new pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer>();
-    public pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> Player {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.UserManager.V1.RecentPlayer> _repeated_player_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.UserManager.V1.RecentPlayer.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> player_ = new pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer>();
+    public pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> Player {
       get { return player_; }
     }
 
@@ -1784,7 +1784,7 @@ namespace Bnet.UserManager.V1 {
     public static pb::MessageParser<RecentPlayersRemovedNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Bgs.Protocol.UserManager.V1.UserManagerServiceReflection.Descriptor.MessageTypes[12]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1807,10 +1807,10 @@ namespace Bnet.UserManager.V1 {
 
     /// <summary>Field number for the "player" field.</summary>
     public const int PlayerFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.UserManager.V1.RecentPlayer> _repeated_player_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.UserManager.V1.RecentPlayer.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> player_ = new pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer>();
-    public pbc::RepeatedField<global::Bnet.UserManager.V1.RecentPlayer> Player {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.UserManager.V1.RecentPlayer> _repeated_player_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.UserManager.V1.RecentPlayer.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> player_ = new pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer>();
+    public pbc::RepeatedField<global::Bgs.Protocol.UserManager.V1.RecentPlayer> Player {
       get { return player_; }
     }
 

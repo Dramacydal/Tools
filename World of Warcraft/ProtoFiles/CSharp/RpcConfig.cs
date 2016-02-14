@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Config {
+namespace Bgs.Protocol.Config {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/rpc_config.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -44,10 +44,10 @@ namespace Bnet.Config {
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Config.RPCMethodConfig), global::Bnet.Config.RPCMethodConfig.Parser, new[]{ "ServiceName", "MethodName", "FixedCallCost", "FixedPacketSize", "VariableMultiplier", "Multiplier", "RateLimitCount", "RateLimitSeconds", "MaxPacketSize", "MaxEncodedSize", "Timeout", "CapBalance", "IncomePerSecond", "ServiceHash", "MethodId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Config.RPCMeterConfig), global::Bnet.Config.RPCMeterConfig.Parser, new[]{ "Method", "IncomePerSecond", "InitialBalance", "CapBalance", "StartupPeriod" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Config.ProtocolAlias), global::Bnet.Config.ProtocolAlias.Parser, new[]{ "ServerServiceName", "ClientServiceName" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Config.ServiceAliases), global::Bnet.Config.ServiceAliases.Parser, new[]{ "ProtocolAlias" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Config.RPCMethodConfig), global::Bgs.Protocol.Config.RPCMethodConfig.Parser, new[]{ "ServiceName", "MethodName", "FixedCallCost", "FixedPacketSize", "VariableMultiplier", "Multiplier", "RateLimitCount", "RateLimitSeconds", "MaxPacketSize", "MaxEncodedSize", "Timeout", "CapBalance", "IncomePerSecond", "ServiceHash", "MethodId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Config.RPCMeterConfig), global::Bgs.Protocol.Config.RPCMeterConfig.Parser, new[]{ "Method", "IncomePerSecond", "InitialBalance", "CapBalance", "StartupPeriod" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Config.ProtocolAlias), global::Bgs.Protocol.Config.ProtocolAlias.Parser, new[]{ "ServerServiceName", "ClientServiceName" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Config.ServiceAliases), global::Bgs.Protocol.Config.ServiceAliases.Parser, new[]{ "ProtocolAlias" }, null, null, null)
           }));
     }
     #endregion
@@ -60,7 +60,7 @@ namespace Bnet.Config {
     public static pb::MessageParser<RPCMethodConfig> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Config.RpcConfigReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Config.RpcConfigReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -543,7 +543,7 @@ namespace Bnet.Config {
     public static pb::MessageParser<RPCMeterConfig> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Config.RpcConfigReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Config.RpcConfigReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -570,10 +570,10 @@ namespace Bnet.Config {
 
     /// <summary>Field number for the "method" field.</summary>
     public const int MethodFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Config.RPCMethodConfig> _repeated_method_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Config.RPCMethodConfig.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Config.RPCMethodConfig> method_ = new pbc::RepeatedField<global::Bnet.Config.RPCMethodConfig>();
-    public pbc::RepeatedField<global::Bnet.Config.RPCMethodConfig> Method {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Config.RPCMethodConfig> _repeated_method_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Config.RPCMethodConfig.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Config.RPCMethodConfig> method_ = new pbc::RepeatedField<global::Bgs.Protocol.Config.RPCMethodConfig>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Config.RPCMethodConfig> Method {
       get { return method_; }
     }
 
@@ -746,7 +746,7 @@ namespace Bnet.Config {
     public static pb::MessageParser<ProtocolAlias> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Config.RpcConfigReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Config.RpcConfigReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -876,7 +876,7 @@ namespace Bnet.Config {
     public static pb::MessageParser<ServiceAliases> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Config.RpcConfigReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Config.RpcConfigReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -899,10 +899,10 @@ namespace Bnet.Config {
 
     /// <summary>Field number for the "protocol_alias" field.</summary>
     public const int ProtocolAliasFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Config.ProtocolAlias> _repeated_protocolAlias_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Config.ProtocolAlias.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Config.ProtocolAlias> protocolAlias_ = new pbc::RepeatedField<global::Bnet.Config.ProtocolAlias>();
-    public pbc::RepeatedField<global::Bnet.Config.ProtocolAlias> ProtocolAlias {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Config.ProtocolAlias> _repeated_protocolAlias_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Config.ProtocolAlias.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Config.ProtocolAlias> protocolAlias_ = new pbc::RepeatedField<global::Bgs.Protocol.Config.ProtocolAlias>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Config.ProtocolAlias> ProtocolAlias {
       get { return protocolAlias_; }
     }
 

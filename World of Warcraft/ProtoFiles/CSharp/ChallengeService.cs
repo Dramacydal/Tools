@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Challenge.V1 {
+namespace Bgs.Protocol.Challenge.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/challenge_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -77,20 +77,20 @@ namespace Bnet.Challenge.V1 {
             "LnByb3RvY29sLmNoYWxsZW5nZS52MS5DaGFsbGVuZ2VFeHRlcm5hbFJlc3Vs",
             "dBoZLmJncy5wcm90b2NvbC5OT19SRVNQT05TRUIFSAKAAQBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.AttributeTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.AttributeTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.Challenge), global::Bnet.Challenge.V1.Challenge.Parser, new[]{ "Type", "Info", "Answer", "Retries" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.ChallengePickedRequest), global::Bnet.Challenge.V1.ChallengePickedRequest.Parser, new[]{ "Challenge", "Id", "NewChallengeProtocol" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.ChallengePickedResponse), global::Bnet.Challenge.V1.ChallengePickedResponse.Parser, new[]{ "Data" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.ChallengeAnsweredRequest), global::Bnet.Challenge.V1.ChallengeAnsweredRequest.Parser, new[]{ "Answer", "Data", "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.ChallengeAnsweredResponse), global::Bnet.Challenge.V1.ChallengeAnsweredResponse.Parser, new[]{ "Data", "DoRetry", "RecordNotFound" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.ChallengeCancelledRequest), global::Bnet.Challenge.V1.ChallengeCancelledRequest.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.SendChallengeToUserRequest), global::Bnet.Challenge.V1.SendChallengeToUserRequest.Parser, new[]{ "PeerId", "GameAccountId", "Challenges", "Context", "Timeout", "Attributes", "Host", "AccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.SendChallengeToUserResponse), global::Bnet.Challenge.V1.SendChallengeToUserResponse.Parser, new[]{ "Id" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.ChallengeUserRequest), global::Bnet.Challenge.V1.ChallengeUserRequest.Parser, new[]{ "Challenges", "Context", "Id", "Deadline", "Attributes", "GameAccountId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.ChallengeResultRequest), global::Bnet.Challenge.V1.ChallengeResultRequest.Parser, new[]{ "Id", "Type", "ErrorId", "Answer" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.ChallengeExternalRequest), global::Bnet.Challenge.V1.ChallengeExternalRequest.Parser, new[]{ "RequestToken", "PayloadType", "Payload" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Challenge.V1.ChallengeExternalResult), global::Bnet.Challenge.V1.ChallengeExternalResult.Parser, new[]{ "RequestToken", "Passed" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.Challenge), global::Bgs.Protocol.Challenge.V1.Challenge.Parser, new[]{ "Type", "Info", "Answer", "Retries" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.ChallengePickedRequest), global::Bgs.Protocol.Challenge.V1.ChallengePickedRequest.Parser, new[]{ "Challenge", "Id", "NewChallengeProtocol" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.ChallengePickedResponse), global::Bgs.Protocol.Challenge.V1.ChallengePickedResponse.Parser, new[]{ "Data" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.ChallengeAnsweredRequest), global::Bgs.Protocol.Challenge.V1.ChallengeAnsweredRequest.Parser, new[]{ "Answer", "Data", "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.ChallengeAnsweredResponse), global::Bgs.Protocol.Challenge.V1.ChallengeAnsweredResponse.Parser, new[]{ "Data", "DoRetry", "RecordNotFound" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.ChallengeCancelledRequest), global::Bgs.Protocol.Challenge.V1.ChallengeCancelledRequest.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.SendChallengeToUserRequest), global::Bgs.Protocol.Challenge.V1.SendChallengeToUserRequest.Parser, new[]{ "PeerId", "GameAccountId", "Challenges", "Context", "Timeout", "Attributes", "Host", "AccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.SendChallengeToUserResponse), global::Bgs.Protocol.Challenge.V1.SendChallengeToUserResponse.Parser, new[]{ "Id" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.ChallengeUserRequest), global::Bgs.Protocol.Challenge.V1.ChallengeUserRequest.Parser, new[]{ "Challenges", "Context", "Id", "Deadline", "Attributes", "GameAccountId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.ChallengeResultRequest), global::Bgs.Protocol.Challenge.V1.ChallengeResultRequest.Parser, new[]{ "Id", "Type", "ErrorId", "Answer" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.ChallengeExternalRequest), global::Bgs.Protocol.Challenge.V1.ChallengeExternalRequest.Parser, new[]{ "RequestToken", "PayloadType", "Payload" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Challenge.V1.ChallengeExternalResult), global::Bgs.Protocol.Challenge.V1.ChallengeExternalResult.Parser, new[]{ "RequestToken", "Passed" }, null, null, null)
           }));
     }
     #endregion
@@ -103,7 +103,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<Challenge> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -287,7 +287,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<ChallengePickedRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -444,7 +444,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<ChallengePickedResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -547,7 +547,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<ChallengeAnsweredRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -704,7 +704,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<ChallengeAnsweredResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -861,7 +861,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<ChallengeCancelledRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -964,7 +964,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<SendChallengeToUserRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -994,8 +994,8 @@ namespace Bnet.Challenge.V1 {
 
     /// <summary>Field number for the "peer_id" field.</summary>
     public const int PeerIdFieldNumber = 1;
-    private global::Bnet.ProcessId peerId_;
-    public global::Bnet.ProcessId PeerId {
+    private global::Bgs.Protocol.ProcessId peerId_;
+    public global::Bgs.Protocol.ProcessId PeerId {
       get { return peerId_; }
       set {
         peerId_ = value;
@@ -1004,8 +1004,8 @@ namespace Bnet.Challenge.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 2;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -1014,10 +1014,10 @@ namespace Bnet.Challenge.V1 {
 
     /// <summary>Field number for the "challenges" field.</summary>
     public const int ChallengesFieldNumber = 3;
-    private static readonly pb::FieldCodec<global::Bnet.Challenge.V1.Challenge> _repeated_challenges_codec
-        = pb::FieldCodec.ForMessage(26, global::Bnet.Challenge.V1.Challenge.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Challenge.V1.Challenge> challenges_ = new pbc::RepeatedField<global::Bnet.Challenge.V1.Challenge>();
-    public pbc::RepeatedField<global::Bnet.Challenge.V1.Challenge> Challenges {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Challenge.V1.Challenge> _repeated_challenges_codec
+        = pb::FieldCodec.ForMessage(26, global::Bgs.Protocol.Challenge.V1.Challenge.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Challenge.V1.Challenge> challenges_ = new pbc::RepeatedField<global::Bgs.Protocol.Challenge.V1.Challenge>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Challenge.V1.Challenge> Challenges {
       get { return challenges_; }
     }
 
@@ -1043,17 +1043,17 @@ namespace Bnet.Challenge.V1 {
 
     /// <summary>Field number for the "attributes" field.</summary>
     public const int AttributesFieldNumber = 6;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attributes_codec
-        = pb::FieldCodec.ForMessage(50, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attributes_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attributes {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attributes_codec
+        = pb::FieldCodec.ForMessage(50, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attributes_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attributes {
       get { return attributes_; }
     }
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 7;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -1062,8 +1062,8 @@ namespace Bnet.Challenge.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 8;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -1169,13 +1169,13 @@ namespace Bnet.Challenge.V1 {
       }
       if (other.peerId_ != null) {
         if (peerId_ == null) {
-          peerId_ = new global::Bnet.ProcessId();
+          peerId_ = new global::Bgs.Protocol.ProcessId();
         }
         PeerId.MergeFrom(other.PeerId);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
@@ -1189,13 +1189,13 @@ namespace Bnet.Challenge.V1 {
       attributes_.Add(other.attributes_);
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
@@ -1210,14 +1210,14 @@ namespace Bnet.Challenge.V1 {
             break;
           case 10: {
             if (peerId_ == null) {
-              peerId_ = new global::Bnet.ProcessId();
+              peerId_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(peerId_);
             break;
           }
           case 18: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
@@ -1240,14 +1240,14 @@ namespace Bnet.Challenge.V1 {
           }
           case 58: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
           }
           case 66: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
@@ -1264,7 +1264,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<SendChallengeToUserResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1367,7 +1367,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<ChallengeUserRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1395,10 +1395,10 @@ namespace Bnet.Challenge.V1 {
 
     /// <summary>Field number for the "challenges" field.</summary>
     public const int ChallengesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Challenge.V1.Challenge> _repeated_challenges_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Challenge.V1.Challenge.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Challenge.V1.Challenge> challenges_ = new pbc::RepeatedField<global::Bnet.Challenge.V1.Challenge>();
-    public pbc::RepeatedField<global::Bnet.Challenge.V1.Challenge> Challenges {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Challenge.V1.Challenge> _repeated_challenges_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Challenge.V1.Challenge.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Challenge.V1.Challenge> challenges_ = new pbc::RepeatedField<global::Bgs.Protocol.Challenge.V1.Challenge>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Challenge.V1.Challenge> Challenges {
       get { return challenges_; }
     }
 
@@ -1434,17 +1434,17 @@ namespace Bnet.Challenge.V1 {
 
     /// <summary>Field number for the "attributes" field.</summary>
     public const int AttributesFieldNumber = 5;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attributes_codec
-        = pb::FieldCodec.ForMessage(42, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attributes_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attributes {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attributes_codec
+        = pb::FieldCodec.ForMessage(42, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attributes_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attributes {
       get { return attributes_; }
     }
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 6;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -1543,7 +1543,7 @@ namespace Bnet.Challenge.V1 {
       attributes_.Add(other.attributes_);
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
@@ -1578,7 +1578,7 @@ namespace Bnet.Challenge.V1 {
           }
           case 50: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
@@ -1595,7 +1595,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<ChallengeResultRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1779,7 +1779,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<ChallengeExternalRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1936,7 +1936,7 @@ namespace Bnet.Challenge.V1 {
     public static pb::MessageParser<ChallengeExternalResult> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Bgs.Protocol.Challenge.V1.ChallengeServiceReflection.Descriptor.MessageTypes[11]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.GameUtilities.V1 {
+namespace Bgs.Protocol.GameUtilities.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/game_utilities_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -92,21 +92,21 @@ namespace Bnet.GameUtilities.V1 {
             "dGllcy52MUIZR2FtZVV0aWxpdGllc1NlcnZpY2VQcm90b0gCgAEAiAEBYgZw",
             "cm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.AttributeTypesReflection.Descriptor, global::Bnet.ContentHandleTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.GameUtilities.V1.GameUtilitiesTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.AttributeTypesReflection.Descriptor, global::Bgs.Protocol.ContentHandleTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.ClientRequest), global::Bnet.GameUtilities.V1.ClientRequest.Parser, new[]{ "Attribute", "Host", "AccountId", "GameAccountId", "Program", "ClientInfo" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.ClientResponse), global::Bnet.GameUtilities.V1.ClientResponse.Parser, new[]{ "Attribute" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.ServerRequest), global::Bnet.GameUtilities.V1.ServerRequest.Parser, new[]{ "Attribute", "Program", "Host" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.ServerResponse), global::Bnet.GameUtilities.V1.ServerResponse.Parser, new[]{ "Attribute" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.PresenceChannelCreatedRequest), global::Bnet.GameUtilities.V1.PresenceChannelCreatedRequest.Parser, new[]{ "Id", "GameAccountId", "AccountId", "Host" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.GetPlayerVariablesRequest), global::Bnet.GameUtilities.V1.GetPlayerVariablesRequest.Parser, new[]{ "PlayerVariables", "Host" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.GetPlayerVariablesResponse), global::Bnet.GameUtilities.V1.GetPlayerVariablesResponse.Parser, new[]{ "PlayerVariables" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.GameAccountOnlineNotification), global::Bnet.GameUtilities.V1.GameAccountOnlineNotification.Parser, new[]{ "GameAccountId", "Host", "SessionId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.GameAccountOfflineNotification), global::Bnet.GameUtilities.V1.GameAccountOfflineNotification.Parser, new[]{ "GameAccountId", "Host", "SessionId" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.GetAchievementsFileRequest), global::Bnet.GameUtilities.V1.GetAchievementsFileRequest.Parser, new[]{ "Host" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.GetAchievementsFileResponse), global::Bnet.GameUtilities.V1.GetAchievementsFileResponse.Parser, new[]{ "ContentHandle" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.GetAllValuesForAttributeRequest), global::Bnet.GameUtilities.V1.GetAllValuesForAttributeRequest.Parser, new[]{ "AttributeKey", "AgentId", "Program" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.GameUtilities.V1.GetAllValuesForAttributeResponse), global::Bnet.GameUtilities.V1.GetAllValuesForAttributeResponse.Parser, new[]{ "AttributeValue" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.ClientRequest), global::Bgs.Protocol.GameUtilities.V1.ClientRequest.Parser, new[]{ "Attribute", "Host", "AccountId", "GameAccountId", "Program", "ClientInfo" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.ClientResponse), global::Bgs.Protocol.GameUtilities.V1.ClientResponse.Parser, new[]{ "Attribute" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.ServerRequest), global::Bgs.Protocol.GameUtilities.V1.ServerRequest.Parser, new[]{ "Attribute", "Program", "Host" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.ServerResponse), global::Bgs.Protocol.GameUtilities.V1.ServerResponse.Parser, new[]{ "Attribute" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.PresenceChannelCreatedRequest), global::Bgs.Protocol.GameUtilities.V1.PresenceChannelCreatedRequest.Parser, new[]{ "Id", "GameAccountId", "AccountId", "Host" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.GetPlayerVariablesRequest), global::Bgs.Protocol.GameUtilities.V1.GetPlayerVariablesRequest.Parser, new[]{ "PlayerVariables", "Host" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.GetPlayerVariablesResponse), global::Bgs.Protocol.GameUtilities.V1.GetPlayerVariablesResponse.Parser, new[]{ "PlayerVariables" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.GameAccountOnlineNotification), global::Bgs.Protocol.GameUtilities.V1.GameAccountOnlineNotification.Parser, new[]{ "GameAccountId", "Host", "SessionId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.GameAccountOfflineNotification), global::Bgs.Protocol.GameUtilities.V1.GameAccountOfflineNotification.Parser, new[]{ "GameAccountId", "Host", "SessionId" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.GetAchievementsFileRequest), global::Bgs.Protocol.GameUtilities.V1.GetAchievementsFileRequest.Parser, new[]{ "Host" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.GetAchievementsFileResponse), global::Bgs.Protocol.GameUtilities.V1.GetAchievementsFileResponse.Parser, new[]{ "ContentHandle" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.GetAllValuesForAttributeRequest), global::Bgs.Protocol.GameUtilities.V1.GetAllValuesForAttributeRequest.Parser, new[]{ "AttributeKey", "AgentId", "Program" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.GameUtilities.V1.GetAllValuesForAttributeResponse), global::Bgs.Protocol.GameUtilities.V1.GetAllValuesForAttributeResponse.Parser, new[]{ "AttributeValue" }, null, null, null)
           }));
     }
     #endregion
@@ -119,7 +119,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<ClientRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -147,17 +147,17 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 2;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -166,8 +166,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 3;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -176,8 +176,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 4;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -196,8 +196,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "client_info" field.</summary>
     public const int ClientInfoFieldNumber = 6;
-    private global::Bnet.GameUtilities.V1.ClientInfo clientInfo_;
-    public global::Bnet.GameUtilities.V1.ClientInfo ClientInfo {
+    private global::Bgs.Protocol.GameUtilities.V1.ClientInfo clientInfo_;
+    public global::Bgs.Protocol.GameUtilities.V1.ClientInfo ClientInfo {
       get { return clientInfo_; }
       set {
         clientInfo_ = value;
@@ -291,19 +291,19 @@ namespace Bnet.GameUtilities.V1 {
       attribute_.Add(other.attribute_);
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
@@ -312,7 +312,7 @@ namespace Bnet.GameUtilities.V1 {
       }
       if (other.clientInfo_ != null) {
         if (clientInfo_ == null) {
-          clientInfo_ = new global::Bnet.GameUtilities.V1.ClientInfo();
+          clientInfo_ = new global::Bgs.Protocol.GameUtilities.V1.ClientInfo();
         }
         ClientInfo.MergeFrom(other.ClientInfo);
       }
@@ -331,21 +331,21 @@ namespace Bnet.GameUtilities.V1 {
           }
           case 18: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
           }
           case 26: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
           }
           case 34: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
@@ -356,7 +356,7 @@ namespace Bnet.GameUtilities.V1 {
           }
           case 50: {
             if (clientInfo_ == null) {
-              clientInfo_ = new global::Bnet.GameUtilities.V1.ClientInfo();
+              clientInfo_ = new global::Bgs.Protocol.GameUtilities.V1.ClientInfo();
             }
             input.ReadMessage(clientInfo_);
             break;
@@ -373,7 +373,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<ClientResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -396,10 +396,10 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -468,7 +468,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<ServerRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -493,10 +493,10 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -512,8 +512,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 3;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -583,7 +583,7 @@ namespace Bnet.GameUtilities.V1 {
       }
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
@@ -606,7 +606,7 @@ namespace Bnet.GameUtilities.V1 {
           }
           case 26: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
@@ -623,7 +623,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<ServerResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[3]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[3]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -646,10 +646,10 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -718,7 +718,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<PresenceChannelCreatedRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[4]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[4]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -744,8 +744,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "id" field.</summary>
     public const int IdFieldNumber = 1;
-    private global::Bnet.EntityId id_;
-    public global::Bnet.EntityId Id {
+    private global::Bgs.Protocol.EntityId id_;
+    public global::Bgs.Protocol.EntityId Id {
       get { return id_; }
       set {
         id_ = value;
@@ -754,8 +754,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 3;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -764,8 +764,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "account_id" field.</summary>
     public const int AccountIdFieldNumber = 4;
-    private global::Bnet.EntityId accountId_;
-    public global::Bnet.EntityId AccountId {
+    private global::Bgs.Protocol.EntityId accountId_;
+    public global::Bgs.Protocol.EntityId AccountId {
       get { return accountId_; }
       set {
         accountId_ = value;
@@ -774,8 +774,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 5;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -855,25 +855,25 @@ namespace Bnet.GameUtilities.V1 {
       }
       if (other.id_ != null) {
         if (id_ == null) {
-          id_ = new global::Bnet.EntityId();
+          id_ = new global::Bgs.Protocol.EntityId();
         }
         Id.MergeFrom(other.Id);
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
       if (other.accountId_ != null) {
         if (accountId_ == null) {
-          accountId_ = new global::Bnet.EntityId();
+          accountId_ = new global::Bgs.Protocol.EntityId();
         }
         AccountId.MergeFrom(other.AccountId);
       }
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
@@ -888,28 +888,28 @@ namespace Bnet.GameUtilities.V1 {
             break;
           case 10: {
             if (id_ == null) {
-              id_ = new global::Bnet.EntityId();
+              id_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(id_);
             break;
           }
           case 26: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
           }
           case 34: {
             if (accountId_ == null) {
-              accountId_ = new global::Bnet.EntityId();
+              accountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(accountId_);
             break;
           }
           case 42: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
@@ -926,7 +926,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<GetPlayerVariablesRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[5]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[5]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -950,17 +950,17 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "player_variables" field.</summary>
     public const int PlayerVariablesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.GameUtilities.V1.PlayerVariables> _repeated_playerVariables_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.GameUtilities.V1.PlayerVariables.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.GameUtilities.V1.PlayerVariables> playerVariables_ = new pbc::RepeatedField<global::Bnet.GameUtilities.V1.PlayerVariables>();
-    public pbc::RepeatedField<global::Bnet.GameUtilities.V1.PlayerVariables> PlayerVariables {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.GameUtilities.V1.PlayerVariables> _repeated_playerVariables_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.GameUtilities.V1.PlayerVariables.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.GameUtilities.V1.PlayerVariables> playerVariables_ = new pbc::RepeatedField<global::Bgs.Protocol.GameUtilities.V1.PlayerVariables>();
+    public pbc::RepeatedField<global::Bgs.Protocol.GameUtilities.V1.PlayerVariables> PlayerVariables {
       get { return playerVariables_; }
     }
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 2;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -1018,7 +1018,7 @@ namespace Bnet.GameUtilities.V1 {
       playerVariables_.Add(other.playerVariables_);
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
@@ -1037,7 +1037,7 @@ namespace Bnet.GameUtilities.V1 {
           }
           case 18: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
@@ -1054,7 +1054,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<GetPlayerVariablesResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[6]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[6]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1077,10 +1077,10 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "player_variables" field.</summary>
     public const int PlayerVariablesFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.GameUtilities.V1.PlayerVariables> _repeated_playerVariables_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.GameUtilities.V1.PlayerVariables.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.GameUtilities.V1.PlayerVariables> playerVariables_ = new pbc::RepeatedField<global::Bnet.GameUtilities.V1.PlayerVariables>();
-    public pbc::RepeatedField<global::Bnet.GameUtilities.V1.PlayerVariables> PlayerVariables {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.GameUtilities.V1.PlayerVariables> _repeated_playerVariables_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.GameUtilities.V1.PlayerVariables.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.GameUtilities.V1.PlayerVariables> playerVariables_ = new pbc::RepeatedField<global::Bgs.Protocol.GameUtilities.V1.PlayerVariables>();
+    public pbc::RepeatedField<global::Bgs.Protocol.GameUtilities.V1.PlayerVariables> PlayerVariables {
       get { return playerVariables_; }
     }
 
@@ -1149,7 +1149,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<GameAccountOnlineNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[7]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[7]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1174,8 +1174,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 1;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -1184,8 +1184,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 2;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -1266,13 +1266,13 @@ namespace Bnet.GameUtilities.V1 {
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
@@ -1290,14 +1290,14 @@ namespace Bnet.GameUtilities.V1 {
             break;
           case 10: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
           }
           case 18: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
@@ -1318,7 +1318,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<GameAccountOfflineNotification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[8]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[8]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1343,8 +1343,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "game_account_id" field.</summary>
     public const int GameAccountIdFieldNumber = 1;
-    private global::Bnet.EntityId gameAccountId_;
-    public global::Bnet.EntityId GameAccountId {
+    private global::Bgs.Protocol.EntityId gameAccountId_;
+    public global::Bgs.Protocol.EntityId GameAccountId {
       get { return gameAccountId_; }
       set {
         gameAccountId_ = value;
@@ -1353,8 +1353,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 2;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -1435,13 +1435,13 @@ namespace Bnet.GameUtilities.V1 {
       }
       if (other.gameAccountId_ != null) {
         if (gameAccountId_ == null) {
-          gameAccountId_ = new global::Bnet.EntityId();
+          gameAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         GameAccountId.MergeFrom(other.GameAccountId);
       }
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
@@ -1459,14 +1459,14 @@ namespace Bnet.GameUtilities.V1 {
             break;
           case 10: {
             if (gameAccountId_ == null) {
-              gameAccountId_ = new global::Bnet.EntityId();
+              gameAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(gameAccountId_);
             break;
           }
           case 18: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
@@ -1487,7 +1487,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<GetAchievementsFileRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[9]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[9]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1510,8 +1510,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "host" field.</summary>
     public const int HostFieldNumber = 1;
-    private global::Bnet.ProcessId host_;
-    public global::Bnet.ProcessId Host {
+    private global::Bgs.Protocol.ProcessId host_;
+    public global::Bgs.Protocol.ProcessId Host {
       get { return host_; }
       set {
         host_ = value;
@@ -1564,7 +1564,7 @@ namespace Bnet.GameUtilities.V1 {
       }
       if (other.host_ != null) {
         if (host_ == null) {
-          host_ = new global::Bnet.ProcessId();
+          host_ = new global::Bgs.Protocol.ProcessId();
         }
         Host.MergeFrom(other.Host);
       }
@@ -1579,7 +1579,7 @@ namespace Bnet.GameUtilities.V1 {
             break;
           case 10: {
             if (host_ == null) {
-              host_ = new global::Bnet.ProcessId();
+              host_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(host_);
             break;
@@ -1596,7 +1596,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<GetAchievementsFileResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[10]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[10]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1619,8 +1619,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "content_handle" field.</summary>
     public const int ContentHandleFieldNumber = 1;
-    private global::Bnet.ContentHandle contentHandle_;
-    public global::Bnet.ContentHandle ContentHandle {
+    private global::Bgs.Protocol.ContentHandle contentHandle_;
+    public global::Bgs.Protocol.ContentHandle ContentHandle {
       get { return contentHandle_; }
       set {
         contentHandle_ = value;
@@ -1673,7 +1673,7 @@ namespace Bnet.GameUtilities.V1 {
       }
       if (other.contentHandle_ != null) {
         if (contentHandle_ == null) {
-          contentHandle_ = new global::Bnet.ContentHandle();
+          contentHandle_ = new global::Bgs.Protocol.ContentHandle();
         }
         ContentHandle.MergeFrom(other.ContentHandle);
       }
@@ -1688,7 +1688,7 @@ namespace Bnet.GameUtilities.V1 {
             break;
           case 10: {
             if (contentHandle_ == null) {
-              contentHandle_ = new global::Bnet.ContentHandle();
+              contentHandle_ = new global::Bgs.Protocol.ContentHandle();
             }
             input.ReadMessage(contentHandle_);
             break;
@@ -1705,7 +1705,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<GetAllValuesForAttributeRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[11]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[11]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1740,8 +1740,8 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "agent_id" field.</summary>
     public const int AgentIdFieldNumber = 2;
-    private global::Bnet.EntityId agentId_;
-    public global::Bnet.EntityId AgentId {
+    private global::Bgs.Protocol.EntityId agentId_;
+    public global::Bgs.Protocol.EntityId AgentId {
       get { return agentId_; }
       set {
         agentId_ = value;
@@ -1825,7 +1825,7 @@ namespace Bnet.GameUtilities.V1 {
       }
       if (other.agentId_ != null) {
         if (agentId_ == null) {
-          agentId_ = new global::Bnet.EntityId();
+          agentId_ = new global::Bgs.Protocol.EntityId();
         }
         AgentId.MergeFrom(other.AgentId);
       }
@@ -1847,7 +1847,7 @@ namespace Bnet.GameUtilities.V1 {
           }
           case 18: {
             if (agentId_ == null) {
-              agentId_ = new global::Bnet.EntityId();
+              agentId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(agentId_);
             break;
@@ -1868,7 +1868,7 @@ namespace Bnet.GameUtilities.V1 {
     public static pb::MessageParser<GetAllValuesForAttributeResponse> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[12]; }
+      get { return global::Bgs.Protocol.GameUtilities.V1.GameUtilitiesServiceReflection.Descriptor.MessageTypes[12]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -1891,10 +1891,10 @@ namespace Bnet.GameUtilities.V1 {
 
     /// <summary>Field number for the "attribute_value" field.</summary>
     public const int AttributeValueFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Variant> _repeated_attributeValue_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Variant.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Variant> attributeValue_ = new pbc::RepeatedField<global::Bnet.Variant>();
-    public pbc::RepeatedField<global::Bnet.Variant> AttributeValue {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Variant> _repeated_attributeValue_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Variant.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Variant> attributeValue_ = new pbc::RepeatedField<global::Bgs.Protocol.Variant>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Variant> AttributeValue {
       get { return attributeValue_; }
     }
 

@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Report.V1 {
+namespace Bgs.Protocol.Report.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/report_service.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -38,10 +38,10 @@ namespace Bnet.Report.V1 {
             "b3J0UmVxdWVzdBoULmJncy5wcm90b2NvbC5Ob0RhdGFCBUgCgAEAYgZwcm90",
             "bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.AttributeTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.AttributeTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Report.V1.Report), global::Bnet.Report.V1.Report.Parser, new[]{ "ReportType", "Attribute", "ReportQos", "ReportingAccount", "ReportingGameAccount", "ReportTimestamp" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Report.V1.SendReportRequest), global::Bnet.Report.V1.SendReportRequest.Parser, new[]{ "Report" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Report.V1.Report), global::Bgs.Protocol.Report.V1.Report.Parser, new[]{ "ReportType", "Attribute", "ReportQos", "ReportingAccount", "ReportingGameAccount", "ReportTimestamp" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Report.V1.SendReportRequest), global::Bgs.Protocol.Report.V1.SendReportRequest.Parser, new[]{ "Report" }, null, null, null)
           }));
     }
     #endregion
@@ -54,7 +54,7 @@ namespace Bnet.Report.V1 {
     public static pb::MessageParser<Report> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Report.V1.ReportServiceReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Report.V1.ReportServiceReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -92,10 +92,10 @@ namespace Bnet.Report.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 2;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(18, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(18, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
@@ -111,8 +111,8 @@ namespace Bnet.Report.V1 {
 
     /// <summary>Field number for the "reporting_account" field.</summary>
     public const int ReportingAccountFieldNumber = 4;
-    private global::Bnet.EntityId reportingAccount_;
-    public global::Bnet.EntityId ReportingAccount {
+    private global::Bgs.Protocol.EntityId reportingAccount_;
+    public global::Bgs.Protocol.EntityId ReportingAccount {
       get { return reportingAccount_; }
       set {
         reportingAccount_ = value;
@@ -121,8 +121,8 @@ namespace Bnet.Report.V1 {
 
     /// <summary>Field number for the "reporting_game_account" field.</summary>
     public const int ReportingGameAccountFieldNumber = 5;
-    private global::Bnet.EntityId reportingGameAccount_;
-    public global::Bnet.EntityId ReportingGameAccount {
+    private global::Bgs.Protocol.EntityId reportingGameAccount_;
+    public global::Bgs.Protocol.EntityId ReportingGameAccount {
       get { return reportingGameAccount_; }
       set {
         reportingGameAccount_ = value;
@@ -232,13 +232,13 @@ namespace Bnet.Report.V1 {
       }
       if (other.reportingAccount_ != null) {
         if (reportingAccount_ == null) {
-          reportingAccount_ = new global::Bnet.EntityId();
+          reportingAccount_ = new global::Bgs.Protocol.EntityId();
         }
         ReportingAccount.MergeFrom(other.ReportingAccount);
       }
       if (other.reportingGameAccount_ != null) {
         if (reportingGameAccount_ == null) {
-          reportingGameAccount_ = new global::Bnet.EntityId();
+          reportingGameAccount_ = new global::Bgs.Protocol.EntityId();
         }
         ReportingGameAccount.MergeFrom(other.ReportingGameAccount);
       }
@@ -268,14 +268,14 @@ namespace Bnet.Report.V1 {
           }
           case 34: {
             if (reportingAccount_ == null) {
-              reportingAccount_ = new global::Bnet.EntityId();
+              reportingAccount_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(reportingAccount_);
             break;
           }
           case 42: {
             if (reportingGameAccount_ == null) {
-              reportingGameAccount_ = new global::Bnet.EntityId();
+              reportingGameAccount_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(reportingGameAccount_);
             break;
@@ -296,7 +296,7 @@ namespace Bnet.Report.V1 {
     public static pb::MessageParser<SendReportRequest> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Report.V1.ReportServiceReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Report.V1.ReportServiceReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -319,8 +319,8 @@ namespace Bnet.Report.V1 {
 
     /// <summary>Field number for the "report" field.</summary>
     public const int ReportFieldNumber = 1;
-    private global::Bnet.Report.V1.Report report_;
-    public global::Bnet.Report.V1.Report Report {
+    private global::Bgs.Protocol.Report.V1.Report report_;
+    public global::Bgs.Protocol.Report.V1.Report Report {
       get { return report_; }
       set {
         report_ = value;
@@ -373,7 +373,7 @@ namespace Bnet.Report.V1 {
       }
       if (other.report_ != null) {
         if (report_ == null) {
-          report_ = new global::Bnet.Report.V1.Report();
+          report_ = new global::Bgs.Protocol.Report.V1.Report();
         }
         Report.MergeFrom(other.Report);
       }
@@ -388,7 +388,7 @@ namespace Bnet.Report.V1 {
             break;
           case 10: {
             if (report_ == null) {
-              report_ = new global::Bnet.Report.V1.Report();
+              report_ = new global::Bgs.Protocol.Report.V1.Report();
             }
             input.ReadMessage(report_);
             break;

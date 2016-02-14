@@ -7,7 +7,7 @@ using pb = global::Google.Protobuf;
 using pbc = global::Google.Protobuf.Collections;
 using pbr = global::Google.Protobuf.Reflection;
 using scg = global::System.Collections.Generic;
-namespace Bnet.Notification.V1 {
+namespace Bgs.Protocol.Notification.V1 {
 
   /// <summary>Holder for reflection information generated from bgs/low/pb/client/notification_types.proto</summary>
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -44,11 +44,11 @@ namespace Bnet.Notification.V1 {
             "c0lkEj4KE2ZvcndhcmRpbmdfaWRlbnRpdHkYCiABKAsyIS5iZ3MucHJvdG9j",
             "b2wuYWNjb3VudC52MS5JZGVudGl0eUICSAJiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Bnet.Account.V1.AccountTypesReflection.Descriptor, global::Bnet.AttributeTypesReflection.Descriptor, global::Bnet.EntityTypesReflection.Descriptor, global::Bnet.RpcTypesReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Bgs.Protocol.Account.V1.AccountTypesReflection.Descriptor, global::Bgs.Protocol.AttributeTypesReflection.Descriptor, global::Bgs.Protocol.EntityTypesReflection.Descriptor, global::Bgs.Protocol.RpcTypesReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Notification.V1.Target), global::Bnet.Notification.V1.Target.Parser, new[]{ "Identity", "Type" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Notification.V1.Subscription), global::Bnet.Notification.V1.Subscription.Parser, new[]{ "Target", "Subscriber", "DeliveryRequired" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Bnet.Notification.V1.Notification), global::Bnet.Notification.V1.Notification.Parser, new[]{ "SenderId", "TargetId", "Type", "Attribute", "SenderAccountId", "TargetAccountId", "SenderBattleTag", "TargetBattleTag", "Peer", "ForwardingIdentity" }, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Notification.V1.Target), global::Bgs.Protocol.Notification.V1.Target.Parser, new[]{ "Identity", "Type" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Notification.V1.Subscription), global::Bgs.Protocol.Notification.V1.Subscription.Parser, new[]{ "Target", "Subscriber", "DeliveryRequired" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Bgs.Protocol.Notification.V1.Notification), global::Bgs.Protocol.Notification.V1.Notification.Parser, new[]{ "SenderId", "TargetId", "Type", "Attribute", "SenderAccountId", "TargetAccountId", "SenderBattleTag", "TargetBattleTag", "Peer", "ForwardingIdentity" }, null, null, null)
           }));
     }
     #endregion
@@ -61,7 +61,7 @@ namespace Bnet.Notification.V1 {
     public static pb::MessageParser<Target> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Notification.V1.NotificationTypesReflection.Descriptor.MessageTypes[0]; }
+      get { return global::Bgs.Protocol.Notification.V1.NotificationTypesReflection.Descriptor.MessageTypes[0]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -85,8 +85,8 @@ namespace Bnet.Notification.V1 {
 
     /// <summary>Field number for the "identity" field.</summary>
     public const int IdentityFieldNumber = 1;
-    private global::Bnet.Account.V1.Identity identity_;
-    public global::Bnet.Account.V1.Identity Identity {
+    private global::Bgs.Protocol.Account.V1.Identity identity_;
+    public global::Bgs.Protocol.Account.V1.Identity Identity {
       get { return identity_; }
       set {
         identity_ = value;
@@ -158,7 +158,7 @@ namespace Bnet.Notification.V1 {
       }
       if (other.identity_ != null) {
         if (identity_ == null) {
-          identity_ = new global::Bnet.Account.V1.Identity();
+          identity_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         Identity.MergeFrom(other.Identity);
       }
@@ -176,7 +176,7 @@ namespace Bnet.Notification.V1 {
             break;
           case 10: {
             if (identity_ == null) {
-              identity_ = new global::Bnet.Account.V1.Identity();
+              identity_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(identity_);
             break;
@@ -197,7 +197,7 @@ namespace Bnet.Notification.V1 {
     public static pb::MessageParser<Subscription> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Notification.V1.NotificationTypesReflection.Descriptor.MessageTypes[1]; }
+      get { return global::Bgs.Protocol.Notification.V1.NotificationTypesReflection.Descriptor.MessageTypes[1]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -222,17 +222,17 @@ namespace Bnet.Notification.V1 {
 
     /// <summary>Field number for the "target" field.</summary>
     public const int TargetFieldNumber = 1;
-    private static readonly pb::FieldCodec<global::Bnet.Notification.V1.Target> _repeated_target_codec
-        = pb::FieldCodec.ForMessage(10, global::Bnet.Notification.V1.Target.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Notification.V1.Target> target_ = new pbc::RepeatedField<global::Bnet.Notification.V1.Target>();
-    public pbc::RepeatedField<global::Bnet.Notification.V1.Target> Target {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Notification.V1.Target> _repeated_target_codec
+        = pb::FieldCodec.ForMessage(10, global::Bgs.Protocol.Notification.V1.Target.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Notification.V1.Target> target_ = new pbc::RepeatedField<global::Bgs.Protocol.Notification.V1.Target>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Notification.V1.Target> Target {
       get { return target_; }
     }
 
     /// <summary>Field number for the "subscriber" field.</summary>
     public const int SubscriberFieldNumber = 2;
-    private global::Bnet.Account.V1.Identity subscriber_;
-    public global::Bnet.Account.V1.Identity Subscriber {
+    private global::Bgs.Protocol.Account.V1.Identity subscriber_;
+    public global::Bgs.Protocol.Account.V1.Identity Subscriber {
       get { return subscriber_; }
       set {
         subscriber_ = value;
@@ -309,7 +309,7 @@ namespace Bnet.Notification.V1 {
       target_.Add(other.target_);
       if (other.subscriber_ != null) {
         if (subscriber_ == null) {
-          subscriber_ = new global::Bnet.Account.V1.Identity();
+          subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         Subscriber.MergeFrom(other.Subscriber);
       }
@@ -331,7 +331,7 @@ namespace Bnet.Notification.V1 {
           }
           case 18: {
             if (subscriber_ == null) {
-              subscriber_ = new global::Bnet.Account.V1.Identity();
+              subscriber_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(subscriber_);
             break;
@@ -352,7 +352,7 @@ namespace Bnet.Notification.V1 {
     public static pb::MessageParser<Notification> Parser { get { return _parser; } }
 
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::Bnet.Notification.V1.NotificationTypesReflection.Descriptor.MessageTypes[2]; }
+      get { return global::Bgs.Protocol.Notification.V1.NotificationTypesReflection.Descriptor.MessageTypes[2]; }
     }
 
     pbr::MessageDescriptor pb::IMessage.Descriptor {
@@ -384,8 +384,8 @@ namespace Bnet.Notification.V1 {
 
     /// <summary>Field number for the "sender_id" field.</summary>
     public const int SenderIdFieldNumber = 1;
-    private global::Bnet.EntityId senderId_;
-    public global::Bnet.EntityId SenderId {
+    private global::Bgs.Protocol.EntityId senderId_;
+    public global::Bgs.Protocol.EntityId SenderId {
       get { return senderId_; }
       set {
         senderId_ = value;
@@ -394,8 +394,8 @@ namespace Bnet.Notification.V1 {
 
     /// <summary>Field number for the "target_id" field.</summary>
     public const int TargetIdFieldNumber = 2;
-    private global::Bnet.EntityId targetId_;
-    public global::Bnet.EntityId TargetId {
+    private global::Bgs.Protocol.EntityId targetId_;
+    public global::Bgs.Protocol.EntityId TargetId {
       get { return targetId_; }
       set {
         targetId_ = value;
@@ -414,17 +414,17 @@ namespace Bnet.Notification.V1 {
 
     /// <summary>Field number for the "attribute" field.</summary>
     public const int AttributeFieldNumber = 4;
-    private static readonly pb::FieldCodec<global::Bnet.Attribute> _repeated_attribute_codec
-        = pb::FieldCodec.ForMessage(34, global::Bnet.Attribute.Parser);
-    private readonly pbc::RepeatedField<global::Bnet.Attribute> attribute_ = new pbc::RepeatedField<global::Bnet.Attribute>();
-    public pbc::RepeatedField<global::Bnet.Attribute> Attribute {
+    private static readonly pb::FieldCodec<global::Bgs.Protocol.Attribute> _repeated_attribute_codec
+        = pb::FieldCodec.ForMessage(34, global::Bgs.Protocol.Attribute.Parser);
+    private readonly pbc::RepeatedField<global::Bgs.Protocol.Attribute> attribute_ = new pbc::RepeatedField<global::Bgs.Protocol.Attribute>();
+    public pbc::RepeatedField<global::Bgs.Protocol.Attribute> Attribute {
       get { return attribute_; }
     }
 
     /// <summary>Field number for the "sender_account_id" field.</summary>
     public const int SenderAccountIdFieldNumber = 5;
-    private global::Bnet.EntityId senderAccountId_;
-    public global::Bnet.EntityId SenderAccountId {
+    private global::Bgs.Protocol.EntityId senderAccountId_;
+    public global::Bgs.Protocol.EntityId SenderAccountId {
       get { return senderAccountId_; }
       set {
         senderAccountId_ = value;
@@ -433,8 +433,8 @@ namespace Bnet.Notification.V1 {
 
     /// <summary>Field number for the "target_account_id" field.</summary>
     public const int TargetAccountIdFieldNumber = 6;
-    private global::Bnet.EntityId targetAccountId_;
-    public global::Bnet.EntityId TargetAccountId {
+    private global::Bgs.Protocol.EntityId targetAccountId_;
+    public global::Bgs.Protocol.EntityId TargetAccountId {
       get { return targetAccountId_; }
       set {
         targetAccountId_ = value;
@@ -463,8 +463,8 @@ namespace Bnet.Notification.V1 {
 
     /// <summary>Field number for the "peer" field.</summary>
     public const int PeerFieldNumber = 9;
-    private global::Bnet.ProcessId peer_;
-    public global::Bnet.ProcessId Peer {
+    private global::Bgs.Protocol.ProcessId peer_;
+    public global::Bgs.Protocol.ProcessId Peer {
       get { return peer_; }
       set {
         peer_ = value;
@@ -473,8 +473,8 @@ namespace Bnet.Notification.V1 {
 
     /// <summary>Field number for the "forwarding_identity" field.</summary>
     public const int ForwardingIdentityFieldNumber = 10;
-    private global::Bnet.Account.V1.Identity forwardingIdentity_;
-    public global::Bnet.Account.V1.Identity ForwardingIdentity {
+    private global::Bgs.Protocol.Account.V1.Identity forwardingIdentity_;
+    public global::Bgs.Protocol.Account.V1.Identity ForwardingIdentity {
       get { return forwardingIdentity_; }
       set {
         forwardingIdentity_ = value;
@@ -603,13 +603,13 @@ namespace Bnet.Notification.V1 {
       }
       if (other.senderId_ != null) {
         if (senderId_ == null) {
-          senderId_ = new global::Bnet.EntityId();
+          senderId_ = new global::Bgs.Protocol.EntityId();
         }
         SenderId.MergeFrom(other.SenderId);
       }
       if (other.targetId_ != null) {
         if (targetId_ == null) {
-          targetId_ = new global::Bnet.EntityId();
+          targetId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetId.MergeFrom(other.TargetId);
       }
@@ -619,13 +619,13 @@ namespace Bnet.Notification.V1 {
       attribute_.Add(other.attribute_);
       if (other.senderAccountId_ != null) {
         if (senderAccountId_ == null) {
-          senderAccountId_ = new global::Bnet.EntityId();
+          senderAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         SenderAccountId.MergeFrom(other.SenderAccountId);
       }
       if (other.targetAccountId_ != null) {
         if (targetAccountId_ == null) {
-          targetAccountId_ = new global::Bnet.EntityId();
+          targetAccountId_ = new global::Bgs.Protocol.EntityId();
         }
         TargetAccountId.MergeFrom(other.TargetAccountId);
       }
@@ -637,13 +637,13 @@ namespace Bnet.Notification.V1 {
       }
       if (other.peer_ != null) {
         if (peer_ == null) {
-          peer_ = new global::Bnet.ProcessId();
+          peer_ = new global::Bgs.Protocol.ProcessId();
         }
         Peer.MergeFrom(other.Peer);
       }
       if (other.forwardingIdentity_ != null) {
         if (forwardingIdentity_ == null) {
-          forwardingIdentity_ = new global::Bnet.Account.V1.Identity();
+          forwardingIdentity_ = new global::Bgs.Protocol.Account.V1.Identity();
         }
         ForwardingIdentity.MergeFrom(other.ForwardingIdentity);
       }
@@ -658,14 +658,14 @@ namespace Bnet.Notification.V1 {
             break;
           case 10: {
             if (senderId_ == null) {
-              senderId_ = new global::Bnet.EntityId();
+              senderId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(senderId_);
             break;
           }
           case 18: {
             if (targetId_ == null) {
-              targetId_ = new global::Bnet.EntityId();
+              targetId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetId_);
             break;
@@ -680,14 +680,14 @@ namespace Bnet.Notification.V1 {
           }
           case 42: {
             if (senderAccountId_ == null) {
-              senderAccountId_ = new global::Bnet.EntityId();
+              senderAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(senderAccountId_);
             break;
           }
           case 50: {
             if (targetAccountId_ == null) {
-              targetAccountId_ = new global::Bnet.EntityId();
+              targetAccountId_ = new global::Bgs.Protocol.EntityId();
             }
             input.ReadMessage(targetAccountId_);
             break;
@@ -702,14 +702,14 @@ namespace Bnet.Notification.V1 {
           }
           case 74: {
             if (peer_ == null) {
-              peer_ = new global::Bnet.ProcessId();
+              peer_ = new global::Bgs.Protocol.ProcessId();
             }
             input.ReadMessage(peer_);
             break;
           }
           case 82: {
             if (forwardingIdentity_ == null) {
-              forwardingIdentity_ = new global::Bnet.Account.V1.Identity();
+              forwardingIdentity_ = new global::Bgs.Protocol.Account.V1.Identity();
             }
             input.ReadMessage(forwardingIdentity_);
             break;
